@@ -32,14 +32,19 @@ lines = [
 ]
 
 qrows, qid = [], 0
-for f in ("questions_akt.json", "questions_kfp.json"):
+for f in ("questions_akt.json", "questions_akt_batch2.json", "questions_akt_batch3.json", "questions_akt_batch4.json", "questions_kfp.json", "questions_kfp_batch2.json"):
+    qtype = "AKT" if "akt" in f.lower() else "KFP"
     for q in json.loads((D / "data" / f).read_text(encoding="utf-8")):
         qid += 1
-        opts = {"parts": q["parts"]} if q["type"] == "KFP" else {"options": q["options"]}
-        answers = q if q["type"] == "KFP" else {"answers": q["answers"]}
-        qrows.append(f"({qid}, {esc(q['type'])}, {esc(q['topic'])}, {esc(q.get('unit',''))}, {esc(q['stem'])}, {jstr(opts)}, {jstr(answers)}, {esc(q.get('explanation',''))}, {esc(q.get('pearl',''))}, {esc(q.get('trap',''))})")
-lines += ["", "-- QUESTIONS", "INSERT OR IGNORE INTO questions (id, type, topic, unit, stem, options, answers, explanation, pearl, trap) VALUES",
-          ",\n".join(qrows) + ";"]
+        opts = {"parts": q["parts"]} if qtype == "KFP" else {"options": q["options"]}
+        answers = q if qtype == "KFP" else {"answers": q["answers"]}
+        qrows.append(f"({qid}, '{qtype}', {esc(q['topic'])}, {esc(q.get('unit',''))}, {esc(q['stem'])}, {jstr(opts)}, {jstr(answers)}, {esc(q.get('explanation',''))}, {esc(q.get('pearl',''))}, {esc(q.get('trap',''))})")
+lines += ["", "-- QUESTIONS (chunked)"]
+CH = 50
+for i in range(0, len(qrows), CH):
+    chunk = qrows[i:i+CH]
+    lines.append("INSERT OR IGNORE INTO questions (id, type, topic, unit, stem, options, answers, explanation, pearl, trap) VALUES")
+    lines.append(",\n".join(chunk) + ";")
 
 crows = []
 for i, c in enumerate(json.loads((D / "data" / "cce_cases.json").read_text(encoding="utf-8")), 1):
