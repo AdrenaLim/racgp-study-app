@@ -203,7 +203,7 @@ pre.sched{white-space:pre-wrap;font-size:.82rem;line-height:1.6;background:rgba(
 const S = { tab:'dashboard' };
 const app = document.getElementById('app');
 const api = async (p, opts) => (await fetch('/api'+p, opts)).json();
-const esc = s => String(s??'').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
+const esc = s => String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pj = s => { try { return typeof s==='string'? JSON.parse(s): s; } catch { return s; } };
 
 const NAV = [
@@ -525,7 +525,7 @@ window.qSubmit = async () => {
     ${q.pearl?`<div style="margin:4px 0"><b>💎 Pearl:</b> ${esc(q.pearl)}</div>`:''}
     ${q.trap?`<div style="margin:4px 0"><b>⚠️ Trap:</b> ${esc(q.trap)}</div>`:''}
     ${partsMeta}
-    ${correct?'':'<button class="btn subtle" style="margin-top:8px" onclick=\\'logMissed()\\'>➕ Log to Mistake Log</button>'}
+    ${correct?"":'<button class="btn subtle" style="margin-top:8px" onclick="logMissed()">➕ Log to Mistake Log</button>'}
     <span id="logmsg" style="margin-left:8px;color:var(--green)"></span>
   </div>`;
 };
