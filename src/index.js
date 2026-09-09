@@ -160,8 +160,8 @@ export default {
       const byType = await DB.prepare("SELECT q.type AS type, COUNT(*) AS n, SUM(a.correct) AS c FROM attempts a JOIN questions q ON q.id = a.question_id GROUP BY q.type").all();
       const mistakes = await DB.prepare('SELECT COUNT(*) AS n FROM mistakes WHERE status="open"').first();
       const due = await DB.prepare("SELECT topic FROM reviews WHERE due <= date('now') ORDER BY due").all();
-      const weakest = await DB.prepare("SELECT q.topic AS topic, ROUND(100.0*SUM(a.correct)/COUNT(*)) AS pct, COUNT(*) AS n FROM attempts a JOIN questions q ON q.id=a.question_id GROUP BY q.topic HAVING COUNT(*) >= 1 ORDER BY pct ASC LIMIT 5").all();
-      const strongest = await DB.prepare("SELECT q.topic AS topic, ROUND(100.0*SUM(a.correct)/COUNT(*)) AS pct, COUNT(*) AS n FROM attempts a JOIN questions q ON q.id=a.question_id GROUP BY q.topic HAVING COUNT(*) >= 1 ORDER BY pct DESC LIMIT 5").all();
+      const weakest = await DB.prepare("SELECT q.topic AS topic, ROUND(100.0*SUM(a.correct)/COUNT(*)) AS pct, COUNT(*) AS n FROM attempts a JOIN questions q ON q.id=a.question_id GROUP BY q.topic HAVING COUNT(*) >= 2 ORDER BY pct ASC LIMIT 5").all();
+      const strongest = await DB.prepare("SELECT q.topic AS topic, ROUND(100.0*SUM(a.correct)/COUNT(*)) AS pct, COUNT(*) AS n FROM attempts a JOIN questions q ON q.id=a.question_id GROUP BY q.topic HAVING COUNT(*) >= 2 ORDER BY pct DESC LIMIT 5").all();
       return json({
         topics_total: totals.n, topics_touched: done.n,
         questions_attempted: at.n, questions_correct: at.c ?? 0,

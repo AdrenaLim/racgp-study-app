@@ -71,6 +71,12 @@
   details.unit{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;background:var(--panel2)}
   details.unit summary{padding:11px 14px;cursor:pointer;font-size:14.5px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
   details.unit summary .pill{flex:none}
+  .sec{margin:10px 0;padding:10px 12px;background:var(--panel);border:1px solid var(--border);border-radius:9px}
+  .sec-h{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-bottom:6px}
+  .sec p{margin:4px 0}
+  .li{font-size:13.5px;margin:4px 0;line-height:1.5}
+  .li.chk{display:flex;gap:9px;align-items:flex-start;cursor:pointer}
+  .case{font-size:13.5px;line-height:1.55;background:var(--panel2);border-left:3px solid var(--accent2);padding:8px 12px;border-radius:6px}
   .unit-body{padding:4px 14px 14px;border-top:1px solid var(--border)}
   .unit-body p{margin:8px 0;font-size:13.5px}
   .gl-link{color:#7ab0ff;font-size:12.5px;text-decoration:none;border-bottom:1px dotted #7ab0ff66}
@@ -79,6 +85,8 @@
   .note textarea{flex:1;min-height:48px;font-size:13.5px}
   .btn.tiny{padding:5px 10px;font-size:12px}
   .add-note{margin-top:8px}
+  .due-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #20283a;gap:10px;flex-wrap:wrap}
+  .btn.tiny{padding:5px 10px;font-size:12px}
   @media(max-width:700px){main{padding:14px 12px 60px}}
 </style>
 </head>
@@ -133,26 +141,54 @@ async function render() {
 async function vDashboard() {
   const d = await api('/dashboard');
   const acc = d.accuracy==null?'—':d.accuracy+'%';
+  const akt = (d.by_type||[]).find(x=>x.type==='AKT');
+  const kfp = (d.by_type||[]).find(x=>x.type==='KFP');
+  const pct = (a,b) => b? Math.round(100*a/b) : 0;
+  const days = s => { const n = countdown(s); return n>0? `${n} days` : 'passed'; };
+  const goals = JSON.parse(localStorage.getItem('weeklyGoals')||'{}');
+  const goalList = [
+    'Work through 1 curriculum unit end-to-end (rationale → competencies → case → strategies)',
+    'Complete 15+ AKT questions and log every miss',
+    'Do 2 KFP cases aloud, mark yourself against the model answers',
+    'Read 1 Tier-1 guideline section (Red Book / Asthma Handbook / eTG)',
+    'Practise 1 CCE case aloud, timed 15 min'
+  ];
   app.innerHTML = `
   <h2>Dashboard</h2>
-  <p class="lead">Progress at a glance · Phase 1 Foundation · next exam: AKT 15 Jan 2027 (${countdown('2027-01-15')} days)</p>
-  <div class="grid c3">
+  <p class="lead">Phase 1 Foundation · ${d.topics_touched}/${d.topics_total} topics touched · ${d.questions_attempted} questions attempted</p>
+  <div class="card" style="border-color:var(--warn)">
+    <b>⚠️ Enrolment window: AKT/KFP 2027.1 enrolment closes 1 October 2026</b> — <span class="subtle">${days('2026-10-01')} remaining. Opens 3 Sep 2026. Don't miss it — no late enrolments.</span>
+  </div>
+  <div class="grid c3" style="margin-top:14px">
     <div class="stat"><div class="num">${d.topics_touched}/${d.topics_total}</div><div class="lbl">Topics touched</div><div class="bar"><div style="width:${100*d.topics_touched/d.topics_total}%"></div></div></div>
-    <div class="stat"><div class="num">${d.questions_attempted}</div><div class="lbl">Questions attempted · ${acc} accuracy</div></div>
+    <div class="stat"><div class="num">${d.questions_attempted}</div><div class="lbl">Questions · ${acc} accuracy</div></div>
     <div class="stat"><div class="num">${d.open_mistakes}</div><div class="lbl">Open mistakes to review</div></div>
-    <div class="stat"><div class="num">${d.due_reviews.length}</div><div class="lbl">Spaced-repetition reviews due</div></div>
+    <div class="stat"><div class="num">${d.due_reviews.length}</div><div class="lbl">Reviews due today</div></div>
   </div>
   <div class="grid c2" style="margin-top:14px">
-    <div class="card"><h3 style="margin:0 0 8px">🎯 Weakest topics (by accuracy)</h3>${listOrEmpty(d.weakest,r=>`<div class="row" style="justify-content:space-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n} attempts</span></div>`)}</div>
-    <div class="card"><h3 style="margin:0 0 8px">💪 Strongest topics</h3>${listOrEmpty(d.strongest,r=>`<div class="row" style="justify-content:space-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n} attempts</span></div>`)}</div>
+    <div class="card"><h3 style="margin:0 0 8px">📝 By exam component</h3>
+      <div class="row" style="justify-content:space-between;margin:6px 0"><span><span class="pill tier1">AKT</span> 15 Jan 2027 (${days('2027-01-15')})</span><span class="subtle">${akt? `${akt.n} done · ${pct(akt.c,akt.n)}%` : 'not started'}</span></div>
+      <div class="bar"><div style="width:${akt? pct(akt.c,akt.n):0}%"></div></div>
+      <div class="row" style="justify-content:space-between;margin:6px 0"><span><span class="pill tier2">KFP</span> 16 Jan 2027 (${days('2027-01-16')})</span><span class="subtle">${kfp? `${kfp.n} parts done · ${pct(kfp.c,kfp.n)}%` : 'not started'}</span></div>
+      <div class="bar"><div style="width:${kfp? pct(kfp.c,kfp.n):0}%"></div></div>
+      <div class="row" style="justify-content:space-between;margin:6px 0"><span><span class="pill tier3">CCE</span> June 2027 (dates TBC)</span><span class="subtle">practise via CCE tab</span></div>
+    </div>
+    <div class="card"><h3 style="margin:0 0 8px">🎯 Weakest topics <span class="subtle">(≥2 attempts)</span></h3>${listOrEmpty(d.weakest,r=>`<div class="row" style="justify-content:space-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n}</span></div>`)}
+    <h3 style="margin:12px 0 8px">💪 Strongest topics</h3>${listOrEmpty(d.strongest,r=>`<div class="row" style="justify-content:space-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n}</span></div>`)}</div>
+  <div class="card"><div class="flex-between"><h3 style="margin:0">🔁 Reviews due today</h3><span class="subtle">${d.due_reviews.length} topic(s) — mark to reschedule (Day 1/7/21/45/90)</span></div>
+    ${d.due_reviews.length? `<div class="due-list">${d.due_reviews.slice(0,12).map(t=>`<div class="due-row"><span>${esc(t)}</span>
+      <span class="row" style="gap:6px">
+        <button class="btn tiny subtle" onclick="revQ('${esc(t)}','again')">Again</button>
+        <button class="btn tiny" onclick="revQ('${esc(t)}','good')">Good → +interval</button>
+        <button class="btn tiny green" onclick="revQ('${esc(t)}','easy')">Easy</button>
+      </span></div>`).join('')}${d.due_reviews.length>12? `<div class="subtle">…and ${d.due_reviews.length-12} more</div>`:''}</div>` : '<div class="empty">Nothing due — answer questions to drive the scheduler</div>'}
   </div>
-  <div class="card"><h3 style="margin:0 0 8px">🔁 Reviews due today</h3>${listOrEmpty(d.due_reviews.map(t=>({t})),r=>`<div>${esc(r.t)}</div>`)}</div>
-  <div class="card"><h3 style="margin:0 0 8px">This week's goals</h3>
-    <label style="display:flex;gap:8px;align-items:center;font-size:14px"><input type="checkbox"> Cardiovascular topics: mark 5 as learning+ via Curriculum tab</label>
-    <label style="display:flex;gap:8px;align-items:center;font-size:14px"><input type="checkbox"> Complete 10 AKT questions in Questions tab</label>
-    <label style="display:flex;gap:8px;align-items:center;font-size:14px"><input type="checkbox"> Read Red Book screening chapter (see Guidelines)</label>
+  <div class="card"><h3 style="margin:0 0 8px">✅ This week's goals <span class="subtle">(saved in this browser)</span></h3>
+    ${goalList.map((g,i)=>`<label class="li chk"><input type="checkbox" ${goals[i]?'checked':''} onchange="toggleGoal(${i},this.checked)"> ${esc(g)}</label>`).join('')}
   </div>`;
 }
+window.revQ = async (topic, quality) => { await api('/reviews', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic,quality})}); render(); };
+window.toggleGoal = (i, checked) => { const g = JSON.parse(localStorage.getItem('weeklyGoals')||'{}'); g[i]=checked; localStorage.setItem('weeklyGoals', JSON.stringify(g)); };
 function listOrEmpty(arr,fn){ return arr&&arr.length? arr.map(fn).join(''): '<div class="empty">No data yet — do some questions first</div>'; }
 function countdown(dateStr){ return Math.round((new Date(dateStr)-Date.now())/86400000); }
 
@@ -162,25 +198,34 @@ async function vTopics() {
   TOPICS_CACHE = topics; window.UNITS_CACHE = units;
   const topicsByUnit = {};
   topics.forEach(t => { (topicsByUnit[t.unit] ??= []).push(t); });
-  const gl = u => (pj(u.guidelines)||[]).map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)}</a>`).join(' · ') || '<span class="subtle">—</span>';
-  const mat = u => (pj(u.materials)||[]).map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)}</a>`).join(' · ') || '<span class="subtle">—</span>';
   const unitCard = u => {
     const ts = topicsByUnit[u.name] || [];
+    const gl = u => (pj(u.guidelines)||[]).map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)}</a>`).join('<br>') || '<span class="subtle">—</span>';
+    const mat = u => (pj(u.materials)||[]).map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)}</a>`).join('<br>') || '<span class="subtle">—</span>';
     return `<details class="unit" data-unit="${esc(u.name)}"><summary>
       <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.type==='core'?'CORE':'CTX'} ${u.number}</span>
-      <b>${esc(u.name)}</b> <span class="subtle">${ts.length} topic${ts.length!==1?'s':''}</span></summary>
+      <b>${esc(u.name)}</b> <span class="subtle">${ts.length} topic${ts.length!==1?'s':''}${(pj(u.guidelines)||[]).length?' · '+(pj(u.guidelines)||[]).length+' guidelines':''}</span></summary>
       <div class="unit-body">
-        <p class="subtle">${esc(u.blurb||'')}</p>
-        <p><b>Guidelines:</b> ${gl(u)}</p>
-        <p><b>Study materials:</b> ${mat(u)}</p>
-        <a class="gl-link" href="${esc(u.racgp_url)}" target="_blank">RACGP unit page ↗</a>
+        <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(u.rationale||u.blurb||'')}</p></div>
+        <div class="sec"><div class="sec-h">2 · Competencies and learning outcomes</div>
+          ${(pj(u.competencies)||[]).map(c=>`<div class="li">▸ ${esc(c)}</div>`).join('')}</div>
+        <div class="sec"><div class="sec-h">3 · Curricula in context <a class="gl-link" href="${esc(u.racgp_url)}" target="_blank">official unit page ↗</a></div>
+          <p class="subtle">See the RACGP page for the full outcome mapping across the five domains.</p></div>
+        <div class="sec"><div class="sec-h">4 · Case consultation example <span class="subtle">(CCE-styled)</span></div>
+          <p class="case">${esc(u.case_example||'')}</p></div>
+        <div class="sec"><div class="sec-h">5 · Learning strategies</div>
+          ${(pj(u.learning_strategies)||[]).map(s=>`<label class="li chk"><input type="checkbox"> ${esc(s)}</label>`).join('')}</div>
+        <div class="sec"><div class="sec-h">6 · Guiding topics and content areas</div>
         ${ts.length? `<table><tr><th>Topic</th><th>Yield</th><th>Status</th><th>Focus</th></tr>
         ${ts.map(t=>`<tr data-t="${esc(t.name)}">
           <td><b>${esc(t.name)}</b><div class="subtle">${esc((t.should_know||'').slice(0,80))}…</div></td>
           <td><span class="pill ${t.priority}">${t.priority==='VH'?'🔴':t.priority==='H'?'🟠':t.priority==='M'?'🟡':'🟢'}</span></td>
           <td><span class="pill st-${esc(t.status)} stbtn" style="cursor:pointer" onclick="cycleStatus(${t.id},'${esc(t.status)}')">${esc(t.status)}</span></td>
           <td class="subtle" style="max-width:330px">${esc((t.must_know||'').slice(0,110))}… <span class="expand" onclick="tDetail(${t.id})">more</span></td>
-        </tr>`).join('')}</table>` : '<div class="empty">No topics mapped to this unit yet — study from the RACGP unit page and guidelines above.</div>'}
+        </tr>`).join('')}</table>` : '<div class="subtle">Study from the official unit page and guidelines; no mapped topics yet.</div>'}</div>
+        <div class="sec"><div class="sec-h">7 · Learning resources</div>
+          <p><b>Guidelines & sources:</b><br>${gl(u)}</p>
+          <p><b>Study materials:</b><br>${mat(u)}</p></div>
         <div class="unit-notes" id="notes-${u.id}"></div>
         <button class="btn subtle add-note" onclick="addNote(${u.id})">＋ Add note</button>
       </div></details>`;
@@ -280,9 +325,11 @@ function qRender() {
     window.QSTATE.pick = null;
   } else {
     const parts = opts.parts || [];
-    document.getElementById('qparts').innerHTML = parts.map((p,pi)=>`
-      <div style="margin:10px 0"><b>Part ${pi+1}:</b> ${esc(p.q)}</div>
-      <div class="q-options">${p.options.map((o,i)=>`<label id="l${pi}_${i}"><input type="checkbox" value="${i}" data-part="${pi}" onchange="qPickMulti(${pi},${i},this.checked)"> <span>${esc(o)}</span></label>`).join('')}</div>`).join('');
+    document.getElementById('qparts').innerHTML = parts.map((p,pi)=>{
+      const need = (p.q.match(/TWO|THREE|FOUR|FIVE|SIX/)?.[0])||null;
+      const hint = need? `<span class="pill tier2" style="font-size:11px">select ${need.toLowerCase()}</span>` : '';
+      return `<div style="margin:10px 0"><b>Part ${pi+1}:</b> ${esc(p.q)} ${hint}</div>
+      <div class="q-options">${p.options.map((o,i)=>`<label id="l${pi}_${i}"><input type="checkbox" value="${i}" data-part="${pi}" onchange="qPickMulti(${pi},${i},this.checked)"> <span>${esc(o)}</span></label>`).join('')}</div>`}).join('');
     window.QSTATE.pickMulti = {};
   }
   window.QCUR = { q, opts, answers };
@@ -293,12 +340,14 @@ window.qSubmit = async () => {
   const { q, opts, answers } = QCUR;
   let correct = false, detail = '';
   if (q.type === 'AKT') {
-    if (QSTATE.pick == null) return alert('Choose an option first');
+    if (QSTATE.pick == null) { const m=document.getElementById('qfb'); if(m) m.innerHTML='<div class="feedback no">Choose an option first.</div>'; return; }
     correct = QSTATE.pick === answers.answers[0];
     document.getElementById(`l${answers.answers[0]}`).classList.add('correct');
     if (!correct) document.getElementById(`l${QSTATE.pick}`).classList.add('wrong');
   } else {
     const parts = pj(q.options).parts || [];
+    const anyPicked = Object.values(QSTATE.pickMulti||{}).some(s=>s && s.size>0);
+    if (!anyPicked) { const m=document.getElementById('qfb'); if(m) m.innerHTML='<div class="feedback no">Select at least one option in each part before submitting.</div>'; return; }
     let allOk = true;
     parts.forEach((p,pi) => {
       const want = new Set(p.correct);

@@ -1,0 +1,1618 @@
+{
+ "units": [
+  {
+   "type": "core",
+   "number": 1,
+   "name": "Communication and the patient\u2013doctor relationship",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/1-communication-and-the-patient-doctor-relationship",
+   "rationale": "The consultation is the core intervention of general practice. Effective, empathic communication improves accuracy of diagnosis, patient adherence, satisfaction and outcomes, and reduces medico-legal risk.",
+   "competencies": [
+    "Open the consultation, elicit the patient's ideas, concerns and expectations, and close with a clear, mutually agreed plan",
+    "Adapt communication to health literacy, culture, language (interpreters) and disability",
+    "Break bad news with a structured approach, manage strong emotions and consult safely with children, adolescents and older people"
+   ],
+   "case_example": "A 45-year-old presents with 'tiredness'. As the consultation unfolds, three separate concerns emerge: her own tiredness, her father's recent cancer diagnosis, and a request for a medical certificate. (CCE areas: data gathering - elicit all three agendas; clinical management - prioritise; communication - agenda-setting, ICE, summarising.)",
+   "learning_strategies": [
+    "Record (with consent) one of your own consultations each week and review it against a consultation model",
+    "Practise breaking bad news aloud with a study partner using SPIKES",
+    "Ask your supervisor to observe a consultation and give structured feedback"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP unit page (official)",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/1-communication-and-the-patient-doctor-relationship",
+     "tier": 1
+    },
+    {
+     "title": "RACGP Curriculum and syllabus guide",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/a-guide-to-using-the-curriculum-and-syllabus",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "RACGP gplearning communication modules",
+     "url": "https://www.racgp.org.au/education/professional-development/online-learning/gplearning",
+     "kind": "course"
+    }
+   ]
+  },
+  {
+   "type": "core",
+   "number": 2,
+   "name": "Applied professional knowledge and skills",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/2-applied-professional-knowledge-and-skills",
+   "rationale": "The GP applies clinical knowledge through reasoning: history, examination, differential diagnosis, targeted investigation and safe management - the engine room of the KFP and daily practice.",
+   "competencies": [
+    "Take a focused history and perform a relevant, respectful examination",
+    "Generate a pragmatic differential diagnosis and choose investigations that change management (avoiding over-investigation)",
+    "Interpret results in context, prescribe safely, perform common GP procedures, and manage clinical uncertainty"
+   ],
+   "case_example": "A 52-year-old has 3 weeks of fatigue. First-line tests show ferritin 12 with normal Hb. (CCE areas: data gathering - menstrual, dietary, GI symptoms; clinical management - iron deficiency needs a cause: coeliac screen, GI malignancy considerations by age/sex; communication - explaining why 'a bit low in iron' still needs investigation.)",
+   "learning_strategies": [
+    "Do 20 AKT questions daily and log error patterns in your mistake log",
+    "Case-based discussion with your supervisor on 2 undifferentiated presentations per week",
+    "Practise a structured approach to abnormal results (anaemia, LFTs, electrolytes)"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG complete (Therapeutic Guidelines)",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Australian Medicines Handbook",
+     "url": "https://amhonline.amh.net.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "eTG app - daily point-of-care use",
+     "url": "https://tg.org.au",
+     "kind": "tool"
+    },
+    {
+     "label": "RACGP unit page (official)",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/2-applied-professional-knowledge-and-skills",
+     "kind": "link"
+    }
+   ]
+  },
+  {
+   "type": "core",
+   "number": 3,
+   "name": "Population health and the context of general practice",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/3-population-health-and-the-context-of-general-practice",
+   "rationale": "GPs deliver preventive care at scale: screening programs, immunisation, notifiable disease management and health equity. Population thinking turns individual consultations into community outcomes.",
+   "competencies": [
+    "Apply epidemiology when offering screening (benefits, harms, intervals)",
+    "Run preventive activities systematically (Red Book) and use practice recall systems",
+    "Recognise and act on health inequity; manage notifiable conditions and public health risks"
+   ],
+   "case_example": "A 54-year-old attends for a script refill. Her screening is overdue: bowel, cervical. (CCE areas: data gathering - what she already knows; clinical management - opportunistic offer of iFOBT and CST, immunisation status; communication - prevention in a time-poor consult without lecturing.)",
+   "learning_strategies": [
+    "Audit 10 consecutive patient files for due preventive activities",
+    "Memorise current program intervals (cervical 25-74/5-yearly HPV, bowel 45-74/2-yearly iFOBT, BreastScreen 50-74)",
+    "Write a one-page practice plan for improving under-screened groups"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP Red Book 10th ed (2024)",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+     "tier": 1
+    },
+    {
+     "title": "Australian Immunisation Handbook",
+     "url": "https://immunisationhandbook.health.gov.au/",
+     "tier": 1
+    },
+    {
+     "title": "Dept of Health - screening programs",
+     "url": "https://www.health.gov.au/topics/health-prevention",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Red Book online (searchable)",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+     "kind": "reference"
+    },
+    {
+     "label": "AIH digital",
+     "url": "https://immunisationhandbook.health.gov.au/",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "core",
+   "number": 4,
+   "name": "Professional and ethical role",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/4-professional-and-ethical-role",
+   "rationale": "Professionalism underpins patient trust: ethical reasoning, confidentiality, consent, duty of candour, and care of the doctor's own health and that of colleagues.",
+   "competencies": [
+    "Apply ethical frameworks to consent, capacity and confidentiality dilemmas",
+    "Meet mandatory reporting obligations and know the limits of confidentiality",
+    "Maintain own health, recognise colleague impairment, and practise within competence"
+   ],
+   "case_example": "A colleague at your practice seems increasingly withdrawn and smells of alcohol at morning tea. (CCE areas: clinical management - patient safety duties, doctors' health pathways, mandatory notification thresholds; communication - the supportive colleague conversation; professionalism - documentation.)",
+   "learning_strategies": [
+    "Discuss 2 ethics vignettes per fortnight with a study group",
+    "Learn your state's mandatory reporting and child protection numbers by heart",
+    "Complete an AHPRA code-of-conduct self-review"
+   ],
+   "guidelines": [
+    {
+     "title": "Medical Board - Good medical practice code",
+     "url": "https://www.medicalboard.gov.au/Codes-Guidelines-Policies/Code-of-conduct.aspx",
+     "tier": 1
+    },
+    {
+     "title": "AHPRA mandatory notifications",
+     "url": "https://www.ahpra.gov.au/notifications/mandatory-notifications.aspx",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Doctors' Health Service Queensland",
+     "url": "https://www.drs4drs.com.au",
+     "kind": "org"
+    },
+    {
+     "label": "RACGP unit page (official)",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/4-professional-and-ethical-role",
+     "kind": "link"
+    }
+   ]
+  },
+  {
+   "type": "core",
+   "number": 5,
+   "name": "Organisational and legal dimensions",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/5-organisational-and-legal-dimensions",
+   "rationale": "Safe general practice runs on systems: records, results handling, prescribing safety, privacy, employment law and quality improvement. Organisational failures - not knowledge failures - cause much preventable harm.",
+   "competencies": [
+    "Keep contemporaneous, adequate records; apply privacy principles and appropriate confidentiality",
+    "Run safe results and recall systems; manage referrals and prescribing within MBS/PBS rules",
+    "Know key legal duties: certification, driving fitness, mandatory reporting, and respond to incidents openly"
+   ],
+   "case_example": "A patient telephones: 'Did anyone get my biopsy result? I had it 6 weeks ago.' No result was ever actioned. (CCE areas: clinical management - open disclosure, urgent retrieval and clinical assessment; professionalism - incident reporting and system fix; communication - the honest, apologetic conversation.)",
+   "learning_strategies": [
+    "Do a mock audit of your practice's results-tracking system",
+    "Learn the common MBS item numbers used weekly in your practice",
+    "Practise writing one defensible referral letter and one certificate per week"
+   ],
+   "guidelines": [
+    {
+     "title": "Austroads - Assessing Fitness to Drive",
+     "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive",
+     "tier": 1
+    },
+    {
+     "title": "MBS Online",
+     "url": "http://mbsonline.gov.au",
+     "tier": 1
+    },
+    {
+     "title": "OAIC - health privacy",
+     "url": "https://www.oaic.gov.au/privacy/privacy-guidance-for-organisations-and-government-agencies/health-services/",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "RACGP practice standards and tools",
+     "url": "https://www.racgp.org.au/running-a-practice/practice-standards",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "core",
+   "number": 6,
+   "name": "Aboriginal and Torres Strait Islander health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/6-aboriginal-and-torres-strait-islander-health",
+   "rationale": "Aboriginal and Torres Strait Islander peoples experience a burden of disease 2-3 times the non-Indigenous rate, with earlier onset chronic disease. Culturally safe, high-trust general practice closes gaps: annual health checks, earlier risk assessment, CTG scripts and working with community-controlled services.",
+   "competencies": [
+    "Deliver culturally safe care: ask about identification respectfully, build trust, understand institutional barriers and intergenerational trauma",
+    "Deliver the annual 715 health check and Close the Gap PBS entitlements; start CVD risk assessment from 35 and diabetes screening earlier",
+    "Work with ATSI community-controlled health services and local referral pathways; support patient self-determination"
+   ],
+   "case_example": "A 52-year-old Aboriginal man presents with tiredness; HbA1c returns 7.2%. His father died of kidney disease. He is wary of hospitals. (CCE areas: data gathering - family history, previous screening; clinical management - confirm diagnosis, cycle of care, CTG entitlements, vaccination; communication - plain language, trust, service choice.)",
+   "learning_strategies": [
+    "Complete RACGP ATSI health activity on gplearning",
+    "Learn the 715, CTG script and follow-up item numbers cold",
+    "Visit or arrange a visit to your local ATSI community-controlled health service"
+   ],
+   "guidelines": [
+    {
+     "title": "National guide to preventive healthcare for ATSI people (3rd ed)",
+     "url": "https://racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/national-guide",
+     "tier": 1
+    },
+    {
+     "title": "RACGP ATSI health unit page",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/6-aboriginal-and-torres-strait-islander-health",
+     "tier": 1
+    },
+    {
+     "title": "Australian Institute of Health and Welfare - ATSI health reports",
+     "url": "https://www.aihw.gov.au/reports/indigenous-australians",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "NACCHO",
+     "url": "https://www.naccho.org.au",
+     "kind": "org"
+    },
+    {
+     "label": "AIATSIS map of Indigenous Australia",
+     "url": "https://aiatsis.gov.au/explore/map-indigenous-australia",
+     "kind": "map"
+    }
+   ]
+  },
+  {
+   "type": "core",
+   "number": 7,
+   "name": "Rural health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/rural-health",
+   "rationale": "Rural GPs work with extended scope, greater distance from specialist services and different workforce realities: telehealth, retrieval, and managing emergencies that urban colleagues refer out.",
+   "competencies": [
+    "Stabilise and coordinate emergencies with longer transfer times; know local retrieval pathways",
+    "Use telehealth effectively and coordinate care across distances",
+    "Manage the professional isolation and on-call realities of rural practice; maintain skills and self-care"
+   ],
+   "case_example": "You are the only doctor in a small town. A 60-year-old collapses with chest pain; the nearest PCI hospital is 90 minutes by road. (CCE areas: data gathering - ECG, history in parallel with treatment; clinical management - pre-hospital STEMI pathway, aspirin, GTN, oxygen if hypoxic, 000/retrieval; communication - calm coordination, family updates.)",
+   "learning_strategies": [
+    "Rehearse your practice's emergency drug trolley and anaphylaxis/STEMI/stroke workflows",
+    "Complete a rural emergency skills course (or refresh) if applicable to your scope",
+    "Write out your local after-hours and retrieval phone tree"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP rural health unit page",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/rural-health",
+     "tier": 1
+    },
+    {
+     "title": "Services Australia - telehealth items",
+     "url": "https://www.servicesaustralia.gov.au/medicare-benefits-health-professionals",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "ACRRM/rural emergency resources",
+     "url": "https://www.acrrm.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 1,
+   "name": "Abuse and violence",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/abuse-and-violence",
+   "rationale": "Family and domestic violence affects about 1 in 4 women presenting to general practice; GPs are often the first and sometimes the only professional a victim discloses to. Recognition, safety assessment and patient-paced response save lives; child safety obligations run alongside.",
+   "competencies": [
+    "Ask directly and privately, believe, validate, and assess immediate safety including strangulation risk",
+    "Safety-plan, document meticulously (verbatim, body maps), and connect to FDV services; never force leaving",
+    "Meet mandatory child protection obligations when children are exposed"
+   ],
+   "case_example": "A 38-year-old woman discloses ongoing violence from her partner; she is not ready to leave. Two children at home. (CCE areas: data gathering - privacy, pattern, strangulation, children; clinical management - safety assessment, safety plan, 1800RESPECT, child protection duty; communication - patient-paced, non-directive.)",
+   "learning_strategies": [
+    "Read the RACGP White Book end-to-end once; re-read the safety assessment chapter",
+    "Practise the first-response script aloud: validation without pressure",
+    "Memorise local FDV services, the Elder Abuse helpline and Child Safety number"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP White Book - Abuse and violence",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/white-book",
+     "tier": 1
+    },
+    {
+     "title": "1800RESPECT clinical resources",
+     "url": "https://www.1800respect.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "QLD Domestic Violence Protection Act resources / DV Connect",
+     "url": "https://www.dvconnect.org",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 2,
+   "name": "Addiction medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/addiction-medicine",
+   "rationale": "Alcohol, tobacco and other drug problems are among the highest-burden conditions GPs manage. Brief interventions work; pharmacotherapies (smoking, opioid, alcohol) are GP-deliverable; withdrawal states are medical emergencies in the dependent.",
+   "competencies": [
+    "Screen with AUDIT-C and deliver brief intervention for alcohol and smoking (Ask-Advise-Help)",
+    "Manage alcohol withdrawal risk (CIWA-Ar, thiamine before glucose) and opioid dependence (buprenorphine/methadone pathways)",
+    "Prescribe pharmacotherapy for smoking cessation (varenicline first-line, combination NRT) and reduce harms for all substance use"
+   ],
+   "case_example": "A 50-year-old drinks 80 g/day and is booked for surgery next week. (CCE areas: data gathering - quantity, withdrawal history, past seizures/delirium; clinical management - withdrawal risk stratification, thiamine, hospital liaison; communication - motivation without confrontation.)",
+   "learning_strategies": [
+    "Learn the alcohol withdrawal ladder and thiamine rules cold",
+    "Do the RACGP smoking cessation module; memorise varenicline dosing and cautions",
+    "Write out the opioid substitution pathway in your state"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG Psychotropic (alcohol/drug sections)",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "RACGP smoking cessation guideline",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/smoking-cessation",
+     "tier": 1
+    },
+    {
+     "title": "Quitline resources",
+     "url": "https://www.quit.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Turning Point education",
+     "url": "https://www.turningpoint.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 3,
+   "name": "Cardiovascular health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/cardiovascular-health",
+   "rationale": "CVD is Australia's leading cause of death: 26% of all deaths. GPs control the levers - absolute risk assessment, BP, lipids, anticoagulation in AF, and post-event secondary prevention. ATSI adults carry double the mortality, with risk assessment from 35.",
+   "competencies": [
+    "Assess and manage absolute CVD risk (Aus CVD Risk Calculator; treat risk, not single numbers)",
+    "Diagnose and manage hypertension (confirm out-of-office), AF (CHA2DS2-VA anticoagulation), and heart failure (quadruple therapy)",
+    "Recognise and refer ACS, aortic dissection and severe valve disease emergently; run post-ACS secondary prevention"
+   ],
+   "case_example": "A 62-year-old has 2 hours of central chest pain in your practice. ECG: ST elevation V2-V4. (CCE areas: data gathering - focused pain history, risk factors in parallel; clinical management - 000, aspirin 300, GTN if BP allows, PCI transfer; communication - calm urgency, family informed.)",
+   "learning_strategies": [
+    "Master the 2023 CVD risk guideline thresholds and the AF anticoagulation decision",
+    "Write the HFrEF quadruple therapy from memory weekly until automatic",
+    "Rehearse the practice STEMI/anaphylaxis drill"
+   ],
+   "guidelines": [
+    {
+     "title": "2023 Australian CVD Risk guideline + calculator",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/cardiovascular-disease-risk-assessment",
+     "tier": 1
+    },
+    {
+     "title": "Australian AF guideline (2018)",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/atrial-fibrillation-resources",
+     "tier": 1
+    },
+    {
+     "title": "Heart Foundation hypertension resources",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/hypertension",
+     "tier": 1
+    },
+    {
+     "title": "ACS guideline 2025",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/acute-coronary-syndromes",
+     "tier": 1
+    },
+    {
+     "title": "eTG Cardiovascular",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Aus CVD Risk Calculator",
+     "url": "https://www.cvdcheck.org.au",
+     "kind": "tool"
+    },
+    {
+     "label": "Heart Foundation professional hub",
+     "url": "https://www.heartfoundation.org.au/for-professionals",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 4,
+   "name": "Child and youth health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/child-and-youth-health",
+   "rationale": "Children are a large share of GP presentations: infections, development, behaviour, and adolescent health. Weight and height are vital signs; fever management is risk-stratified; safeguarding duties run through everything.",
+   "competencies": [
+    "Assess the febrile child by risk (traffic-light); manage common conditions per RCH guidelines (bronchiolitis, croup, otitis media)",
+    "Track growth and development; recognise autism/ADHD and refer via correct pathways",
+    "Consult adolescents headssfully: confidentiality and its limits; mandatory reporting for abuse"
+   ],
+   "case_example": "A 6-month-old has fever 38.8 for 24 hours, alert and drinking. (CCE areas: data gathering - traffic-light features; clinical management - green category, safety-netting, no antibiotics; communication - clear when-to-return advice.)",
+   "learning_strategies": [
+    "Learn the fever traffic-light table and the under-3-months rule cold",
+    "Bookmark RCH CPGs; do the bronchiolitis, croup, and gastro guidelines end-to-end",
+    "Do one HEADSS practice consultation with a teen in your clinic this month"
+   ],
+   "guidelines": [
+    {
+     "title": "RCH Clinical Practice Guidelines",
+     "url": "https://www.rch.org.au/clinicalguide/",
+     "tier": 1
+    },
+    {
+     "title": "Red Book - child screening sections",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+     "tier": 1
+    },
+    {
+     "title": "Australian Immunisation Handbook",
+     "url": "https://immunisationhandbook.health.gov.au/",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Raising Children Network",
+     "url": "https://raisingchildren.net.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 5,
+   "name": "Dermatological presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/dermatological-presentations",
+   "rationale": "Skin problems are ~15% of GP presentations and Australia has the world's highest skin cancer rates. The GP is the front line for melanoma detection, eczema/psoriasis management and skin surgery decisions.",
+   "competencies": [
+    "Describe lesions systematically; biopsy correctly (excision for suspected melanoma - never shave)",
+    "Manage eczema (steroid ladder, emollients, bleach baths), psoriasis (topical combinations, referral criteria), acne (stepwise, isotretinoin rules)",
+    "Perform skin checks and recognise high-risk patients; know referral criteria for lesions and wounds"
+   ],
+   "case_example": "A 40-year-old asks review of a 7 mm changing pigmented lesion on his back with varied colours. (CCE areas: data gathering - ABCD/E, change, risk factors; clinical management - excision biopsy 2 mm margin, dermoscopy where trained; communication - explaining why 'just removing it' must be done properly.)",
+   "learning_strategies": [
+    "Practise describing 10 lesions aloud using formal morphology language",
+    "Memorise biopsy margins and which lesions never to shave",
+    "Do a dermoscopy basics module if available locally"
+   ],
+   "guidelines": [
+    {
+     "title": "Cancer Council Australia - melanoma/NMSC guidelines",
+     "url": "https://www.cancer.org.au/clinical-guidelines",
+     "tier": 1
+    },
+    {
+     "title": "eTG Dermatology",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "SunSmart / Cancer Council resources",
+     "url": "https://www.cancer.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 6,
+   "name": "Disability care",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/disability-care",
+   "rationale": "People with disability face the greatest health inequities: undiagnosed pain, missed prevention, diagnostic overshadowing. The GP's job is ordinary excellent care, delivered accessibly, plus NDIS literacy.",
+   "competencies": [
+    "Deliver annual health assessments for patients with intellectual/physical disability with reasonable adjustments",
+    "Communicate with AAC users, carers and support workers; assess capacity decision-by-decision",
+    "Navigate the NDIS: reports, allied health coordination, and advocacy for health needs"
+   ],
+   "case_example": "A 25-year-old woman with cerebral palsy and intellectual disability presents with new agitation; her support worker says 'she's always like this'. (CCE areas: data gathering - pain/constipation/reflux/UTI as equal possibilities, obtaining history from multiple sources; clinical management - treat the cause, not the behaviour; communication - direct address, capacity respect.)",
+   "learning_strategies": [
+    "Read the RACGP position on care of patients with disability",
+    "Learn the health assessment item numbers for patients with disability",
+    "Audit 5 files of patients with disability for missed prevention"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP - health of people with disabilities",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines",
+     "tier": 1
+    },
+    {
+     "title": "NDIS resources for GPs",
+     "url": "https://www.ndis.gov.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Council for Intellectual Disability resources",
+     "url": "https://cid.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 7,
+   "name": "Disaster health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/disaster-health",
+   "rationale": "GPs are embedded in every disaster response - fires, floods, pandemics: continuity of care for the vulnerable, public health measures, and practice business continuity.",
+   "competencies": [
+    "Maintain care continuity for high-risk patients during disruption (medication supply, telehealth)",
+    "Apply public health directions and outbreak principles; know your role and limits in activation",
+    "Plan practice continuity: records access, remote work, staff safety"
+   ],
+   "case_example": "A flood has cut power to your practice for 3 days; several patients on insulin and warfarin are stranded without medication. (CCE areas: data gathering - identify the vulnerable cohort; clinical management - alternative supply, relocation of care; professionalism - proactive outreach.)",
+   "learning_strategies": [
+    "Write a one-page practice continuity plan for your top 3 local risks",
+    "Complete an emergency/incident management module"
+   ],
+   "guidelines": [
+    {
+     "title": "Australian Disaster Resilience Hub",
+     "url": "https://knowledge.aidr.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Dept of Health emergency response",
+     "url": "https://www.health.gov.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "RACGP disaster management resources",
+     "url": "https://www.racgp.org.au/running-a-practice",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 8,
+   "name": "Doctors' health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/doctors-health",
+   "rationale": "Doctors have elevated rates of mental illness, substance use and suicide, and are notoriously poor patients. Confidential, doctor-to-doctor care pathways exist; the treating doctor generally does NOT face mandatory notification for treating impairment.",
+   "competencies": [
+    "Encourage every doctor to have their own GP; provide non-judgemental care to colleagues",
+    "Recognise burnout, depression, substance use in self and colleagues; intervene supportively early",
+    "Know doctors' health services (drs4drs) and the boundaries of the treating-physician notification exemption"
+   ],
+   "case_example": "A 29-year-old intern confesses to 6+ drinks nightly to sleep, plus zopiclone from a sample pack, terrified of exposure. (CCE areas: data gathering - severity, risk, work impact; clinical management - safer sleep plan, alcohol taper, doctors' health service, own GP; professionalism - confidentiality within legal limits.)",
+   "learning_strategies": [
+    "Save the Doctors' Health Service number in your phone now",
+    "Read the treating-practitioner exemption rules once carefully"
+   ],
+   "guidelines": [
+    {
+     "title": "Converge / Doctors' Health Service",
+     "url": "https://www.drs4drs.com.au",
+     "tier": 1
+    },
+    {
+     "title": "RACGP doctors' health resources",
+     "url": "https://www.racgp.org.au/running-a-practice/your-health",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "drs4drs Queensland",
+     "url": "https://www.drs4drs.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 9,
+   "name": "Ear, nose, throat and oral health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/ear-nose-throat-and-oral-health",
+   "rationale": "ENT complaints fill waiting rooms: otitis media (watchful waiting criteria), sore throat (Centor), sinusitis, hearing loss, epistaxis first aid, and oral lesions with cancer red flags.",
+   "competencies": [
+    "Manage AOM with analgesia-first and defined antibiotic triggers; treat otitis externa topically",
+    "Triage sore throat (Centor, penicillin), sinusitis (>10 days worsening), and epistaxis (pressure first-line)",
+    "Assess hearing loss (Rinne/Weber patterns) and refer; recognise non-healing oral ulcers (3 weeks) urgently"
+   ],
+   "case_example": "A 2-year-old with bilateral AOM, 48 hours, distressed but systemically well. (CCE areas: data gathering - analgesia adequacy, red flags; clinical management - delayed prescribing/watchful waiting; communication - what to watch for, when to return.)",
+   "learning_strategies": [
+    "Memorise AOM immediate-antibiotic criteria and the 3-week oral ulcer rule",
+    "Practise Rinne/Weber interpretation on 5 cases"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG Respiratory (ENT sections)",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "RCH CPG - otitis media",
+     "url": "https://www.rch.org.au/clinicalguide/",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Hearing Australia",
+     "url": "https://www.hearing.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 10,
+   "name": "Education in general practice",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/education-in-general-practice",
+   "rationale": "Teaching is a core professional role: supervising students and registrars, giving feedback, and teaching patients. Good teaching improves the whole practice's care.",
+   "competencies": [
+    "Give structured feedback (set-readiness, observe, debrief)",
+    "Teach in the consultation efficiently (One-Minute Preceptor, SNAPPS)",
+    "Support learners in difficulty and manage the failing student fairly"
+   ],
+   "case_example": "A final-year student presents a case badly; you have a full waiting room. (CCE areas: clinical management - model efficient teaching; professionalism - feedback culture; communication - educational alliance.)",
+   "learning_strategies": [
+    "Practise the One-Minute Preencer structure three times this week"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP education unit page",
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/education-in-general-practice",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "gplearning teaching modules",
+     "url": "https://www.racgp.org.au/education/professional-development/online-learning/gplearning",
+     "kind": "course"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 11,
+   "name": "Emergency medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/emergency-medicine",
+   "rationale": "GP surgeries are unplanned-care sites: anaphylaxis, sepsis, ACS, stroke, trauma and collapse all walk through the door. Outcomes depend on recognition, first-line treatment and timely transfer.",
+   "competencies": [
+    "Deliver IM adrenaline for anaphylaxis (0.5 mg adult, thigh, repeat 5 min) and salbutamol/steroids for severe asthma",
+    "Recognise sepsis (qSOFA) and stroke (FAST); transfer 000 with pre-alert",
+    "Run a practice emergency trolley: adrenaline, salbutamol, GTN, aspirin, glucometer, defibrillator"
+   ],
+   "case_example": "A patient collapses anaphylactic after an antibiotic injection in your treatment room. (CCE areas: clinical management - IM adrenaline, call 000, lie flat, IV access; communication - team leadership, family; professionalism - incident documentation.)",
+   "learning_strategies": [
+    "Run a team anaphylaxis drill this month; restock the trolley",
+    "Write your top-10 surgery emergency protocols on one card"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG Emergency",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Australian Resuscitation Council guidelines",
+     "url": "https://resus.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "ARC anaphylaxis flowchart (print for wall)",
+     "url": "https://resus.org.au",
+     "kind": "tool"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 12,
+   "name": "Endocrine and metabolic health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/metabolic-and-endocrine-health",
+   "rationale": "Diabetes, obesity, thyroid and lipids dominate chronic GP care and exam blueprints equally. Modern management is comorbidity-driven (SGLT2i/GLP-1) and complication-screened (annual cycle).",
+   "competencies": [
+    "Diagnose and manage T2DM: individualised HbA1c, comorbidity-based drug choice, annual complications screen",
+    "Interpret thyroid function tests and manage overt/subclinical disease, including pregnancy",
+    "Manage obesity as a chronic disease (5-10% goals, pharmacotherapy criteria) and lipids by absolute risk/FH rules"
+   ],
+   "case_example": "A 60-year-old with T2DM (HbA1c 8.5%), eGFR 62, on metformin and gliclazide, smokes. (CCE areas: data gathering - cycle-of-care gaps; clinical management - SGLT2i add-on, BP/lipid targets, smoking; communication - prioritising with the patient.)",
+   "learning_strategies": [
+    "Write the T2DM cycle of care and drug-choice ladder from memory weekly",
+    "Master TFT interpretation including pregnancy and subclinical patterns"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP/Diabetes Australia - T2DM management",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/type-2-diabetes",
+     "tier": 1
+    },
+    {
+     "title": "ADS position statements",
+     "url": "https://diabetessociety.com.au",
+     "tier": 1
+    },
+    {
+     "title": "eTG Endocrine",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Diabetes Australia",
+     "url": "https://www.diabetesaustralia.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 13,
+   "name": "Eye presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/eye-presentations",
+   "rationale": "Sight-threatening emergencies present to GPs first: chemical injury (irrigate first), contact-lens keratitis, acute angle closure, retinal detachment, and GCA-related vision loss. Also: diabetic retinopathy screening and red-eye triage.",
+   "competencies": [
+    "Irrigate chemical burns immediately (30 min) before anything else; assess pH",
+    "Triage the red eye: pain, photophobia, vision loss, contact lenses = same-day ophthalmology",
+    "Organise diabetic retinal screening and recognise glaucoma risk opportunistically"
+   ],
+   "case_example": "A 25-year-old contact-lens wearer has a painful red eye with photophobia and reduced vision. (CCE areas: data gathering - lens habits, overnight wear; clinical management - same-day ophthalmology, no patching, stop lenses; communication - sight-loss seriousness.)",
+   "learning_strategies": [
+    "Print the red-eye triage table and the chemical-injury protocol for your desk",
+    "Learn the four sight-threatening headaches of the eye (angle closure, GCA, keratitis, detachment)"
+   ],
+   "guidelines": [
+    {
+     "title": "RANZCO / Optometry Australia resources",
+     "url": "https://www.optometry.org.au",
+     "tier": 1
+    },
+    {
+     "title": "eTG Eye",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "KeepSight (diabetic retinopathy recall)",
+     "url": "https://www.keepsight.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 14,
+   "name": "Gastrointestinal health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/gastrointestinal-health",
+   "rationale": "GI symptoms are among the most common presentations: dyspepsia with alarm features, liver disease (MASLD, viral hepatitis), bowel screening positives, coeliac, IBS and iron deficiency.",
+   "competencies": [
+    "Triage dysphagia/weight loss/anaemia urgently (scope, not PPI trials); manage GORD stepwise",
+    "Work up abnormal LFTs systematically (pattern, viral serology, iron, ultrasound, FIB-4)",
+    "Manage positive iFOBT (colonoscopy), coeliac (test before diet), and IBS positively (Rome IV, diet)"
+   ],
+   "case_example": "A 52-year-old asymptomatic man has ALT 95, BMI 33, negative serology. (CCE areas: data gathering - alcohol, meds, risk factors; clinical management - MASLD pathway: confirm, viral/iron/autoimmune screen, FIB-4; communication - fatty liver explanation and prognosis factors.)",
+   "learning_strategies": [
+    "Learn the LFT pattern approach and FIB-4 thresholds",
+    "Memorise upper-GI alarm features and the iFOBT-positive action"
+   ],
+   "guidelines": [
+    {
+     "title": "GESA resources",
+     "url": "https://www.gesa.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Cancer Council bowel screening resources",
+     "url": "https://www.cancer.org.au",
+     "tier": 1
+    },
+    {
+     "title": "eTG Gastrointestinal",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Bowel Screening Program resources for GPs",
+     "url": "https://www.health.gov.au/our-work/national-bowel-cancer-screening-program",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 15,
+   "name": "Haematological presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/haematological-presentations",
+   "rationale": "Anaemia, abnormal clotting and blood count abnormalities are bread-and-butter GP interpretation; anticoagulation decisions and malignancy recognition (blasts, unexplained cytopenias) are high-stakes.",
+   "competencies": [
+    "Classify anaemia by MCV and reticulocytes; find the cause (iron deficiency in adults = find the source)",
+    "Anticoagulate appropriately (DOAC-first for AF/VTE; renal dosing, perioperative rules) and set VTE durations by provocation",
+    "Recognise haematological emergencies: blasts on film, platelets <20, neutropenic fever - same-day haematology"
+   ],
+   "case_example": "A 63-year-old man has Hb 102, ferritin 8, microcytic. (CCE areas: data gathering - GI symptoms, diet, family history; clinical management - bidirectional endoscopy, iron replacement 3 months beyond normalisation; communication - why men need the scope.)",
+   "learning_strategies": [
+    "Drill the anaemia grid (micro/macro/normocytic) and iron rules",
+    "Learn DOAC perioperative holding and the provoked vs unprovoked VTE durations"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG Haematology",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Blood resources - National Blood Authority",
+     "url": "https://www.blood.gov.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Anticoagulation reversal reference card",
+     "url": "https://www.blood.gov.au",
+     "kind": "tool"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 16,
+   "name": "Infectious diseases",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/infectious-diseases",
+   "rationale": "GPs prescribe most antibiotics in Australia: stewardship, first-line choices and notifiable disease duties sit with us. Add QLD-specific exposures (Q fever, melioidosis up north) and the returned traveller.",
+   "competencies": [
+    "Choose antibiotics per eTG (UTI nitrofurantoin, cellulitis flucloxacillin, pneumonia amoxycillin) and de-escalate",
+    "Diagnose and manage influenza, pertussis, TB risk, and febrile travellers (malaria same-day)",
+    "Vaccinate per AIH including catch-ups; manage notifiable diseases and contact advice"
+   ],
+   "case_example": "A 46-year-old abattoir worker has 5 days of fever and headache in rural QLD. (CCE areas: data gathering - occupation, animals, travel; clinical management - Q fever: doxycycline, serology, notification; communication - occupational implications.)",
+   "learning_strategies": [
+    "Build a personal top-15 antibiotic table with doses and durations",
+    "Learn the notifiable diseases list and your public health unit contact"
+   ],
+   "guidelines": [
+    {
+     "title": "Australian Immunisation Handbook",
+     "url": "https://immunisationhandbook.health.gov.au/",
+     "tier": 1
+    },
+    {
+     "title": "eTG Antibiotic",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Australian STI guidelines (overlap)",
+     "url": "http://sti.guidelines.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "NCIRS resources",
+     "url": "https://www.ncirs.org.au",
+     "kind": "org"
+    },
+    {
+     "label": "QLD Health notifiable diseases",
+     "url": "https://www.health.qld.gov.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 17,
+   "name": "Integrative medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/integrative-medicine",
+   "rationale": "Many patients use complementary medicine: GPs must ask (half don't tell), check interactions, and communicate respectfully about evidence without destroying the relationship.",
+   "competencies": [
+    "Ask routinely about all supplements and practitioners; document",
+    "Check for interactions (warfarin/DOACs + fish oils, St John's wort with everything)",
+    "Communicate evidence differences honestly; support safe choices, caution on harm"
+   ],
+   "case_example": "A patient on warfarin starts high-dose fish oil and ginkgo bought online, and her INR becomes erratic. (CCE areas: data gathering - full supplement list; clinical management - interaction management, INR safety net; communication - non-judgemental negotiation.)",
+   "learning_strategies": [
+    "Memorise the top-10 herbal-drug interactions"
+   ],
+   "guidelines": [
+    {
+     "title": "NPS MedicineWise",
+     "url": "https://www.nps.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "NPS complementary medicine interactions checker",
+     "url": "https://www.nps.org.au",
+     "kind": "tool"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 18,
+   "name": "Justice system health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/justice-system-health",
+   "rationale": "Prisoners and forensic patients have worse health than the general population; GPs working in or adjacent to the justice system manage high mental health, substance and chronic disease burdens with confidentiality subtleties.",
+   "competencies": [
+    "Deliver equivalent care to people in custody; recognise the health consequences of incarceration",
+    "Manage confidentiality within justice-system constraints (security present at consults)",
+    "Coordinate with justice health services on release: continuity scripts, opioid programs"
+   ],
+   "case_example": "A man recently released from prison needs ongoing methadone, hepatitis C treatment and housing support. (CCE areas: data gathering - custody history, meds, risks; clinical management - DAA treatment, OST continuity, referrals; communication - trust and reintegration.)",
+   "learning_strategies": [
+    "Read one overview of prison health in Australia",
+    "Learn the Medicare rules for custodial settings"
+   ],
+   "guidelines": [
+    {
+     "title": "Justice Health Queensland resources",
+     "url": "https://www.health.qld.gov.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Justice Health QLD clinical resources",
+     "url": "https://www.health.qld.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 19,
+   "name": "Kidney and urinary health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/kidney-and-urinary-health",
+   "rationale": "CKD is silent, common and manageable in primary care: eGFR + ACR staging, RAAS blockade, SGLT2i and nephrotoxin avoidance change trajectories. Haematuria and LUTS triage are daily GP work.",
+   "competencies": [
+    "Stage CKD (eGFR + ACR) and manage: BP, RAAS blockade with albuminuria, SGLT2i, sick-day rules",
+    "Triage haematuria: visible = urological malignancy pathway; glomerular pattern = nephrology",
+    "Manage UTI (nitrofurantoin first), stones, and LUTS stepwise; refer per criteria"
+   ],
+   "case_example": "A 68-year-old man, eGFR 38 and stable, has a gout flare asking for naproxen. (CCE areas: data gathering - meds, CKD stage; clinical management - NSAID avoidance, topical first, colchicine dose-adjusted; communication - analgesia explanation in CKD.)",
+   "learning_strategies": [
+    "Memorise CKD stages + referral criteria and the sick-day drug list",
+    "Learn haematuria triage cold (visible vs glomerular)"
+   ],
+   "guidelines": [
+    {
+     "title": "Kidney Health Australia - CKD in primary care",
+     "url": "https://kidney.org.au/health-professionals/chronic-kidney-disease-management-in-primary-care",
+     "tier": 1
+    },
+    {
+     "title": "eTG Kidney/Urology",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "CKD management in primary care handbook",
+     "url": "https://kidney.org.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 20,
+   "name": "Men's health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/mens-health",
+   "rationale": "Men die younger and attend less: GP opportunities concentrate in chronic disease, mental health and suicide prevention, urological symptoms and ED as a cardiovascular flag.",
+   "competencies": [
+    "Use ED as a CVD screening prompt (assess risk before sildenafil)",
+    "Counsel on PSA with informed decision-making (benefits/harms; no population program)",
+    "Screen opportunistically: BP, lipids, glucose, mental health in every male consult you can"
+   ],
+   "case_example": "A 56-year-old smoker with ED requests 'just a script for Viagra'. (CCE areas: data gathering - CVD risk factors, morning erections, mood; clinical management - risk assessment first, PDE5i with nitrate check; communication - reframing ED as a heart check.)",
+   "learning_strategies": [
+    "Learn the PSA conversation (screening vs informed choice) thoroughly",
+    "Rehearse asking men about mood and suicide risk directly"
+   ],
+   "guidelines": [
+    {
+     "title": "Healthy Male (Andrology Australia)",
+     "url": "https://www.healthymale.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Red Book men's sections",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Healthy Male GP resources",
+     "url": "https://www.healthymale.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 21,
+   "name": "Mental health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/mental-health",
+   "rationale": "Mental illness is the third-largest burden of disease in Australia; GPs deliver most mental health care. Depression, anxiety, bipolar, psychosis, perinatal disorders and suicide risk are core GP competencies.",
+   "competencies": [
+    "Screen (PHQ-9, GAD-7, EPDS, K10), assess suicide risk directly (plan/means/intent), and safety-plan (never contracts)",
+    "Deliver stepped care: psychological therapy +/- SSRI with structured review (2 weeks tolerability, 4-6 response)",
+    "Recognise bipolar/psychosis early and refer; manage perinatal and youth mental health within pathways"
+   ],
+   "case_example": "A 35-year-old woman with PHQ-9 = 18 has passive death wishes but no plan; two children at home. (CCE areas: data gathering - direct risk questions, protective factors, substances; clinical management - safety plan, same-week review, SSRI, referral; communication - hope, control, follow-through.)",
+   "learning_strategies": [
+    "Learn a suicide risk framework you can say out loud in 60 seconds",
+    "Memorise the MH referral options in your area (mental health plan, crisis lines)"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP depression guidelines",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/depression",
+     "tier": 1
+    },
+    {
+     "title": "LIFE Framework (suicide prevention)",
+     "url": "https://lifeinmindaustralia.com.au",
+     "tier": 1
+    },
+    {
+     "title": "Beyond Blue primary care guides",
+     "url": "https://www.beyondblue.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "QLD Mental Health Line 1300 642 255",
+     "url": "tel:1300642255",
+     "kind": "tel"
+    },
+    {
+     "label": "Head to Health",
+     "url": "https://headtohealth.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 22,
+   "name": "Migrant, refugee and asylum seeker health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/migrant-refugee-and-asylum-seeker-health",
+   "rationale": "New arrivals carry specific health needs: refugee screening bundles, interpreter-mediated care, torture/trauma awareness, and visa-status effects on Medicare access.",
+   "competencies": [
+    "Use professional interpreters always (TIS), speak to the patient, and confirm dialect",
+    "Deliver arrival screening: hepatitis B, HIV, syphilis, TB, parasites; vaccinate and catch up",
+    "Practise trauma-informed care: never force disclosure; navigate Medicare/visa issues kindly"
+   ],
+   "case_example": "A 28-year-old pregnant refugee from Africa, no English, first antenatal visit. (CCE areas: data gathering - interpreter, obstetric, exposure country; clinical management - booking labs + hep B/HIV/syphilis, TB screen, parasite screen; communication - teach-back, safety.)",
+   "learning_strategies": [
+    "Save the TIS Doctors line number; practise booking one",
+    "Learn the refugee screening bundle by heart"
+   ],
+   "guidelines": [
+    {
+     "title": "ASID refugee health guidelines",
+     "url": "https://www.asid.net.au",
+     "tier": 1
+    },
+    {
+     "title": "Foundation House (torture/trauma)",
+     "url": "https://www.foundationhouse.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "TIS National",
+     "url": "https://www.tisnational.gov.au",
+     "kind": "tool"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 23,
+   "name": "Military and veteran health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/military-and-veteran-health",
+   "rationale": "Veterans carry distinct risks: PTSD, moral injury, hearing loss, musculoskeletal injury and higher suicide rates. DVA arrangements and veteran-aware care improve engagement.",
+   "competencies": [
+    "Recognise service-related conditions (PTSD presentations, hearing, chronic pain) and ask about service history",
+    "Navigate DVA funding: gold/white card entitlements and GP items",
+    "Coordinate veteran mental health care with Open Arms and specialist services"
+   ],
+   "case_example": "A 45-year-old ex-serviceman has insomnia, irritability and heavy drinking since deployment. (CCE areas: data gathering - service history, PTSD screen, alcohol; clinical management - veteran-specific pathways, DVA, Open Arms; communication - trust, no assumptions.)",
+   "learning_strategies": [
+    "Learn the DVA card types and what they cover"
+   ],
+   "guidelines": [
+    {
+     "title": "DVA health provider resources",
+     "url": "https://www.dva.gov.au/providers",
+     "tier": 1
+    },
+    {
+     "title": "Open Arms",
+     "url": "https://www.openarms.gov.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Open Arms - Veterans & Families Counselling",
+     "url": "https://www.openarms.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 24,
+   "name": "Musculoskeletal presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/musculoskeletal-presentations",
+   "rationale": "MSK complaints are the most common reason for GP visits: backs, knees, shoulders, arthritis. Red flags first, imaging restraint second, function-focused management third.",
+   "competencies": [
+    "Screen back pain red flags (cauda equina, cancer, infection, fracture) and manage most acute back pain without imaging",
+    "Manage OA (exercise/weight loss first), gout (acute + ULT rules: start low, titrate to urate <0.30, prophylaxis), and RA (early referral)",
+    "Assess injuries by structure (Ottawa rules); know when to image, inject, refer"
+   ],
+   "case_example": "A 34-year-old man has acute low back pain after lifting; no red flags. (CCE areas: data gathering - red flag screen; clinical management - stay active, heat, analgesia, no MRI; communication - reassurance and expected course.)",
+   "learning_strategies": [
+    "Memorise the back-pain red flag list and Ottawa ankle rules",
+    "Learn allopurinol start-titrate-prophylaxis rules and the PMR/GCA pair"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP OA guideline",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/osteoarthritis",
+     "tier": 1
+    },
+    {
+     "title": "Healthy Bones Australia",
+     "url": "https://healthybonesaustralia.org.au",
+     "tier": 1
+    },
+    {
+     "title": "eTG Musculoskeletal",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Arthritis Australia resources",
+     "url": "https://arthritisaustralia.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 25,
+   "name": "Neurological presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/neurological-presentations",
+   "rationale": "Headache, dizziness, stroke, seizures and dementia are high-yield GP neurology: pattern recognition separates benign from urgent, and time matters in stroke care.",
+   "competencies": [
+    "Triage headache red flags (thunderclap, fever, neurology, >50y new, GCA) and manage migraine with correct prophylaxis triggers",
+    "Manage dizziness by pattern (BPPV: Dix-Hallpike/Epley) and recognise posterior circulation strokes",
+    "Respond to TIA/seizure correctly (same-day TIA assessment; driving rules) and structure dementia workup (reversible causes)"
+   ],
+   "case_example": "A 70-year-old has 20 minutes of arm weakness yesterday; resolved today, feels well. (CCE areas: data gathering - deficit detail, risk factors; clinical management - same-day TIA pathway, ABCD2 not for triage in Australia, aspirin per pathway; communication - urgency despite feeling well.)",
+   "learning_strategies": [
+    "Write the headache red-flag list and the TIA same-day rule on a card",
+    "Practise Dix-Hallpike/Epley on a colleague"
+   ],
+   "guidelines": [
+    {
+     "title": "Stroke Foundation - Clinical Guidelines",
+     "url": "https://www.strokefoundation.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Austroads - neurological conditions and driving",
+     "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Stroke Foundation resources for GPs",
+     "url": "https://www.strokefoundation.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 26,
+   "name": "Occupational and environmental medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/occupational-and-environmental-medicine",
+   "rationale": "Work drives health and health drives work capacity: certificates, return-to-work plans, occupational disease recognition (dermatitis, Q fever, noise) and environmental exposures.",
+   "competencies": [
+    "Certify accurately (what you can verify); write return-to-work plans with specific duties",
+    "Recognise occupational disease patterns (wet-work dermatitis, zoonoses, solvents) and link exposure to diagnosis",
+    "Understand workers' compensation systems and the GP's reporting role"
+   ],
+   "case_example": "A 34-year-old hairdresser has hand dermatitis worse on workdays. (CCE areas: data gathering - exposure inventory, gloves, wet work; clinical management - allergen avoidance, topical ladder, notification for compensation; communication - work modification negotiation.)",
+   "learning_strategies": [
+    "Learn certificate-writing rules and your state's workers comp process"
+   ],
+   "guidelines": [
+    {
+     "title": "Safe Work Australia",
+     "url": "https://www.safeworkaustralia.gov.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Return to work coordinator resources",
+     "url": "https://www.safeworkaustralia.gov.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 27,
+   "name": "Older persons' health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/older-persons-health",
+   "rationale": "Frailty, multimorbidity and polypharmacy define care of older people: annual health assessments, deprescribing, falls, cognition and elder abuse. The aim is function and dignity, not number-chasing.",
+   "competencies": [
+    "Deliver comprehensive geriatric assessment (75+ health assessment): function, falls, cognition, mood, meds, social",
+    "Deprescribe systematically (fall-risk drugs, anticholinergics, PPIs without indication); individualise BP/HbA1c targets",
+    "Recognise delirium (acute = cause hunt), elder abuse, and drive advance care planning early"
+   ],
+   "case_example": "An 85-year-old has 3 falls in 6 months on temazepam and doxazosin with postural drop. (CCE areas: data gathering - meds, home hazards, vision, strength; clinical management - deprescribe first, exercise, vitamin D if deficient; communication - goals-of-care conversation.)",
+   "learning_strategies": [
+    "Write the frailty-aware target list (when to relax BP/HbA1c)",
+    "Learn the 4 AT delirium screen and the multifactorial falls pathway"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP Silver Book",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/silver-book",
+     "tier": 1
+    },
+    {
+     "title": "Austroads - older drivers",
+     "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Silver Book (Medical care of older persons)",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/silver-book",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 28,
+   "name": "Pain management",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/pain-management",
+   "rationale": "Persistent pain is a disease in its own right. Opioid harm taught Australia that biopsychosocial, function-first care is the only approach that works.",
+   "competencies": [
+    "Assess pain biopsychosocially (function, mood, sleep, beliefs, context)",
+    "Manage acute pain well (multimodal, short courses) to prevent chronicity; taper high-dose opioids with support",
+    "Deliver interdisciplinary persistent pain care (programs, pacing, CBT) rather than escalating drugs"
+   ],
+   "case_example": "A 47-year-old on oxycodone 40 mg/day for chronic back pain asks for more. (CCE areas: data gathering - function, mood, aberrant behaviours; clinical management - explain hyperalgesia, taper plan, interdisciplinary program; communication - alliance without capitulation.)",
+   "learning_strategies": [
+    "Learn the opioid taper structure and the yellow-flag screen"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG Analgesic/Palliative",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Faculty of Pain Medicine",
+     "url": "https://www.anzca.edu.au/faculty-of-pain-medicine",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Local persistent pain programs list",
+     "url": "https://www.aci.health.nsw.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 29,
+   "name": "Palliative care",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/palliative-care",
+   "rationale": "Most Australians die with diseases GPs manage. Good end-of-life care: symptom control, anticipatory prescribing, recognising dying, carer support and voluntary assisted dying literacy (QLD law since 2023).",
+   "competencies": [
+    "Manage terminal symptoms: pain (1/6 breakthrough rule), dyspnoea, secretions, delirium, nausea - anticipatory SC sets",
+    "Recognise the dying phase and communicate it honestly; coordinate home/RACF deaths",
+    "Facilitate advance care planning and know QLD VAD law (eligibility, process, conscientious objection)"
+   ],
+   "case_example": "A 78-year-old with metastatic lung cancer at home is entering the dying phase; family anxious. (CCE areas: data gathering - symptoms, fears, supports; clinical management - anticipatory meds, care team, cessation of burdensome interventions; communication - what dying looks like, permission for family.)",
+   "learning_strategies": [
+    "Write the anticipatory drug set (drug/indication/dose) from memory weekly",
+    "Read the QLD VAD eligibility summary once"
+   ],
+   "guidelines": [
+    {
+     "title": "eTG Palliative Care",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "CareSearch",
+     "url": "https://www.caresearch.com.au",
+     "tier": 1
+    },
+    {
+     "title": "QLD Health - VAD guidance",
+     "url": "https://www.health.qld.gov.au/clinical-practice-guidelines/palliative-care/voluntary-assisted-dying",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Palliative Care Australia",
+     "url": "https://palliativecareaustralia.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 30,
+   "name": "Pregnancy and reproductive health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/pregnancy-and-reproductive-health",
+   "rationale": "GPs do most antenatal and postnatal care: booking, routine screening, shared care, and the urgent triage points (ectopic, pre-eclampsia, reduced movements). Contraception and preconception counselling are core GP craft.",
+   "competencies": [
+    "Deliver first antenatal visit care: dating, booking bloods (group/Ab, FBE, hep B, HIV, syphilis, urine MC&S), screening options discussion",
+    "Recognise and refer: ectopic (pain/bleeding + positive test), pre-eclampsia red flags, reduced movements >26 weeks",
+    "Provide full contraception counselling (LARC-first, UKMEC) and postnatal care (EPDS, feeding, contraception timing)"
+   ],
+   "case_example": "A 31-year-old at 9 weeks books in; partner from a high hepatitis B prevalence country. (CCE areas: data gathering - medical, family, exposure history; clinical management - booking tests + extra risk-based, folate/iodine, screening discussion; communication - informed choices.)",
+   "learning_strategies": [
+    "Write the booking blood list and the pre-eclampsia red flags cold",
+    "Learn UKMEC categories for the top 5 contraceptives"
+   ],
+   "guidelines": [
+    {
+     "title": "Dept of Health - Pregnancy Care Guidelines",
+     "url": "https://www.health.gov.au/our-work/clinical-practice-guidelines-pregnancy-care",
+     "tier": 1
+    },
+    {
+     "title": "RANZCOG resources",
+     "url": "https://ranzcog.edu.au",
+     "tier": 1
+    },
+    {
+     "title": "SHQ (QLD) contraception resources",
+     "url": "https://shq.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Healthdirect pregnancy resources",
+     "url": "https://www.healthdirect.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 31,
+   "name": "Research in general practice",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/research-in-general-practice",
+   "rationale": "Evidence-literate GPs appraise studies, run audits and sometimes contribute research. Critical appraisal keeps practice honest; audit improves it.",
+   "competencies": [
+    "Appraise studies: design, validity, size, applicability to your patients",
+    "Run clinical audits (SNAP, prescribing, prevention) and act on findings",
+    "Contribute data/answering surveys where useful; understand basic ethics processes"
+   ],
+   "case_example": "A drug rep presents a new trial showing '30% relative risk reduction'. (CCE areas: data gathering - absolute vs relative risk; clinical management - applicability to your population; professionalism - evidence over marketing.)",
+   "learning_strategies": [
+    "Do one critical appraisal exercise on a paper in your field per month",
+    "Join or form a journal club"
+   ],
+   "guidelines": [
+    {
+     "title": "RACGP research unit",
+     "url": "https://www.racgp.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "RACGP research and ethics resources",
+     "url": "https://www.racgp.org.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 32,
+   "name": "Respiratory health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/respiratory-health",
+   "rationale": "Asthma and COPD alone affect ~2.5 million Australians; GPs manage both from diagnosis to palliative. SABA-only asthma treatment is now history; spirometry is mandatory for COPD diagnosis.",
+   "competencies": [
+    "Diagnose asthma (variability + reversibility) and step to ICS-formoterol AIR therapy; written action plans; review reliever overuse",
+    "Diagnose COPD with post-bronchodilator spirometry; deliver the only trajectory-changers (cessation, rehab) and step-up rules",
+    "Triage haemoptysis (urgent CT + respiratory referral for smokers/mass) and investigate chronic cough systematically"
+   ],
+   "case_example": "A 24-year-old uses salbutamol 3-4 times weekly for months. (CCE areas: data gathering - control assessment, triggers, technique; clinical management - ICS-formoterol, action plan; communication - why the blue inhaler alone is no longer OK.)",
+   "learning_strategies": [
+    "Learn the AIR algorithm and the COPD step-up criteria (eosinophils >=0.3 / 2 exacerbations)",
+    "Do spirometry interpretation drills weekly"
+   ],
+   "guidelines": [
+    {
+     "title": "Australian Asthma Handbook",
+     "url": "https://www.nationalasthma.org.au/australian-asthma-handbook/complete-handbook",
+     "tier": 1
+    },
+    {
+     "title": "COPD-X plan",
+     "url": "https://copdx.org.au/copd-x-plan/",
+     "tier": 1
+    },
+    {
+     "title": "Lung Foundation Australia",
+     "url": "https://lungfoundation.com.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Asthma Australia resources",
+     "url": "https://asthma.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 33,
+   "name": "Sexual health and gender diversity",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/sexual-health-and-gender-diversity",
+   "rationale": "STI rates are rising in Australia; GPs do most testing and all partner notification duties. Affirming care for LGBTQI+ patients measurably improves their health engagement.",
+   "competencies": [
+    "Test by site and risk (NAATs, serology); treat per Australian STI guidelines and arrange partner notification",
+    "Provide PrEP/PEP (PEP within 72 h) and HIV care linkage; screen opportunistically in every eligible patient",
+    "Deliver gender-affirming, non-judgemental care; use chosen names/pronouns; know referral pathways"
+   ],
+   "case_example": "A 22-year-old asymptomatic man who has sex with men requests a check. (CCE areas: data gathering - sexual history without judgement; clinical management - site-specific NAATs + HIV/syphilis, PrEP discussion; communication - normalising, confidentiality.)",
+   "learning_strategies": [
+    "Memorise the site-by-site STI testing table",
+    "Save the PEP hotline and PrEP guidelines link"
+   ],
+   "guidelines": [
+    {
+     "title": "Australian STI Management Guidelines",
+     "url": "http://sti.guidelines.org.au/",
+     "tier": 1
+    },
+    {
+     "title": "ASHM",
+     "url": "https://ashm.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "PrEP guidelines (ASHM)",
+     "url": "https://ashm.org.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 34,
+   "name": "Travel medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/travel-medicine",
+   "rationale": "Pre-travel consults are risk assessments: destination-specific vaccines (typhoid, hep A, rabies, Japanese encephalitis), malaria chemoprophylaxis, and behaviour advice. Returned travellers are a different consult.",
+   "competencies": [
+    "Assess by itinerary: vaccines by destination, malaria risk by region and season, dengue/Zika advice",
+    "Prescribe chemoprophylaxis correctly (drug, start-before, side-effects) and give bite-avoidance advice",
+    "Manage the returned traveller: fever same-day (malaria), persistent diarrhoea, eosinophilia"
+   ],
+   "case_example": "A family with two children is trekking in rural Thailand for 3 weeks. (CCE areas: data gathering - itinerary, activities, duration, pregnancy/medical; clinical management - routine + travel vaccines, malaria assessment, bite avoidance; communication - risk without alarm.)",
+   "learning_strategies": [
+    "Build a region quick-table for the 5 most common destinations your patients visit"
+   ],
+   "guidelines": [
+    {
+     "title": "CDC Yellow Book",
+     "url": "https://wwwnc.cdc.gov/travel",
+     "tier": 1
+    },
+    {
+     "title": "WHO travel health",
+     "url": "https://www.who.int/health-topics/travel-and-health",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Travelvax Australia",
+     "url": "https://www.travelvax.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "type": "contextual",
+   "number": 35,
+   "name": "Women's health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/womens-health",
+   "rationale": "Cervical screening (self-collection era), menopause care, HMB, PCOS and breast symptoms are daily GP work. Individualised, evidence-based care - especially around MHT - is the standard.",
+   "competencies": [
+    "Deliver cervical screening including self-collection choice; manage results per pathways (LBC after non-16/18 HPV)",
+    "Manage menopause: individualised MHT risk-benefit (timing hypothesis), non-hormonal options, GSM treatments",
+    "Assess breast lumps urgently (triple assessment pathway) and manage HMB/PCOS systematically"
+   ],
+   "case_example": "A 49-year-old with perimenopausal symptoms and a uterus asks about 'natural' hormones. (CCE areas: data gathering - symptom inventory, risk factors; clinical management - MHT options/risks, compounded hormones caution; communication - shared decision, contraception still needed.)",
+   "learning_strategies": [
+    "Learn the cervical screening result pathway and MHT contraindications",
+    "Read the menopause society statement on compounded bioidenticals once"
+   ],
+   "guidelines": [
+    {
+     "title": "National Cervical Screening Program",
+     "url": "https://screening.cancer.org.au/cervical/",
+     "tier": 1
+    },
+    {
+     "title": "Australasian Menopause Society",
+     "url": "https://www.menopause.org.au",
+     "tier": 1
+    },
+    {
+     "title": "BreastScreen Australia",
+     "url": "https://www.breastscreen.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Cancer Council breast resources",
+     "url": "https://www.cancer.org.au",
+     "kind": "org"
+    }
+   ]
+  }
+ ]
+}
