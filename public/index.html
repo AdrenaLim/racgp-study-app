@@ -5,107 +5,211 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RACGP Fellowship Study System</title>
 <style>
-  :root{--bg:#0e1116;--panel:#151a22;--panel2:#1b2230;--border:#2a3242;--text:#e8ecf3;--muted:#9aa5b5;--accent:#22c55e;--accent2:#3b82f6;--warn:#f59e0b;--danger:#ef4444;--vh:#ef4444;--h:#f97316;--m:#eab308;--l:#22c55e}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);font-size:15px}
-  header{position:sticky;top:0;z-index:10;background:rgba(14,17,22,.95);border-bottom:1px solid var(--border);padding:10px 18px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-  header h1{font-size:17px;margin:0;font-weight:650}
-  header .sub{color:var(--muted);font-size:12px}
-  nav{display:flex;gap:4px;flex-wrap:wrap}
-  nav button{background:none;border:1px solid transparent;color:var(--muted);padding:7px 12px;border-radius:8px;cursor:pointer;font-size:13.5px;font-weight:550}
-  nav button:hover{color:var(--text)}
-  nav button.active{background:var(--panel2);color:var(--text);border-color:var(--border)}
-  main{max-width:1080px;margin:0 auto;padding:20px 18px 80px}
-  h2{font-size:21px;margin:6px 0 4px}
-  .lead{color:var(--muted);font-size:13px;margin:0 0 18px}
-  .card{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:14px}
-  .grid{display:grid;gap:14px}
-  .grid.c2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
-  .grid.c3{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-  .stat{background:var(--panel);border:1px solid var(--border);border-radius:12px;padding:14px}
-  .stat .num{font-size:26px;font-weight:700}
-  .stat .lbl{color:var(--muted);font-size:12.5px}
-  table{width:100%;border-collapse:collapse;font-size:13.5px}
-  th{color:var(--muted);text-align:left;font-weight:600;padding:8px 10px;border-bottom:1px solid var(--border);font-size:12.5px;text-transform:uppercase;letter-spacing:.04em}
-  td{padding:9px 10px;border-bottom:1px solid #20283a;vertical-align:top}
-  tr:hover td{background:#182030}
-  .pill{display:inline-block;padding:2px 9px;border-radius:99px;font-size:11.5px;font-weight:650;white-space:nowrap}
-  .pill.VH{background:rgba(239,68,68,.15);color:#f87171}.pill.H{background:rgba(249,115,22,.15);color:#fb923c}.pill.M{background:rgba(234,179,8,.15);color:#facc15}.pill.L{background:rgba(34,197,94,.15);color:#4ade80}
-  .pill.st-not\ started{background:rgba(148,163,184,.15);color:#94a3b8}
-  .pill.st-learning{background:rgba(59,130,246,.15);color:#60a5fa}
-  .pill.st-solid{background:rgba(34,197,94,.15);color:#4ade80}
-  .pill.st-exam\ ready{background:rgba(16,185,129,.25);color:#34d399}
-  .pill.tier1{background:rgba(239,68,68,.15);color:#f87171}.pill.tier2{background:rgba(249,115,22,.15);color:#fb923c}.pill.tier3{background:rgba(148,163,184,.15);color:#94a3b8}
-  select,input[type=text],input[type=date],textarea{background:var(--panel2);border:1px solid var(--border);color:var(--text);border-radius:8px;padding:8px 10px;font-size:13.5px;font-family:inherit}
-  textarea{width:100%;min-height:64px;resize:vertical}
-  button.btn{background:var(--accent2);color:#fff;border:none;border-radius:8px;padding:9px 16px;font-size:13.5px;font-weight:600;cursor:pointer}
-  button.btn:hover{filter:brightness(1.1)}
-  button.btn.green{background:var(--accent)}
-  button.btn.subtle{background:var(--panel2);color:var(--text);border:1px solid var(--border)}
-  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  .q-options label{display:flex;gap:10px;align-items:flex-start;background:var(--panel2);border:1px solid var(--border);border-radius:9px;padding:10px 12px;margin-bottom:7px;cursor:pointer;font-size:14px}
-  .q-options label:hover{border-color:var(--accent2)}
-  .q-options label.sel{border-color:var(--accent2);background:#1d2a44}
-  .q-options label.correct{border-color:var(--accent);background:rgba(34,197,94,.12)}
-  .q-options label.wrong{border-color:var(--danger);background:rgba(239,68,68,.10)}
-  .feedback{border-radius:10px;padding:12px 14px;margin-top:12px;font-size:13.5px}
-  .feedback.ok{background:rgba(34,197,94,.1);border:1px solid rgba(34,197,94,.4)}
-  .feedback.no{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.4)}
-  .meta-chip{background:var(--panel2);border:1px solid var(--border);border-radius:10px;padding:12px 14px;margin-bottom:8px}
-  .meta-chip .k{font-size:11.5px;color:var(--accent);font-weight:700;text-transform:uppercase;letter-spacing:.05em}
-  .meta-chip .v{font-size:13.5px;margin-top:3px;line-height:1.5}
-  .meta-chip a{color:#7ab0ff;font-size:12px}
-  .expand{cursor:pointer;color:var(--accent2);font-size:12.5px;font-weight:600;user-select:none}
-  details summary{cursor:pointer;color:var(--accent2);font-weight:600;font-size:13.5px}
-  pre.sched{white-space:pre-wrap;font-size:13px;line-height:1.55;background:var(--panel2);padding:12px;border-radius:9px}
-  .subtle{color:var(--muted);font-size:12.5px}
-  .bar{height:7px;background:var(--panel2);border-radius:99px;overflow:hidden;margin-top:6px}
-  .bar>div{height:100%;background:var(--accent);border-radius:99px}
-  .due-today{color:var(--warn);font-weight:600}
-  .flex-between{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
-  .empty{color:var(--muted);font-style:italic;padding:20px;text-align:center}
-  .tabs{display:flex;gap:6px;margin-bottom:12px}
-  .tabs button{background:var(--panel2);border:1px solid var(--border);color:var(--muted);border-radius:8px;padding:6px 12px;cursor:pointer;font-size:12.5px;font-weight:600}
-  .tabs button.active{color:var(--text);border-color:var(--accent2)}
-  .ccb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
-  details.unit{border:1px solid var(--border);border-radius:10px;margin-bottom:8px;background:var(--panel2)}
-  details.unit summary{padding:11px 14px;cursor:pointer;font-size:14.5px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
-  details.unit summary .pill{flex:none}
-  .sec{margin:10px 0;padding:10px 12px;background:var(--panel);border:1px solid var(--border);border-radius:9px}
-  .sec-h{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);margin-bottom:6px}
-  .sec p{margin:4px 0}
-  .li{font-size:13.5px;margin:4px 0;line-height:1.5}
-  .li.chk{display:flex;gap:9px;align-items:flex-start;cursor:pointer}
-  .case{font-size:13.5px;line-height:1.55;background:var(--panel2);border-left:3px solid var(--accent2);padding:8px 12px;border-radius:6px}
-  .unit-body{padding:4px 14px 14px;border-top:1px solid var(--border)}
-  .unit-body p{margin:8px 0;font-size:13.5px}
-  .gl-link{color:#7ab0ff;font-size:12.5px;text-decoration:none;border-bottom:1px dotted #7ab0ff66}
-  .note{margin:8px 0;display:flex;gap:8px;align-items:flex-start}
-  .note .note-meta{color:var(--muted);font-size:11px;min-width:64px;padding-top:8px}
-  .note textarea{flex:1;min-height:48px;font-size:13.5px}
-  .btn.tiny{padding:5px 10px;font-size:12px}
-  .add-note{margin-top:8px}
-  .due-row{display:flex;justify-content:space-between;align-items:center;padding:7px 0;border-bottom:1px solid #20283a;gap:10px;flex-wrap:wrap}
-  .btn.tiny{padding:5px 10px;font-size:12px}
-  @media(max-width:700px){main{padding:14px 12px 60px}}
+:root{
+  --bg:#050510;--bg2:#0a0a1a;
+  --glass:rgba(255,255,255,.04);--glass2:rgba(255,255,255,.08);
+  --border:rgba(255,255,255,.1);--border-glow:rgba(255,255,255,.15);
+  --text:#e2e8f0;--muted:#94a3b8;--dim:#64748b;
+  --cyan:#22d3ee;--purple:#a78bfa;--green:#34d399;--red:#f87171;--amber:#fbbf24;
+  --accent:var(--cyan);--accent2:var(--purple);
+  --font:'Inter','SF Pro Display',system-ui,-apple-system,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:15px}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;background:
+  radial-gradient(ellipse 80% 60% at 50% 0%,rgba(34,211,238,.06),transparent),
+  radial-gradient(ellipse 60% 50% at 80% 100%,rgba(167,139,250,.05),transparent);
+  pointer-events:none;z-index:0}
+
+/* SCROLLBAR */
+::-webkit-scrollbar{width:6px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(255,255,255,.15);border-radius:3px}
+
+/* HEADER */
+header{position:sticky;top:0;z-index:100;
+  background:rgba(5,5,16,.85);backdrop-filter:blur(20px);
+  border-bottom:1px solid var(--border);padding:12px 24px;display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+header h1{font-size:1.15rem;font-weight:700;letter-spacing:-.02em;
+  background:linear-gradient(135deg,var(--cyan),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+header .sub{color:var(--dim);font-size:.75rem}
+
+/* NAV */
+nav{display:flex;gap:6px;flex-wrap:wrap}
+nav button{background:var(--glass);border:1px solid var(--border);color:var(--muted);
+  padding:7px 14px;border-radius:10px;cursor:pointer;font-size:.85rem;font-weight:500;
+  transition:all .2s;backdrop-filter:blur(8px)}
+nav button:hover{color:var(--text);border-color:var(--border-glow);background:var(--glass2)}
+nav button.active{background:rgba(34,211,238,.1);color:var(--cyan);border-color:rgba(34,211,238,.3);
+  box-shadow:0 0 20px rgba(34,211,238,.1)}
+
+/* MAIN */
+main{max-width:1100px;margin:0 auto;padding:24px 20px 100px;position:relative;z-index:1}
+h2{font-size:1.4rem;font-weight:700;margin:0 0 4px}
+.lead{color:var(--dim);font-size:.85rem;margin:0 0 20px}
+
+/* GLASS CARD */
+.glass{background:var(--glass);backdrop-filter:blur(16px);
+  border:1px solid var(--border);border-radius:16px;padding:20px;
+  transition:all .25s;position:relative;overflow:hidden}
+.glass::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(255,255,255,.15),transparent)}
+.glass:hover{border-color:var(--border-glow);background:var(--glass2)}
+.grid{display:grid;gap:14px}
+.grid.c2{grid-template-columns:repeat(auto-fit,minmax(340px,1fr))}
+.grid.c3{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+/* STATS */
+.stat{background:var(--glass);backdrop-filter:blur(16px);border:1px solid var(--border);
+  border-radius:16px;padding:18px;transition:all .25s}
+.stat:hover{border-color:rgba(34,211,238,.3);box-shadow:0 0 30px rgba(34,211,238,.06)}
+.stat .num{font-size:1.8rem;font-weight:800;
+  background:linear-gradient(135deg,var(--cyan),var(--purple));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.stat .lbl{color:var(--dim);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
+
+/* TABLES */
+table{width:100%;border-collapse:collapse;font-size:.85rem}
+th{color:var(--dim);text-align:left;font-weight:600;padding:10px 12px;border-bottom:1px solid var(--border);
+  font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
+td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top}
+tr:hover td{background:rgba(255,255,255,.02)}
+
+/* PILLS */
+.pill{display:inline-block;padding:3px 10px;border-radius:99px;font-size:.75rem;font-weight:600;white-space:nowrap}
+.pill.VH{background:rgba(248,113,113,.12);color:var(--red);border:1px solid rgba(248,113,113,.2)}
+.pill.H{background:rgba(251,191,36,.12);color:var(--amber);border:1px solid rgba(251,191,36,.2)}
+.pill.M{background:rgba(148,163,184,.12);color:var(--muted);border:1px solid rgba(148,163,184,.2)}
+.pill.L{background:rgba(52,211,153,.12);color:var(--green);border:1px solid rgba(52,211,153,.2)}
+.pill.tier1{background:rgba(248,113,113,.1);color:var(--red);border:1px solid rgba(248,113,113,.2)}
+.pill.tier2{background:rgba(251,191,36,.1);color:var(--amber);border:1px solid rgba(251,191,36,.2)}
+.pill.tier3{background:rgba(148,163,184,.1);color:var(--dim);border:1px solid rgba(148,163,184,.2)}
+.pill.st-not\ started{background:rgba(148,163,184,.1);color:var(--dim);border:1px solid rgba(148,163,184,.15)}
+.pill.st-learning{background:rgba(167,139,250,.12);color:var(--purple);border:1px solid rgba(167,139,250,.2)}
+.pill.st-solid{background:rgba(52,211,153,.12);color:var(--green);border:1px solid rgba(52,211,153,.2)}
+.pill.st-exam\ ready{background:rgba(34,211,238,.12);color:var(--cyan);border:1px solid rgba(34,211,238,.2)}
+
+/* BUTTONS */
+button.btn{background:linear-gradient(135deg,var(--cyan),#0891b2);color:#000;border:none;
+  border-radius:10px;padding:9px 18px;font-size:.85rem;font-weight:600;cursor:pointer;
+  transition:all .2s;box-shadow:0 0 20px rgba(34,211,238,.15)}
+button.btn:hover{filter:brightness(1.15);box-shadow:0 0 30px rgba(34,211,238,.25)}
+button.btn.green{background:linear-gradient(135deg,var(--green),#059669);box-shadow:0 0 20px rgba(52,211,153,.15)}
+button.btn.green:hover{box-shadow:0 0 30px rgba(52,211,153,.25)}
+button.btn.subtle{background:var(--glass);color:var(--muted);border:1px solid var(--border)}
+button.btn.subtle:hover{color:var(--text);border-color:var(--border-glow)}
+button.btn.tiny{padding:4px 10px;font-size:.75rem;border-radius:6px}
+
+/* FORMS */
+input[type=text],input[type=date],textarea,select{
+  background:var(--glass);border:1px solid var(--border);color:var(--text);
+  border-radius:10px;padding:9px 12px;font-size:.85rem;font-family:var(--font);
+  transition:all .2s}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--cyan);
+  box-shadow:0 0 20px rgba(34,211,238,.1)}
+textarea{width:100%;min-height:64px;resize:vertical}
+
+/* Q OPTIONS */
+.q-options label{display:flex;gap:10px;align-items:flex-start;background:var(--glass);
+  border:1px solid var(--border);border-radius:10px;padding:10px 14px;margin-bottom:7px;
+  cursor:pointer;font-size:.9rem;transition:all .2s}
+.q-options label:hover{border-color:rgba(34,211,238,.3);background:var(--glass2)}
+.q-options label.sel{border-color:var(--cyan);background:rgba(34,211,238,.06)}
+.q-options label.correct{border-color:var(--green)!important;background:rgba(52,211,153,.08)!important}
+.q-options label.wrong{border-color:var(--red)!important;background:rgba(248,113,113,.06)!important}
+
+/* FEEDBACK */
+.feedback{border-radius:12px;padding:14px 16px;margin-top:12px;font-size:.85rem}
+.feedback.ok{background:rgba(52,211,153,.06);border:1px solid rgba(52,211,153,.2)}
+.feedback.no{background:rgba(248,113,113,.06);border:1px solid rgba(248,113,113,.2)}
+
+/* METAS */
+.meta-chip{background:var(--glass);border:1px solid var(--border);border-radius:12px;
+  padding:14px 16px;margin-bottom:10px}
+.meta-chip .k{font-size:.7rem;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.meta-chip .v{font-size:.85rem;margin-top:4px;line-height:1.6}
+.meta-chip a{color:var(--cyan);font-size:.8rem;text-decoration:none}
+
+/* EXPAND / DETAILS */
+.expand{cursor:pointer;color:var(--cyan);font-size:.8rem;font-weight:600;user-select:none}
+details summary{cursor:pointer;color:var(--cyan);font-weight:600;font-size:.9rem}
+details.unit{border:1px solid var(--border);border-radius:12px;margin-bottom:8px;
+  background:var(--glass);backdrop-filter:blur(12px);overflow:hidden}
+details.unit summary{padding:12px 16px;cursor:pointer;font-size:.95rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+details.unit summary .pill{flex:none}
+.sec{margin:10px 0;padding:12px 14px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:10px}
+.sec-h{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--purple);margin-bottom:6px}
+.sec p,.li{font-size:.85rem;margin:4px 0;line-height:1.6}
+.li.chk{display:flex;gap:9px;align-items:flex-start;cursor:pointer}
+.case{font-size:.85rem;line-height:1.6;background:rgba(34,211,238,.04);border-left:3px solid var(--cyan);
+  padding:10px 14px;border-radius:0 8px 8px 0;margin:6px 0}
+.unit-body{padding:6px 16px 16px;border-top:1px solid var(--border)}
+.gl-link{color:var(--cyan);font-size:.8rem;text-decoration:none;border-bottom:1px dotted rgba(34,211,238,.3)}
+
+/* NOTE */
+.note{margin:8px 0;display:flex;gap:8px;align-items:flex-start}
+.note .note-meta{color:var(--dim);font-size:.7rem;min-width:64px;padding-top:8px}
+.note textarea{flex:1;min-height:48px;font-size:.85rem}
+
+/* TABS */
+.tabs{display:flex;gap:6px;margin-bottom:14px}
+.tabs button{background:var(--glass);border:1px solid var(--border);color:var(--muted);
+  border-radius:10px;padding:7px 14px;cursor:pointer;font-size:.8rem;font-weight:600;
+  transition:all .2s}
+.tabs button:hover{color:var(--text)}
+.tabs button.active{color:var(--cyan);border-color:rgba(34,211,238,.3);background:rgba(34,211,238,.06)}
+
+/* CCE GRID */
+.ccb-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
+
+/* ROWS / UTILS */
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.flex-between{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.empty{color:var(--dim);font-style:italic;padding:24px;text-align:center}
+.due-today{color:var(--amber);font-weight:600}
+.due-row{display:flex;justify-content:space-between;align-items:center;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.04);gap:10px;flex-wrap:wrap}
+
+/* BAR */
+.bar{height:6px;background:rgba(255,255,255,.05);border-radius:99px;overflow:hidden;margin-top:8px}
+.bar>div{height:100%;background:linear-gradient(90deg,var(--cyan),var(--purple));border-radius:99px;transition:width .5s}
+
+/* PRE */
+pre.sched{white-space:pre-wrap;font-size:.82rem;line-height:1.6;background:rgba(255,255,255,.02);
+  padding:14px;border-radius:10px;border:1px solid var(--border)}
+.subtle{color:var(--dim);font-size:.8rem}
+
+/* ANIMATIONS */
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.glass,details.unit,.stat,.meta-chip{animation:fadeIn .3s ease both}
+
+/* RESPONSIVE */
+@media(max-width:700px){
+  header{padding:10px 14px}
+  header h1{font-size:1rem}
+  main{padding:16px 12px 60px}
+  .grid.c2,.grid.c3{grid-template-columns:1fr}
+  .ccb-grid{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
 <header>
-  <div><h1>🩺 RACGP Fellowship Study System</h1><div class="sub">Dr Kangxian Lim · AGPT · AKT+KFP 2027.1 (Jan 15/16) · CCE 2027.1 (June)</div></header>
+  <div><h1>🩺 RACGP Fellowship Study System</h1><div class="sub">Dr Kangxian Lim · AGPT · AKT+KFP 2027.1 (Jan 15/16) · CCE 2027.1 (June)</div></div>
 </header>
-<main id="app"><div class="empty">Loading…</div></main>
+<main id="app"><div class="empty" style="margin-top:40px">Loading…</div></main>
 <script>
 const S = { tab:'dashboard' };
 const app = document.getElementById('app');
 const api = async (p, opts) => (await fetch('/api'+p, opts)).json();
-const esc = s => String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const esc = s => String(s??'').replace(/[&<>\"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','\"':'&quot;',"'":'&#39;'}[c]));
 const pj = s => { try { return typeof s==='string'? JSON.parse(s): s; } catch { return s; } };
 
 const NAV = [
-  ['dashboard','📊 Dashboard'],['topics','📚 Curriculum'],['questions','❓ Questions'],
-  ['cce','🗣️ CCE Cases'],['guidelines','📋 Guidelines'],['resources','🔗 Resources'],
-  ['rapid','⚡ Rapid Revision'],['schedule','🗓️ Schedule'],['mistakes','🧠 Mistake Log'],['meta','🏫 Exam Map']
+  ['dashboard','📊 Dashboard'],['curriculum','📚 Curriculum'],['questions','❓ Questions'],
+  ['cce','🗣️ CCE'],['guidelines','📋 Guidelines'],['resources','🔗 Resources'],
+  ['rapid','⚡ Rapid Revision'],['schedule','🗓️ Schedule'],['mistakes','🧠 Mistakes'],['meta','🏫 Exam Map']
 ];
 function nav() {
   const n = document.createElement('nav');
@@ -120,10 +224,10 @@ function nav() {
 document.querySelector('header').appendChild(nav());
 
 async function render() {
-  app.innerHTML = '<div class="empty">Loading…</div>';
+  app.innerHTML = '<div class="empty" style="margin-top:40px">Loading…</div>';
   try {
     if (S.tab==='dashboard') await vDashboard();
-    else if (S.tab==='topics') await vTopics();
+    else if (S.tab==='curriculum') await vCurriculum();
     else if (S.tab==='questions') await vQuestions();
     else if (S.tab==='cce') await vCCE();
     else if (S.tab==='guidelines') await vGuidelines();
@@ -133,111 +237,159 @@ async function render() {
     else if (S.tab==='mistakes') await vMistakes();
     else if (S.tab==='meta') await vMeta();
   } catch (e) {
-    app.innerHTML = `<div class="card" style="border-color:var(--danger)">Error: ${esc(e.message)}</div>`;
+    app.innerHTML = `<div class="glass" style="border-color:var(--red);margin:40px 0">⚠️ Error: ${esc(e.message)}</div>`;
   }
 }
 
-// ---------- Dashboard ----------
+// ========== DASHBOARD ==========
 async function vDashboard() {
   const d = await api('/dashboard');
   const acc = d.accuracy==null?'—':d.accuracy+'%';
   const akt = (d.by_type||[]).find(x=>x.type==='AKT');
   const kfp = (d.by_type||[]).find(x=>x.type==='KFP');
   const pct = (a,b) => b? Math.round(100*a/b) : 0;
-  const days = s => { const n = countdown(s); return n>0? `${n} days` : 'passed'; };
+  const days = s => { const n = countdown(s); return n>0? `${n} days`: 'passed'; };
   const goals = JSON.parse(localStorage.getItem('weeklyGoals')||'{}');
   const goalList = [
-    'Work through 1 curriculum unit end-to-end (rationale → competencies → case → strategies)',
+    'Work through 1 curriculum unit end-to-end',
     'Complete 15+ AKT questions and log every miss',
-    'Do 2 KFP cases aloud, mark yourself against the model answers',
-    'Read 1 Tier-1 guideline section (Red Book / Asthma Handbook / eTG)',
+    'Do 2 KFP cases aloud, mark against model answers',
+    'Read 1 Tier-1 guideline section',
     'Practise 1 CCE case aloud, timed 15 min'
   ];
+  const topicsTotal = d.topics_total||0;
+  const topicsDone = d.topics_touched||0;
+  const pctDone = topicsTotal? Math.round(100*topicsDone/topicsTotal): 0;
+
   app.innerHTML = `
   <h2>Dashboard</h2>
-  <p class="lead">Phase 1 Foundation · ${d.topics_touched}/${d.topics_total} topics touched · ${d.questions_attempted} questions attempted</p>
-  <div class="card" style="border-color:var(--warn)">
-    <b>⚠️ Enrolment window: AKT/KFP 2027.1 enrolment closes 1 October 2026</b> — <span class="subtle">${days('2026-10-01')} remaining. Opens 3 Sep 2026. Don't miss it — no late enrolments.</span>
+  <p class="lead">Phase 1 Foundation · ${topicsDone}/${topicsTotal} topics touched · ${d.questions_attempted} questions attempted</p>
+
+  <div class="glass" style="border-color:var(--amber);background:rgba(251,191,36,.04)">
+    <b style="color:var(--amber)">⚠️ Enrolment: AKT/KFP 2027.1 closes 1 Oct 2026</b> —
+    <span class="subtle">${days('2026-10-01')} remaining · Opens 3 Sep 2026</span>
   </div>
-  <div class="grid c3" style="margin-top:14px">
-    <div class="stat"><div class="num">${d.topics_touched}/${d.topics_total}</div><div class="lbl">Topics touched</div><div class="bar"><div style="width:${100*d.topics_touched/d.topics_total}%"></div></div></div>
-    <div class="stat"><div class="num">${d.questions_attempted}</div><div class="lbl">Questions · ${acc} accuracy</div></div>
-    <div class="stat"><div class="num">${d.open_mistakes}</div><div class="lbl">Open mistakes to review</div></div>
-    <div class="stat"><div class="num">${d.due_reviews.length}</div><div class="lbl">Reviews due today</div></div>
-  </div>
-  <div class="grid c2" style="margin-top:14px">
-    <div class="card"><h3 style="margin:0 0 8px">📝 By exam component</h3>
-      <div class="row" style="justify-content:space-between;margin:6px 0"><span><span class="pill tier1">AKT</span> 15 Jan 2027 (${days('2027-01-15')})</span><span class="subtle">${akt? `${akt.n} done · ${pct(akt.c,akt.n)}%` : 'not started'}</span></div>
-      <div class="bar"><div style="width:${akt? pct(akt.c,akt.n):0}%"></div></div>
-      <div class="row" style="justify-content:space-between;margin:6px 0"><span><span class="pill tier2">KFP</span> 16 Jan 2027 (${days('2027-01-16')})</span><span class="subtle">${kfp? `${kfp.n} parts done · ${pct(kfp.c,kfp.n)}%` : 'not started'}</span></div>
-      <div class="bar"><div style="width:${kfp? pct(kfp.c,kfp.n):0}%"></div></div>
-      <div class="row" style="justify-content:space-between;margin:6px 0"><span><span class="pill tier3">CCE</span> June 2027 (dates TBC)</span><span class="subtle">practise via CCE tab</span></div>
+
+  <div class="grid c3" style="margin-top:18px">
+    <div class="stat">
+      <div class="num">${topicsDone}/${topicsTotal}</div>
+      <div class="lbl">Topics touched</div>
+      <div class="bar"><div style="width:${pctDone}%"></div></div>
     </div>
-    <div class="card"><h3 style="margin:0 0 8px">🎯 Weakest topics <span class="subtle">(≥2 attempts)</span></h3>${listOrEmpty(d.weakest,r=>`<div class="row" style="justify-content:space-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n}</span></div>`)}
-    <h3 style="margin:12px 0 8px">💪 Strongest topics</h3>${listOrEmpty(d.strongest,r=>`<div class="row" style="justify-content:space-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n}</span></div>`)}</div>
-  <div class="card"><div class="flex-between"><h3 style="margin:0">🔁 Reviews due today</h3><span class="subtle">${d.due_reviews.length} topic(s) — mark to reschedule (Day 1/7/21/45/90)</span></div>
-    ${d.due_reviews.length? `<div class="due-list">${d.due_reviews.slice(0,12).map(t=>`<div class="due-row"><span>${esc(t)}</span>
-      <span class="row" style="gap:6px">
-        <button class="btn tiny subtle" onclick="revQ('${esc(t)}','again')">Again</button>
-        <button class="btn tiny" onclick="revQ('${esc(t)}','good')">Good → +interval</button>
-        <button class="btn tiny green" onclick="revQ('${esc(t)}','easy')">Easy</button>
-      </span></div>`).join('')}${d.due_reviews.length>12? `<div class="subtle">…and ${d.due_reviews.length-12} more</div>`:''}</div>` : '<div class="empty">Nothing due — answer questions to drive the scheduler</div>'}
+    <div class="stat">
+      <div class="num">${d.questions_attempted}</div>
+      <div class="lbl">Questions · ${acc} accuracy</div>
+    </div>
+    <div class="stat">
+      <div class="num">${d.open_mistakes}</div>
+      <div class="lbl">Open mistakes</div>
+    </div>
   </div>
-  <div class="card"><h3 style="margin:0 0 8px">✅ This week's goals <span class="subtle">(saved in this browser)</span></h3>
+
+  <div class="grid c2" style="margin-top:14px">
+    <div class="glass">
+      <h3 style="margin:0 0 10px;font-size:1rem">📝 By exam component</h3>
+      <div class="flex-between" style="margin:8px 0"><span><span class="pill tier1">AKT</span> 15 Jan 2027 (${days('2027-01-15')})</span><span class="subtle">${akt? `${akt.n} done · ${pct(akt.c,akt.n)}%`: 'not started'}</span></div>
+      <div class="bar"><div style="width:${akt? pct(akt.c,akt.n):0}%"></div></div>
+      <div class="flex-between" style="margin:8px 0"><span><span class="pill tier2">KFP</span> 16 Jan 2027 (${days('2027-01-16')})</span><span class="subtle">${kfp? `${kfp.n} parts · ${pct(kfp.c,kfp.n)}%`: 'not started'}</span></div>
+      <div class="bar"><div style="width:${kfp? pct(kfp.c,kfp.n):0}%"></div></div>
+      <div class="flex-between" style="margin:8px 0"><span><span class="pill tier3">CCE</span> June 2027</span><span class="subtle">practise via CCE tab</span></div>
+    </div>
+
+    <div class="glass">
+      <h3 style="margin:0 0 8px;font-size:1rem">🎯 Weakest <span class="subtle">(≥2 attempts)</span></h3>
+      ${listOrEmpty(d.weakest,r=>`<div class="flex-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n}</span></div>`)}
+      <h3 style="margin:14px 0 8px;font-size:1rem">💪 Strongest</h3>
+      ${listOrEmpty(d.strongest,r=>`<div class="flex-between"><span>${esc(r.topic)}</span><span class="subtle">${r.pct}% · ${r.n}</span></div>`)}
+    </div>
+  </div>
+
+  <div class="glass" style="margin-top:14px">
+    <div class="flex-between"><h3 style="margin:0;font-size:1rem">🔁 Reviews due today</h3><span class="subtle">${d.due_reviews.length} topic(s)</span></div>
+    ${d.due_reviews.length? `<div style="margin-top:8px">${d.due_reviews.slice(0,12).map(t=>`
+      <div class="due-row"><span>${esc(t)}</span>
+        <span class="row" style="gap:6px">
+          <button class="btn subtle tiny" onclick="revQ('${esc(t)}','again')">Again</button>
+          <button class="btn tiny" onclick="revQ('${esc(t)}','good')">Good</button>
+          <button class="btn green tiny" onclick="revQ('${esc(t)}','easy')">Easy</button>
+        </span></div>`).join('')}${d.due_reviews.length>12? `<div class="subtle" style="margin-top:8px">…and ${d.due_reviews.length-12} more</div>`:''}</div>`
+      : '<div class="empty">Nothing due — answer questions to drive the scheduler</div>'}
+  </div>
+
+  <div class="glass" style="margin-top:14px">
+    <h3 style="margin:0 0 8px;font-size:1rem">✅ This week's goals</h3>
     ${goalList.map((g,i)=>`<label class="li chk"><input type="checkbox" ${goals[i]?'checked':''} onchange="toggleGoal(${i},this.checked)"> ${esc(g)}</label>`).join('')}
   </div>`;
 }
 window.revQ = async (topic, quality) => { await api('/reviews', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({topic,quality})}); render(); };
 window.toggleGoal = (i, checked) => { const g = JSON.parse(localStorage.getItem('weeklyGoals')||'{}'); g[i]=checked; localStorage.setItem('weeklyGoals', JSON.stringify(g)); };
-function listOrEmpty(arr,fn){ return arr&&arr.length? arr.map(fn).join(''): '<div class="empty">No data yet — do some questions first</div>'; }
+function listOrEmpty(arr,fn){ return arr&&arr.length? arr.map(fn).join(''): '<div class="empty" style="padding:12px">No data yet</div>'; }
 function countdown(dateStr){ return Math.round((new Date(dateStr)-Date.now())/86400000); }
 
-// ---------- Topics (official RACGP curriculum structure) ----------
-async function vTopics() {
+// ========== CURRICULUM ==========
+async function vCurriculum() {
   const [topics, units] = await Promise.all([api('/topics'), api('/units')]);
   TOPICS_CACHE = topics; window.UNITS_CACHE = units;
   const topicsByUnit = {};
   topics.forEach(t => { (topicsByUnit[t.unit] ??= []).push(t); });
+
   const unitCard = u => {
     const ts = topicsByUnit[u.name] || [];
-    const gl = u => (pj(u.guidelines)||[]).map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)}</a>`).join('<br>') || '<span class="subtle">—</span>';
-    const mat = u => (pj(u.materials)||[]).map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)}</a>`).join('<br>') || '<span class="subtle">—</span>';
+    const competencies = pj(u.competencies)||[];
+    const strategies = pj(u.learning_strategies)||[];
+    const guiding = pj(u.guiding_topics)||[];
+    const guidelines = pj(u.guidelines)||[];
+    const materials = pj(u.materials)||[];
+    const rationale = u.rationale || u.blurb || '';
+
+    const glLinks = guidelines.map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)} (${esc(g.tier||'')}) ↗</a>`).join('&ensp;') || '<span class="subtle">—</span>';
+    const matLinks = materials.map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)} ↗</a>`).join('&ensp;') || '<span class="subtle">—</span>';
+
     return `<details class="unit" data-unit="${esc(u.name)}"><summary>
       <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.type==='core'?'CORE':'CTX'} ${u.number}</span>
-      <b>${esc(u.name)}</b> <span class="subtle">${ts.length} topic${ts.length!==1?'s':''}${(pj(u.guidelines)||[]).length?' · '+(pj(u.guidelines)||[]).length+' guidelines':''}</span></summary>
-      <div class="unit-body">
-        <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(u.rationale||u.blurb||'')}</p></div>
-        <div class="sec"><div class="sec-h">2 · Competencies and learning outcomes</div>
-          ${(pj(u.competencies)||[]).map(c=>`<div class="li">▸ ${esc(c)}</div>`).join('')}</div>
-        <div class="sec"><div class="sec-h">3 · Curricula in context <a class="gl-link" href="${esc(u.racgp_url)}" target="_blank">official unit page ↗</a></div>
-          <p class="subtle">See the RACGP page for the full outcome mapping across the five domains.</p></div>
-        <div class="sec"><div class="sec-h">4 · Case consultation example <span class="subtle">(CCE-styled)</span></div>
-          <p class="case">${esc(u.case_example||'')}</p></div>
-        <div class="sec"><div class="sec-h">5 · Learning strategies</div>
-          ${(pj(u.learning_strategies)||[]).map(s=>`<label class="li chk"><input type="checkbox"> ${esc(s)}</label>`).join('')}</div>
-        <div class="sec"><div class="sec-h">6 · Guiding topics and content areas</div>
+      <b>${esc(u.name)}</b>
+      ${ts.length? `<span class="subtle">${ts.length} topic${ts.length>1?'s':''}</span>` : ''}
+    </summary>
+    <div class="unit-body">
+      <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(rationale)}</p></div>
+      <div class="sec"><div class="sec-h">2 · Competencies & learning outcomes</div>
+        ${competencies.length ? competencies.map(c=>`<div class="li">▸ ${esc(c)}</div>`).join('') : '<span class="subtle">See RACGP curriculum page</span>'}
+      </div>
+      <div class="sec"><div class="sec-h">3 · Curricula in context</div>
+        ${u.racgp_url?`<a href="${esc(u.racgp_url)}" target="_blank" class="gl-link">Official RACGP unit page ↗</a>`:'<span class="subtle">—</span>'}
+      </div>
+      ${u.case_example?`<div class="sec"><div class="sec-h">4 · Case consultation example</div><p class="case">${esc(u.case_example)}</p></div>`:''}
+      <div class="sec"><div class="sec-h">5 · Learning strategies</div>
+        ${strategies.length ? strategies.map(s=>`<label class="li chk"><input type="checkbox"> ${esc(s)}</label>`).join('') : '<span class="subtle">—</span>'}
+      </div>
+      <div class="sec"><div class="sec-h">6 · Guiding topics</div>
+        ${guiding.length ? guiding.map(g=>`<div class="li">▸ ${esc(g)}</div>`).join('') : '<span class="subtle">—</span>'}
+      </div>
+      <div class="sec"><div class="sec-h">7 · Study topics</div>
         ${ts.length? `<table><tr><th>Topic</th><th>Yield</th><th>Status</th><th>Focus</th></tr>
         ${ts.map(t=>`<tr data-t="${esc(t.name)}">
-          <td><b>${esc(t.name)}</b><div class="subtle">${esc((t.should_know||'').slice(0,80))}…</div></td>
+          <td><b>${esc(t.name)}</b></td>
           <td><span class="pill ${t.priority}">${t.priority==='VH'?'🔴':t.priority==='H'?'🟠':t.priority==='M'?'🟡':'🟢'}</span></td>
-          <td><span class="pill st-${esc(t.status)} stbtn" style="cursor:pointer" onclick="cycleStatus(${t.id},'${esc(t.status)}')">${esc(t.status)}</span></td>
-          <td class="subtle" style="max-width:330px">${esc((t.must_know||'').slice(0,110))}… <span class="expand" onclick="tDetail(${t.id})">more</span></td>
-        </tr>`).join('')}</table>` : '<div class="subtle">Study from the official unit page and guidelines; no mapped topics yet.</div>'}</div>
-        <div class="sec"><div class="sec-h">7 · Learning resources</div>
-          <p><b>Guidelines & sources:</b><br>${gl(u)}</p>
-          <p><b>Study materials:</b><br>${mat(u)}</p></div>
-        <div class="unit-notes" id="notes-${u.id}"></div>
-        <button class="btn subtle add-note" onclick="addNote(${u.id})">＋ Add note</button>
-      </div></details>`;
+          <td><span class="pill st-${esc(t.status)}" style="cursor:pointer" onclick="cycleStatus(${t.id},'${esc(t.status)}')">${esc(t.status)}</span></td>
+          <td class="subtle" style="max-width:300px">${esc((t.must_know||'').slice(0,100))}… <span class="expand" onclick="tDetail(${t.id})">more</span></td>
+        </tr>`).join('')}</table>` : '<span class="subtle">No study topics mapped yet</span>'}
+      </div>
+      <div class="sec"><div class="sec-h">8 · Learning resources</div>
+        <div style="margin:6px 0"><b>Guidelines & sources:</b><br>${glLinks}</div>
+        <div style="margin:6px 0"><b>Study materials:</b><br>${matLinks}</div>
+      </div>
+      <div class="unit-notes" id="notes-${u.id}"></div>
+      <button class="btn subtle add-note" onclick="addNote(${u.id})">＋ Add note</button>
+    </div></details>`;
   };
+
   app.innerHTML = `
-  <h2>Curriculum — official RACGP structure</h2>
-  <p class="lead">42 units of the 2022 RACGP Curriculum and Syllabus (7 core + 35 contextual). Each unit carries its guidelines, study materials and topics; take notes with the ＋ button. ${topics.length} study topics mapped.</p>
-  <div class="row" style="margin-bottom:12px"><input type="text" id="tfilter" placeholder="Filter topics…" oninput="filterTopics(this.value)"></div>
-  <div class="card"><h3 style="margin:0 0 10px">Core units (domains + ATSI + rural)</h3>${units.filter(u=>u.type==='core').map(unitCard).join('')}</div>
-  <div class="card" style="margin-top:14px"><h3 style="margin:0 0 10px">Contextual units (clinical areas)</h3>${units.filter(u=>u.type==='contextual').map(unitCard).join('')}</div>
+  <h2>Curriculum</h2>
+  <p class="lead">${units.length} RACGP units · ${topics.length} study topics · 7 core + ${units.filter(u=>u.type==='contextual').length} contextual</p>
+  <div class="row" style="margin-bottom:14px"><input type="text" id="tfilter" placeholder="Filter topics…" oninput="filterTopics(this.value)" style="flex:1;min-width:200px"></div>
+  <div class="glass"><h3 style="margin:0 0 10px;font-size:.95rem;color:var(--cyan)">Core units</h3>${units.filter(u=>u.type==='core').map(unitCard).join('')}</div>
+  <div class="glass" style="margin-top:12px"><h3 style="margin:0 0 10px;font-size:.95rem;color:var(--purple)">Contextual units</h3>${units.filter(u=>u.type==='contextual').map(unitCard).join('')}</div>
   <div id="tdetail"></div>`;
-  // load existing notes into each unit
   const allNotes = await api('/notes');
   window.NOTES_CACHE = allNotes;
   renderUnitNotes(allNotes);
@@ -247,33 +399,30 @@ function renderUnitNotes(allNotes) {
     const el = document.getElementById('notes-'+u.id);
     if (!el) return;
     const notes = (allNotes||[]).filter(n => n.unit === u.name);
-    el.innerHTML = notes.length ? `<b>Notes</b>` + notes.map(n =>
-      `<div class="note" id="note-${n.id}"><div class="note-meta">${esc(n.updated_at?.slice(0,10)||'')}</div>
-      <textarea onblur="saveNote(${n.id},this.value)" placeholder="Write…">${esc(n.content)}</textarea>
-      <button class="btn subtle tiny" onclick="delNote(${n.id})">Delete</button></div>`).join('') : '';
+    el.innerHTML = notes.length ? `<div style="margin:10px 0"><b style="font-size:.8rem;color:var(--dim)">Notes</b>` +
+      notes.map(n => `<div class="note" id="note-${n.id}">
+        <div class="note-meta">${esc(n.updated_at?.slice(0,10)||'')}</div>
+        <textarea onblur="saveNote(${n.id},this.value)" placeholder="Write notes…">${esc(n.content)}</textarea>
+        <button class="btn subtle tiny" onclick="delNote(${n.id})" style="padding:4px 8px">✕</button>
+      </div>`).join('') : '';
   });
 }
 window.addNote = async unitId => {
   const u = window.UNITS_CACHE.find(x=>x.id===unitId);
-  await api('/notes', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({unit:u.name, content:''})});
+  if (!u) return;
+  await api('/notes', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({unit:u.name, content:''})});
   const allNotes = await api('/notes'); window.NOTES_CACHE = allNotes;
   renderUnitNotes(allNotes);
-  // focus the newest textarea for this unit
   const el = document.getElementById('notes-'+unitId);
-  const ta = el && el.querySelector('textarea'); if (ta) { ta.focus(); el.scrollIntoView({behavior:'smooth',block:'center'}); }
+  const ta = el && el.querySelector('textarea:last-of-type');
+  if (ta) { ta.focus(); el.scrollIntoView({behavior:'smooth',block:'center'}); }
 };
-window.saveNote = async (id, content) => {
-  await api('/notes/'+id, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({content})});
-};
-window.delNote = async id => {
-  await api('/notes/'+id, {method:'DELETE'});
-  const allNotes = await api('/notes'); window.NOTES_CACHE = allNotes;
-  renderUnitNotes(allNotes);
-};
+window.saveNote = async (id, content) => { await api('/notes/'+id, {method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({content})}); };
+window.delNote = async id => { await api('/notes/'+id, {method:'DELETE'}); const allNotes = await api('/notes'); window.NOTES_CACHE = allNotes; renderUnitNotes(allNotes); };
 window.cycleStatus = async (id, cur) => {
   const order = ['not started','learning','solid','exam ready'];
   const next = order[(order.indexOf(cur)+1)%order.length];
-  await api(`/topics/${id}`, {method:'PUT', headers:{'Content-Type':'application/json'}, body: JSON.stringify({...currentTopic(id), status: next})});
+  await api(`/topics/${id}`, {method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({...currentTopic(id), status: next})});
   render();
 };
 let TOPICS_CACHE = [];
@@ -281,24 +430,29 @@ window.currentTopic = id => TOPICS_CACHE.find(t=>t.id===id);
 window.filterTopics = q => { q=(q||'').toLowerCase(); document.querySelectorAll('[data-t]').forEach(tr=>{ tr.style.display = tr.dataset.t.toLowerCase().includes(q)?'':'none'; }); };
 window.tDetail = async id => {
   const t = TOPICS_CACHE.find(x=>x.id===id); if (!t) return;
-  document.getElementById('tdetail').innerHTML = `<div class="card" style="border-color:var(--accent2)">
-    <div class="flex-between"><h3 style="margin:0">${esc(t.name)}</h3><button class="btn subtle" onclick="document.getElementById('tdetail').innerHTML=''">Close</button></div>
-    <p><b>Must know:</b> ${esc(t.must_know)}</p><p><b>Should know:</b> ${esc(t.should_know)}</p><p><b>Nice to know:</b> ${esc(t.nice_to_know)}</p>
+  document.getElementById('tdetail').innerHTML = `
+  <div class="glass" style="border-color:var(--cyan);margin-top:12px">
+    <div class="flex-between"><h3 style="margin:0;font-size:1rem">${esc(t.name)}</h3><button class="btn subtle tiny" onclick="document.getElementById('tdetail').innerHTML=''">Close</button></div>
+    <p style="margin:8px 0"><b>Must know:</b> ${esc(t.must_know)}</p>
+    <p style="margin:6px 0"><b>Should know:</b> ${esc(t.should_know)}</p>
+    <p style="margin:6px 0"><b>Nice to know:</b> ${esc(t.nice_to_know)}</p>
   </div>`;
   document.getElementById('tdetail').scrollIntoView({behavior:'smooth'});
 };
 
-// ---------- Questions ----------
+// ========== QUESTIONS ==========
 async function vQuestions() {
   const qs = await api('/questions');
   window.QBANK = qs;
+  const nAkt = qs.filter(q=>q.type==='AKT').length;
+  const nKfp = qs.filter(q=>q.type==='KFP').length;
   app.innerHTML = `
   <h2>Question bank</h2>
-  <p class="lead">21 questions seeded (12 AKT · 9 KFP cases). Answer first — feedback and grading after you commit. Missed concepts can be logged to the Mistake Log in one click.</p>
+  <p class="lead">${qs.length} questions · Answer first, then see feedback · Misses log to Mistake Log in one click</p>
   <div class="tabs" id="qtabs">
-    <button class="active" onclick="qTab('ALL',this)">All</button>
-    <button onclick="qTab('AKT',this)">AKT (${qs.filter(q=>q.type==='AKT').length})</button>
-    <button onclick="qTab('KFP',this)">KFP (${qs.filter(q=>q.type==='KFP').length})</button>
+    <button class="active" onclick="qTab('ALL',this)">All (${qs.length})</button>
+    <button onclick="qTab('AKT',this)">AKT (${nAkt})</button>
+    <button onclick="qTab('KFP',this)">KFP (${nKfp})</button>
   </div>
   <div id="qarea"></div>`;
   window.QSTATE = { filter:'ALL', idx:0 };
@@ -308,15 +462,18 @@ window.qTab = (f,btn) => { QSTATE.filter=f; document.querySelectorAll('#qtabs bu
 function qRender() {
   const qs = QBANK.filter(q=>QSTATE.filter==='ALL'||q.type===QSTATE.filter);
   const area = document.getElementById('qarea');
-  if (!qs.length) { area.innerHTML='<div class="empty">No questions of this type yet.</div>'; return; }
+  if (!qs.length) { area.innerHTML='<div class="empty">No questions yet.</div>'; return; }
   const q = qs[QSTATE.idx % qs.length];
   const opts = pj(q.options); const answers = pj(q.answers);
-  let html = `<div class="card">
+  let html = `<div class="glass">
     <div class="flex-between"><span class="pill ${q.type==='AKT'?'tier1':'tier2'}">${q.type}</span><span class="subtle">${esc(q.topic)} · ${esc(q.unit)}</span></div>
-    <p style="font-size:15px;line-height:1.6">${esc(q.stem)}</p><div id="qparts"></div>
-    <div class="row" style="margin-top:12px"><button class="btn green" onclick="qSubmit()">Submit answer</button>
-    <button class="btn subtle" onclick="qNext()">Skip →</button>
-    <span class="subtle">${QSTATE.idx+1}/${qs.length}</span></div>
+    <p style="font-size:.95rem;line-height:1.6;margin:12px 0">${esc(q.stem)}</p>
+    <div id="qparts"></div>
+    <div class="row" style="margin-top:14px">
+      <button class="btn green" onclick="qSubmit()">Submit answer</button>
+      <button class="btn subtle" onclick="qNext()">Skip →</button>
+      <span class="subtle">${QSTATE.idx+1}/${qs.length}</span>
+    </div>
   </div><div id="qfb"></div>`;
   area.innerHTML = html;
   if (q.type === 'AKT') {
@@ -327,32 +484,31 @@ function qRender() {
     const parts = opts.parts || [];
     document.getElementById('qparts').innerHTML = parts.map((p,pi)=>{
       const need = (p.q.match(/TWO|THREE|FOUR|FIVE|SIX/)?.[0])||null;
-      const hint = need? `<span class="pill tier2" style="font-size:11px">select ${need.toLowerCase()}</span>` : '';
-      return `<div style="margin:10px 0"><b>Part ${pi+1}:</b> ${esc(p.q)} ${hint}</div>
+      const hint = need? `<span class="pill tier2" style="font-size:.7rem">select ${need.toLowerCase()}</span>` : '';
+      return `<div style="margin:10px 0"><b style="font-size:.85rem;color:var(--dim)">Part ${pi+1}:</b> ${esc(p.q)} ${hint}</div>
       <div class="q-options">${p.options.map((o,i)=>`<label id="l${pi}_${i}"><input type="checkbox" value="${i}" data-part="${pi}" onchange="qPickMulti(${pi},${i},this.checked)"> <span>${esc(o)}</span></label>`).join('')}</div>`}).join('');
     window.QSTATE.pickMulti = {};
   }
   window.QCUR = { q, opts, answers };
 }
-window.qPick = i => { window.QSTATE.pick = i; };
+window.qPick = i => { QSTATE.pick = i; };
 window.qPickMulti = (pi,i,checked) => { (QSTATE.pickMulti[pi] ??= new Set()); checked? QSTATE.pickMulti[pi].add(i): QSTATE.pickMulti[pi].delete(i); };
 window.qSubmit = async () => {
   const { q, opts, answers } = QCUR;
-  let correct = false, detail = '';
+  let correct = false;
   if (q.type === 'AKT') {
-    if (QSTATE.pick == null) { const m=document.getElementById('qfb'); if(m) m.innerHTML='<div class="feedback no">Choose an option first.</div>'; return; }
+    if (QSTATE.pick == null) { const m=document.getElementById('qfb'); if(m) m.innerHTML='<div class="feedback no" style="margin:10px 0">Choose an option first.</div>'; return; }
     correct = QSTATE.pick === answers.answers[0];
     document.getElementById(`l${answers.answers[0]}`).classList.add('correct');
     if (!correct) document.getElementById(`l${QSTATE.pick}`).classList.add('wrong');
   } else {
     const parts = pj(q.options).parts || [];
     const anyPicked = Object.values(QSTATE.pickMulti||{}).some(s=>s && s.size>0);
-    if (!anyPicked) { const m=document.getElementById('qfb'); if(m) m.innerHTML='<div class="feedback no">Select at least one option in each part before submitting.</div>'; return; }
+    if (!anyPicked) { const m=document.getElementById('qfb'); if(m) m.innerHTML='<div class="feedback no" style="margin:10px 0">Select at least one option in each part.</div>'; return; }
     let allOk = true;
     parts.forEach((p,pi) => {
       const want = new Set(p.correct);
       const got = QSTATE.pickMulti[pi] || new Set();
-      const need = p.q.match(/TWO|FOUR|THREE|SIX/)?.[0];
       const okThis = [...want].every(w=>got.has(w)) && [...got].every(g=>want.has(g));
       if (!okThis) allOk = false;
       p.correct.forEach(c=>document.getElementById(`l${pi}_${c}`).classList.add('correct'));
@@ -361,103 +517,110 @@ window.qSubmit = async () => {
     correct = allOk;
   }
   await api('/attempts', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({question_id:q.id,user_answer:QSTATE.pick??Object.fromEntries(Object.entries(QSTATE.pickMulti||{}).map(([k,v])=>[k,[...v]])),correct})});
+  const partsMeta = q.type==='KFP' ? (pj(q.answers).parts||[]).map((p,i)=>`<div class="subtle"><b>Part ${i+1}:</b> ${esc(p.marks)}</div>`).join('') : '';
   document.getElementById('qfb').innerHTML = `
-    <div class="feedback ${correct?'ok':'no'}"><b>${correct?'✅ Correct':'❌ Review needed'}</b><br>
-    ${q.explanation?`<p><b>Why:</b> ${esc(q.explanation)}</p>`:''}
-    ${q.pearl?`<p><b> Pearl:</b> ${esc(q.pearl)}</p>`:''}
-    ${q.trap?`<p><b>⚠️ Trap:</b> ${esc(q.trap)}</p>`:''}
-    ${q.type==='KFP'? (pj(q.answers).parts||[]).map((p,i)=>`<p class="subtle"><b>Part ${i+1} marking:</b> ${esc(p.marks)}</p>`).join('') :''}
-    ${correct?'':'<button class="btn subtle" onclick=\'logMissed()\' style="margin-top:6px">➕ Log to Mistake Log</button>'}
-    <span id="logmsg" style="margin-left:10px;color:var(--accent)"></span>
-    </div>`;
+  <div class="feedback ${correct?'ok':'no'}" style="margin:10px 0">
+    <b>${correct?'✅ Correct':'❌ Review needed'}</b>
+    ${q.explanation?`<div style="margin:6px 0"><b>Why:</b> ${esc(q.explanation)}</div>`:''}
+    ${q.pearl?`<div style="margin:4px 0"><b>💎 Pearl:</b> ${esc(q.pearl)}</div>`:''}
+    ${q.trap?`<div style="margin:4px 0"><b>⚠️ Trap:</b> ${esc(q.trap)}</div>`:''}
+    ${partsMeta}
+    ${correct?'':'<button class="btn subtle" style="margin-top:8px" onclick=\\'logMissed()\\'>➕ Log to Mistake Log</button>'}
+    <span id="logmsg" style="margin-left:8px;color:var(--green)"></span>
+  </div>`;
 };
 window.logMissed = async () => {
   const { q } = QCUR;
-  await api('/mistakes', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({exam:q.type,topic:q.topic,question_ref:`Q${q.id}`,my_error:'see question',correct_principle:(q.explanation||q.pearl||'').slice(0,200),why_missed:'knowledge gap'})});
+  await api('/mistakes', {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({exam:q.type,topic:q.topic,question_ref:'Q'+q.id,my_error:'see question',correct_principle:(q.explanation||q.pearl||'').slice(0,200),why_missed:'knowledge gap'})});
   const m = document.getElementById('logmsg'); if (m) m.textContent='✓ Logged';
 };
 window.qNext = () => { QSTATE.idx++; qRender(); };
 
-// ---------- CCE ----------
+// ========== CCE ==========
 async function vCCE() {
   const cs = await api('/cce');
   app.innerHTML = `
-  <h2>CCE scenario bank — ${cs.length} cases</h2>
-  <p class="lead">9-case exam: 4 case discussions + 5 clinical encounters, 15 min + 5 min reading each. Practise aloud, timed, using the must-hit list as your marking grid.</p>
+  <h2>CCE scenario bank</h2>
+  <p class="lead">${cs.length} cases · 9-case exam: 4 case discussions + 5 clinical encounters · Practise aloud, timed</p>
   <div class="ccb-grid">${cs.map(c=>`
-    <div class="card"><div class="flex-between"><b>${esc(c.title)}</b><span class="pill tier2">${esc(c.category)}</span></div>
-    <details style="margin-top:8px"><summary>Examiner focus, must-hits, traps, phrases</summary>
-      <p><b>Testing:</b> ${esc(c.testing)}</p><p><b>Must hit:</b> ${esc(c.must_hits)}</p>
-      <p><b>⚠️ Traps:</b> ${esc(c.traps)}</p><p><b>Structure:</b> ${esc(c.structure)}</p>
-      <p><b>Example phrases:</b> ${esc(c.phrases)}</p><p><b>Scoring:</b> ${esc(c.scoring)}</p>
-    </details></div>`).join('')}</div>`;
+    <div class="glass">
+      <div class="flex-between"><b style="font-size:.95rem">${esc(c.title)}</b><span class="pill tier2">${esc(c.category)}</span></div>
+      <details style="margin-top:10px"><summary style="font-size:.85rem">Examiner focus, must-hits, traps, phrases</summary>
+        <div style="margin:10px 0"><b style="font-size:.8rem;color:var(--cyan)">Testing:</b> <div class="subtle" style="margin-top:4px">${esc(c.testing)}</div></div>
+        <div style="margin:6px 0"><b style="font-size:.8rem;color:var(--cyan)">Must hit:</b> <div class="subtle" style="margin-top:4px">${esc(c.must_hits)}</div></div>
+        <div style="margin:6px 0"><b style="font-size:.8rem;color:var(--amber)">⚠️ Traps:</b> <div class="subtle" style="margin-top:4px">${esc(c.traps)}</div></div>
+        <div style="margin:6px 0"><b style="font-size:.8rem;color:var(--purple)">Structure:</b> <div class="subtle" style="margin-top:4px">${esc(c.structure)}</div></div>
+        <div style="margin:6px 0"><b style="font-size:.8rem;color:var(--green)">Example phrases:</b> <div class="subtle" style="margin-top:4px">${esc(c.phrases)}</div></div>
+        <div style="margin:6px 0"><b style="font-size:.8rem;color:var(--dim)">Scoring:</b> <div class="subtle" style="margin-top:4px">${esc(c.scoring)}</div></div>
+      </details></div>`).join('')}</div>`;
 }
 
-// ---------- Guidelines ----------
+// ========== GUIDELINES ==========
 async function vGuidelines() {
   const gs = await api('/guidelines');
   const tiers = [[1,'Tier 1 — Must know cold'],[2,'Tier 2 — Strong working knowledge'],[3,'Tier 3 — Know where to look']];
-  app.innerHTML = `<h2>Guidelines — ranked</h2>
-  <p class="lead">22 guidelines across three tiers. Thresholds shown are the examinable numbers.</p>
+  app.innerHTML = `<h2>Guidelines</h2>
+  <p class="lead">${gs.length} guidelines ranked by exam priority</p>
   ${tiers.map(([n,label]) => `
-    <div class="card"><h3 style="margin:0 0 8px">${label}</h3>
+    <div class="glass" style="margin-bottom:12px"><h3 style="margin:0 0 10px;font-size:.95rem;color:${n===1?'var(--red)':n===2?'var(--amber)':'var(--dim)'}">${label}</h3>
     ${gs.filter(g=>g.tier===n).map(g=>`
       <div class="meta-chip"><div class="flex-between"><div class="k">${esc(g.title)}</div><span class="subtle">${esc(g.publisher)} · ${esc(g.year)}</span></div>
       <div class="v">${esc(g.key_points)}</div>
-      ${g.thresholds?`<div class="v"><b>Thresholds:</b> ${esc(g.thresholds)}</div>`:''}
-      ${g.url?`<a href="${esc(g.url)}" target="_blank">${esc(g.url)}</a>`:''}
-      <div class="v subtle"><b>Exam relevance:</b> ${esc(g.exam_relevance)}</div></div>`).join('')}
-    </div>`).join('')}`;
+      ${g.thresholds?`<div class="v" style="margin-top:6px"><b>Thresholds:</b> ${esc(g.thresholds)}</div>`:''}
+      ${g.url?`<a href="${esc(g.url)}" target="_blank">↗ ${esc(g.url.slice(0,80))}</a>`:''}
+      <div class="v subtle" style="margin-top:6px"><b>Exam relevance:</b> ${esc(g.exam_relevance)}</div></div>`).join('')}</div>`).join('')}`;
 }
 
-// ---------- Resources ----------
+// ========== RESOURCES ==========
 async function vResources() {
   const rs = await api('/resources');
   app.innerHTML = `<h2>Resource library</h2>
-  <p class="lead">One primary resource per domain — not ten. Secondary for clarification, rapid review for the final fortnight.</p>
-  <table><tr><th>Domain</th><th>Primary</th><th>Secondary</th><th>Rapid review</th></tr>
-  ${rs.map(r=>`<tr><td><b>${esc(r.domain)}</b>${r.url?`<div><a href="${esc(r.url)}" target="_blank" style="font-size:12px">${esc(r.url)}</a></div>`:''}</td>
-    <td>${esc(r.primary_res)}</td><td>${esc(r.secondary_res||'—')}</td><td class="subtle">${esc(r.rapid_review||'—')}</td></tr>`).join('')}</table>`;
+  <p class="lead">One primary resource per domain — not ten</p>
+  <div class="glass"><table><tr><th>Domain</th><th>Primary</th><th>Secondary</th><th>Rapid review</th></tr>
+  ${rs.map(r=>`<tr><td><b>${esc(r.domain)}</b>${r.url?`<div><a href="${esc(r.url)}" target="_blank" class="gl-link">↗</a></div>`:''}</td>
+    <td>${esc(r.primary_res)}</td><td>${esc(r.secondary_res||'—')}</td><td class="subtle">${esc(r.rapid_review||'—')}</td></tr>`).join('')}</table></div>`;
 }
 
-// ---------- Rapid ----------
+// ========== RAPID ==========
 async function vRapid() {
   const rs = await api('/rapid');
-  app.innerHTML = `<h2>⚡ Rapid revision</h2>
-  <p class="lead">Final-fortnight sheets. Short, dense, verbatim-revisable.</p>
-  ${rs.map(s=>`<div class="card"><h3 style="margin:0 0 8px">${esc(s.title)}</h3><pre class="sched">${esc(s.content)}</pre></div>`).join('')}`;
+  app.innerHTML = `<h2>Rapid revision</h2>
+  <p class="lead">${rs.length} sheets · Final-fortnight review</p>
+  ${rs.map(s=>`<div class="glass" style="margin-bottom:12px"><div class="flex-between"><h3 style="margin:0;font-size:1rem">${esc(s.title)}</h3></div><pre class="sched" style="margin-top:8px">${esc(s.content)}</pre></div>`).join('')}`;
 }
 
-// ---------- Schedule ----------
+// ========== SCHEDULE ==========
 async function vSchedule() {
   const ws = await api('/schedule');
-  app.innerHTML = `<h2>18-week schedule</h2>
-  <p class="lead">Week 1 starts now; week 18 ends at the AKT on 15 Jan 2027. Weekday pattern: 20 min review + 20 min questions + 10 min mistakes. Weekend: 2-4 h deep block.</p>
-  <table><tr><th>Wk</th><th>Phase</th><th>Focus</th><th>Pattern</th></tr>
-  ${ws.map(w=>`<tr><td><b>${w.week}</b></td><td><span class="pill tier${w.phase.startsWith('1')?'1':w.phase.startsWith('2')?'2':w.phase.startsWith('3')?'2':'3'}">${esc(w.phase)}</span></td><td>${esc(w.focus)}</td><td class="subtle" style="max-width:380px">${esc(w.activities)}</td></tr>`).join('')}</table>
-  <div class="card" style="margin-top:14px"><h3 style="margin:0 0 8px">Current phase targets</h3>
-  <pre class="sched">Phase 1 Foundation (wk 1-8): breadth over depth; every topic touched once; 30+ AKT done; CCE read-through from wk 5.
-Phase 2 Consolidation (wk 9-14): presentation-based reasoning; 100+ AKT; all 9 KFP formats; weekly CCE aloud.
-Phase 3 Exam prep (wk 15-16): timed blocks; full mocks; error-pattern review.
-Phase 4 Final (wk 17-18): rapid sheets + weakest 5 topics only; sleep, logistics, no new content.</pre></div>`;
+  app.innerHTML = `<h2>Study schedule</h2>
+  <p class="lead">Week 1 starts now · Weekday: 20 min review + 20 min questions + 10 min mistakes · Weekend: 2-4h deep block</p>
+  <div class="glass"><table><tr><th>Wk</th><th>Phase</th><th>Focus</th><th>Pattern</th></tr>
+  ${ws.map(w=>`<tr><td><b>${w.week}</b></td><td><span class="pill tier${w.phase.startsWith('1')?'1':w.phase.startsWith('2')?'2':w.phase.startsWith('3')?'2':'3'}">${esc(w.phase)}</span></td><td>${esc(w.focus)}</td><td class="subtle" style="max-width:380px">${esc(w.activities)}</td></tr>`).join('')}</table></div>
+  <div class="glass" style="margin-top:12px"><h3 style="margin:0 0 8px;font-size:.95rem">Phase targets</h3>
+  <pre class="sched">Phase 1 Foundation (wk 1-8): breadth · 30+ AKT · CCE read-through wk 5
+Phase 2 Consolidation (wk 9-14): reasoning · 100+ AKT · all KFP formats · weekly CCE
+Phase 3 Exam prep (wk 15-16): timed mocks · error review
+Phase 4 Final (wk 17-18): rapid sheets · weakest 5 · sleep, logistics</pre></div>`;
 }
 
-// ---------- Mistakes ----------
+// ========== MISTAKES ==========
 async function vMistakes() {
   const ms = await api('/mistakes');
   app.innerHTML = `<h2>Mistake log</h2>
-  <p class="lead">${ms.length} entries. Errors are categorised: knowledge gap, guideline recall, misread question, poor prioritisation, over/under-investigation, missed red flag, unsafe management, medication error, communication, exam technique.</p>
-  ${ms.length? `<table><tr><th>Date</th><th>Exam</th><th>Topic</th><th>Error</th><th>Correct principle</th><th>Category</th><th>Review</th><th></th></tr>
-  ${ms.map(m=>`<tr><td class="subtle">${esc(m.created_at?.slice(0,10))}</td><td><span class="pill tier${m.exam==='AKT'?'1':'2'}">${esc(m.exam)}</span></td><td>${esc(m.topic)}</td><td>${esc(m.my_error)}</td><td class="subtle">${esc(m.correct_principle)}</td><td>${esc(m.why_missed)}</td><td>${m.review_date?esc(m.review_date):'<span class="due-today">unset</span>'}</td>
-  <td><button class="btn subtle" onclick="delMistake(${m.id})" style="padding:4px 10px;font-size:12px">✕</button></td></tr>`).join('')}</table>`
-  : '<div class="empty">No mistakes logged yet — they will appear here automatically when you miss a question and click "Log to Mistake Log".</div>'}
-  <div class="card" style="margin-top:14px"><h3 style="margin:0 0 10px">Add manual entry</h3>
-  <div class="row"><select id="m_exam"><option>AKT</option><option>KFP</option><option>CCE</option></select>
-  <input type="text" id="m_topic" placeholder="Topic">
-  <select id="m_cat"><option>knowledge gap</option><option>guideline recall</option><option>misread question</option><option>poor prioritisation</option><option>over-investigation</option><option>under-investigation</option><option>missed red flag</option><option>unsafe management</option><option>medication error</option><option>communication</option><option>exam technique</option></select></div>
-  <div style="margin-top:8px"><textarea id="m_err" placeholder="What happened / what I did"></textarea></div>
-  <div style="margin-top:8px"><textarea id="m_fix" placeholder="Correct principle"></textarea></div>
-  <div class="row" style="margin-top:8px"><input type="date" id="m_rev"><button class="btn" onclick="addMistake()">Add</button></div></div>`;
+  <p class="lead">${ms.length} entries · Categorized by error type</p>
+  ${ms.length? `<div class="glass"><table><tr><th>Date</th><th>Exam</th><th>Topic</th><th>Error</th><th>Correct principle</th><th>Category</th><th>Review</th><th></th></tr>
+  ${ms.map(m=>`<tr><td class="subtle">${esc(m.created_at?.slice(0,10))}</td><td><span class="pill tier${m.exam==='AKT'?'1':'2'}">${esc(m.exam)}</span></td><td>${esc(m.topic)}</td><td style="max-width:200px">${esc(m.my_error)}</td><td class="subtle" style="max-width:250px">${esc(m.correct_principle)}</td><td>${esc(m.why_missed)}</td><td>${m.review_date?esc(m.review_date):'<span class="due-today">unset</span>'}</td>
+  <td><button class="btn subtle tiny" onclick="delMistake(${m.id})" style="padding:4px 8px">✕</button></td></tr>`).join('')}</table></div>`
+  : '<div class="glass" style="margin-top:12px"><div class="empty">No mistakes yet — they appear here when you miss a question</div></div>'}
+  <div class="glass" style="margin-top:12px">
+    <h3 style="margin:0 0 10px;font-size:.95rem">Manual entry</h3>
+    <div class="row"><select id="m_exam"><option>AKT</option><option>KFP</option><option>CCE</option></select>
+    <input type="text" id="m_topic" placeholder="Topic" style="flex:1;min-width:150px">
+    <select id="m_cat"><option>knowledge gap</option><option>guideline recall</option><option>misread question</option><option>poor prioritisation</option><option>over-investigation</option><option>under-investigation</option><option>missed red flag</option><option>unsafe management</option><option>medication error</option><option>communication</option><option>exam technique</option></select></div>
+    <div style="margin-top:8px"><textarea id="m_err" placeholder="What happened"></textarea></div>
+    <div style="margin-top:8px"><textarea id="m_fix" placeholder="Correct principle"></textarea></div>
+    <div class="row" style="margin-top:8px"><input type="date" id="m_rev"><button class="btn" onclick="addMistake()">Add</button></div>
+  </div>`;
 }
 window.addMistake = async () => {
   await api('/mistakes',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({exam:m_exam.value,topic:m_topic.value||'general',my_error:m_err.value,correct_principle:m_fix.value,why_missed:m_cat.value,review_date:m_rev.value||null})});
@@ -465,13 +628,14 @@ window.addMistake = async () => {
 };
 window.delMistake = async id => { await api('/mistakes/'+id,{method:'DELETE'}); render(); };
 
-// ---------- Meta ----------
+// ========== META ==========
 async function vMeta() {
   const ms = await api('/meta');
-  app.innerHTML = `<h2>Exam map — verified ${ms.find(m=>m.key==='exam_structure_summary')?.checked_date||''}</h2>
-  <p class="lead">Everything below was verified from official RACGP sources at the checked date. Sources linked.</p>
-  ${ms.map(m=>`<div class="meta-chip"><div class="k">${esc(m.key.replaceAll('_',' '))}</div><div class="v">${esc(m.value)}</div>
-  ${m.source_url?`<a href="${esc(m.source_url)}" target="_blank">${esc(m.source_url)}</a> <span class="subtle">(checked ${esc(m.checked_date)})</span>`:''}</div>`).join('')}`;
+  const checked = ms.find(m=>m.key==='exam_structure_summary')?.checked_date||'';
+  app.innerHTML = `<h2>Exam map</h2>
+  <p class="lead">Verified from official RACGP sources · Last checked: ${esc(checked)}</p>
+  ${ms.map(m=>`<div class="meta-chip"><div class="k">${esc(m.key.replace(/_/g,' '))}</div><div class="v">${esc(m.value)}</div>
+  ${m.source_url?`<a href="${esc(m.source_url)}" target="_blank">↗ ${esc(m.source_url)}</a> <span class="subtle">(checked ${esc(m.checked_date)})</span>`:''}</div>`).join('')}`;
 }
 
 render();
