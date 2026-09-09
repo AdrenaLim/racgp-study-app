@@ -83,3 +83,5 @@ For GitHub Actions deploys, add repo secrets `CLOUDFLARE_API_TOKEN` and `CLOUDFL
 ## Data provenance
 
 Exam structure facts in `/api/meta` were verified from racgp.org.au (AKT/KFP/CCE pages, exam dates page, candidate handbook) on **2026-09-08**, each with source URL and checked date. Guideline seeds carry publisher and year; the 2026 HTN guideline (Q4 2026 release) and 2027.1 CCE dates are flagged as pending/announced.
+
+[![CI + Deploy](https://github.com/AdrenaLim/racgp-study-app/actions/workflows/deploy.yml/badge.svg)](https://github.com/AdrenaLim/racgp-study-app/actions/workflows/deploy.yml)
