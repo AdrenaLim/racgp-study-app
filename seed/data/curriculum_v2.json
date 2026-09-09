@@ -1,0 +1,1526 @@
+{
+ "units": [
+  {
+   "id": 1,
+   "type": "core",
+   "number": 1,
+   "name": "Communication and the patient\u2013doctor relationship",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/1-communication-and-the-patient-doctor-relationship",
+   "blurb": "Domain 1: consulting effectively, health education, cultural safety in communication, holistic patient-centred care.",
+   "guidelines": [
+    {
+     "title": "RACGP Curriculum unit page",
+     "tier": 1,
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/1-communication-and-the-patient-doctor-relationship"
+    }
+   ],
+   "materials": [
+    {
+     "label": "RACGP patient-centred consulting models (course) gplearning",
+     "url": "https://www.racgp.org.au/education/professional-development/online-learning/gplearning",
+     "kind": "course"
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "type": "core",
+   "number": 2,
+   "name": "Applied professional knowledge and skills",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/2-applied-professional-knowledge-and-skills",
+   "blurb": "Domain 2: history, examination, differential diagnoses, investigations, clinical reasoning, prescribing, procedures, uncertainty.",
+   "guidelines": [
+    {
+     "title": "RACGP Curriculum unit page",
+     "tier": 1,
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/2-applied-professional-knowledge-and-skills"
+    }
+   ],
+   "materials": [
+    {
+     "label": "eTG complete (Therapeutic Guidelines)",
+     "url": "https://tg.org.au",
+     "kind": "reference"
+    },
+    {
+     "label": "Australian Medicines Handbook",
+     "url": "https://amhonline.amh.net.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "type": "core",
+   "number": 3,
+   "name": "Population health and the context of general practice",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/3-population-health-and-the-context-of-general-practice",
+   "blurb": "Domain 3: epidemiology, screening, sustainable resource use, public health risks, health promotion, equity.",
+   "guidelines": [
+    {
+     "title": "RACGP Red Book 10th ed (2024)",
+     "tier": 1,
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book"
+    }
+   ],
+   "materials": [
+    {
+     "label": "AIH \u2013 Australian Immunisation Handbook",
+     "url": "https://immunisationhandbook.health.gov.au/",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "id": 4,
+   "type": "core",
+   "number": 4,
+   "name": "Professional and ethical role",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/4-professional-and-ethical-role",
+   "blurb": "Domain 4: ethics, duty of care, professional conduct, doctor's own health, teaching, leadership.",
+   "guidelines": [
+    {
+     "title": "Medical Board of Australia \u2013 Good medical practice",
+     "tier": 1,
+     "url": "https://www.medicalboard.gov.au/Codes-Guidelines-Policies/Code-of-conduct.aspx"
+    }
+   ],
+   "materials": [
+    {
+     "label": "AHPRA mandatory notification guidelines",
+     "url": "https://www.ahpra.gov.au/",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "id": 5,
+   "type": "core",
+   "number": 5,
+   "name": "Organisational and legal dimensions",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/5-organisational-and-legal-dimensions",
+   "blurb": "Domain 5: records, consent, privacy, medico-legal, quality and safety, practice systems, time management.",
+   "guidelines": [
+    {
+     "title": "Austroads \u2013 Assessing Fitness to Drive",
+     "tier": 2,
+     "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive"
+    },
+    {
+     "title": "MBS online",
+     "tier": 2,
+     "url": "http://mbsonline.gov.au"
+    }
+   ],
+   "materials": [
+    {
+     "label": "RACGP practice standards",
+     "url": "https://www.racgp.org.au/running-a-practice/practice-standards",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "type": "core",
+   "number": 6,
+   "name": "Aboriginal and Torres Strait Islander health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/6-aboriginal-and-torres-strait-islander-health",
+   "blurb": "Core unit: culturally safe care, health equity, 715 health checks, Closing the Gap, community-controlled services.",
+   "guidelines": [
+    {
+     "title": "National guide to a preventive health assessment for ATSI people (3rd ed)",
+     "tier": 1,
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/national-guide"
+    },
+    {
+     "title": "RACGP ATSI health unit page",
+     "tier": 1,
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/6-aboriginal-and-torres-strait-islander-health"
+    }
+   ],
+   "materials": [
+    {
+     "label": "NACCHO",
+     "url": "https://www.naccho.org.au",
+     "kind": "org"
+    },
+    {
+     "label": "AIATSIS map of Indigenous Australia (for local context)",
+     "url": "https://aiatsis.gov.au/explore/map-indigenous-australia",
+     "kind": "map"
+    }
+   ]
+  },
+  {
+   "id": 7,
+   "type": "core",
+   "number": 7,
+   "name": "Rural health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/rural-health",
+   "blurb": "Core unit: rural and remote practice, isolation, extended scope, on-call, infrastructure, telehealth.",
+   "guidelines": [
+    {
+     "title": "RACGP rural health unit page",
+     "tier": 2,
+     "url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/rural-health"
+    }
+   ],
+   "materials": [
+    {
+     "label": "Services Australia \u2013 telehealth",
+     "url": "https://www.servicesaustralia.gov.au",
+     "kind": "reference"
+    }
+   ]
+  },
+  {
+   "id": 8,
+   "type": "contextual",
+   "number": 1,
+   "name": "Abuse and violence",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/abuse-and-violence",
+   "blurb": "FDV recognition, safety assessment, child protection, mandatory reporting. White Book is the reference.",
+   "guidelines": [
+    {
+     "title": "RACGP White Book (abuse and violence)",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/white-book",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "1800RESPECT",
+     "url": "https://www.1800respect.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "type": "contextual",
+   "number": 2,
+   "name": "Addiction medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/addiction-medicine",
+   "blurb": "Alcohol, tobacco, other drugs: screening, brief intervention, withdrawal, pharmacotherapy, safe opioid prescribing.",
+   "guidelines": [
+    {
+     "title": "eTG Psychotropic / Addiction",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "RACGP smoking cessation guidance",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/smoking-cessation",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Quitline",
+     "url": "https://www.quit.org.au",
+     "kind": "org"
+    },
+    {
+     "label": "Turning Point",
+     "url": "https://www.turningpoint.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 10,
+   "type": "contextual",
+   "number": 3,
+   "name": "Cardiovascular health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/cardiovascular-health",
+   "blurb": "CVD risk, HTN, IHD, ACS secondary prevention, AF, heart failure, lipids.",
+   "guidelines": [
+    {
+     "title": "2023 Australian CVD Risk guideline",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/cardiovascular-disease-risk-assessment",
+     "tier": 1
+    },
+    {
+     "title": "Australian AF guideline (2018)",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/atrial-fibrillation-resources",
+     "tier": 1
+    },
+    {
+     "title": "Heart Foundation HTN resources",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/hypertension",
+     "tier": 2
+    },
+    {
+     "title": "ACS 2025 guideline",
+     "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/acute-coronary-syndromes",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Aus CVD Risk Calculator",
+     "url": "https://www.cvdcheck.org.au",
+     "kind": "tool"
+    },
+    {
+     "label": "Heart Foundation",
+     "url": "https://www.heartfoundation.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 11,
+   "type": "contextual",
+   "number": 4,
+   "name": "Child and youth health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/child-and-youth-health",
+   "blurb": "Growth, development, common paediatric presentations, adolescent health, safeguarding.",
+   "guidelines": [
+    {
+     "title": "RCH Clinical Practice Guidelines",
+     "url": "https://www.rch.org.au/clinicalguide/",
+     "tier": 1
+    },
+    {
+     "title": "Red Book (paediatric screening)",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Raising Children Network",
+     "url": "https://raisingchildren.net.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 12,
+   "type": "contextual",
+   "number": 5,
+   "name": "Dermatological presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/dermatological-presentations",
+   "blurb": "Rashes, skin cancer, lesions, wounds, dermatitis, psoriasis, acne.",
+   "guidelines": [
+    {
+     "title": "Cancer Council melanoma guidelines",
+     "url": "https://www.cancer.org.au/clinical-guidelines",
+     "tier": 1
+    },
+    {
+     "title": "eTG Dermatology",
+     "url": "https://tg.org.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "SunSmart",
+     "url": "https://www.sunsmart.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 13,
+   "type": "contextual",
+   "number": 6,
+   "name": "Disability care",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/disability-care",
+   "blurb": "Patients with intellectual/physical disability, NDIS, communication, health checks, equity.",
+   "guidelines": [
+    {
+     "title": "RACGP Disability care unit + resources",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "NDIS",
+     "url": "https://www.ndis.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 14,
+   "type": "contextual",
+   "number": 7,
+   "name": "Disaster health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/disaster-health",
+   "blurb": "Pandemics, emergencies, business continuity, public health orders, role of GP.",
+   "guidelines": [
+    {
+     "title": "AHPPC / DoHAAC pandemic guidance",
+     "url": "https://www.health.gov.au",
+     "tier": 3
+    }
+   ],
+   "materials": [
+    {
+     "label": "Australian Disaster Resilience Hub",
+     "url": "https://knowledge.aidr.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 15,
+   "type": "contextual",
+   "number": 8,
+   "name": "Doctors' health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/doctors-health",
+   "blurb": "Doctor wellbeing, burnout, impairment, mandatory notification, doctors' health services.",
+   "guidelines": [
+    {
+     "title": "Doctors' Health Services (converge)",
+     "url": "https://www.drs4drs.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Converge International EAP",
+     "url": "https://www.convergeinternational.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 16,
+   "type": "contextual",
+   "number": 9,
+   "name": "Ear, nose, throat and oral health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/ear-nose-throat-and-oral-health",
+   "blurb": "Otitis media, sinusitis, pharyngitis, epistaxis, hearing loss, oral lesions.",
+   "guidelines": [
+    {
+     "title": "eTG Respiratory (ENT sections)",
+     "url": "https://tg.org.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Hearing Australia",
+     "url": "https://www.hearing.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 17,
+   "type": "contextual",
+   "number": 10,
+   "name": "Education in general practice",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/education-in-general-practice",
+   "blurb": "Teaching medical students/registrars, supervision, feedback, assessment.",
+   "guidelines": [
+    {
+     "title": "RACGP education unit page",
+     "url": "https://www.racgp.org.au/education",
+     "tier": 3
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 18,
+   "type": "contextual",
+   "number": 11,
+   "name": "Emergency medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/emergency-medicine",
+   "blurb": "Anaphylaxis, sepsis, ACS, stroke, trauma, collapse, urgent transfer criteria.",
+   "guidelines": [
+    {
+     "title": "eTG Emergency",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "ACEM first aid / basic life support",
+     "url": "https://resuscitationcouncil.guidelines",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 19,
+   "type": "contextual",
+   "number": 12,
+   "name": "Endocrine and metabolic health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/metabolic-and-endocrine-health",
+   "blurb": "Diabetes, thyroid, obesity, lipids, osteoporosis, adrenal, pituitary.",
+   "guidelines": [
+    {
+     "title": "RACGP/Diabetes Australia T2DM guideline",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/type-2-diabetes",
+     "tier": 1
+    },
+    {
+     "title": "ADS position statements",
+     "url": "https://www.diabetessociety.com.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Diabetes Australia",
+     "url": "https://www.diabetesaustralia.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 20,
+   "type": "contextual",
+   "number": 13,
+   "name": "Eye presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/eye-presentations",
+   "blurb": "Red eye, vision loss, trauma, diabetic retinopathy screening, glaucoma.",
+   "guidelines": [
+    {
+     "title": "RANZCO / Optometry Australia guidance",
+     "url": "https://www.ranzco.edu",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Vision 2020 Australia",
+     "url": "https://www.vision2020australia.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 21,
+   "type": "contextual",
+   "number": 14,
+   "name": "Gastrointestinal health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/gastrointestinal-health",
+   "blurb": "Dyspepsia, GORD, IBS, IBD, liver disease, coeliac, bowel cancer screening.",
+   "guidelines": [
+    {
+     "title": "Australian MASLD consensus",
+     "url": "https://www.gesa.org.au",
+     "tier": 2
+    },
+    {
+     "title": "Cancer Council bowel screening",
+     "url": "https://www.cancer.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "GESA",
+     "url": "https://www.gesa.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 22,
+   "type": "contextual",
+   "number": 15,
+   "name": "Haematological presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/haematological-presentations",
+   "blurb": "Anaemia, anticoagulation, thrombosis, haematological malignancy recognition, LFTs and iron studies interpretation.",
+   "guidelines": [
+    {
+     "title": "eTG Haematology",
+     "url": "https://tg.org.au",
+     "tier": 2
+    },
+    {
+     "title": "BloodSafe / NBA",
+     "url": "https://www.blood.gov.au",
+     "tier": 3
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 23,
+   "type": "contextual",
+   "number": 16,
+   "name": "Infectious diseases",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/infectious-diseases",
+   "blurb": "Antibiotic choice, notifiable diseases, immunisation, returned traveller, outbreak response.",
+   "guidelines": [
+    {
+     "title": "Australian Immunisation Handbook",
+     "url": "https://immunisationhandbook.health.gov.au/",
+     "tier": 1
+    },
+    {
+     "title": "eTG Antibiotic",
+     "url": "https://tg.org.au",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "NCIRS",
+     "url": "https://www.ncirs.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 24,
+   "type": "contextual",
+   "number": 17,
+   "name": "Integrative medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/integrative-medicine",
+   "blurb": "Complementary medicine safety, interactions, evidence, patient communication.",
+   "guidelines": [
+    {
+     "title": "NPS MedicineWise",
+     "url": "https://www.nps.org.au",
+     "tier": 3
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 25,
+   "type": "contextual",
+   "number": 18,
+   "name": "Justice system health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/justice-system-health",
+   "blurb": "Prisoners, forensic patients, legal system interface.",
+   "guidelines": [
+    {
+     "title": "RACGP justice system unit",
+     "url": "https://www.racgp.org.au",
+     "tier": 3
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 26,
+   "type": "contextual",
+   "number": 19,
+   "name": "Kidney and urinary health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/kidney-and-urinary-health",
+   "blurb": "CKD, haematuria, proteinuria, UTI, stones, BPS, mens LUTS.",
+   "guidelines": [
+    {
+     "title": "Kidney Health Australia CKD in primary care",
+     "url": "https://kidney.org.au/health-professionals/chronic-kidney-disease-management-in-primary-care",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Kidney Health Australia",
+     "url": "https://kidney.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 27,
+   "type": "contextual",
+   "number": 20,
+   "name": "Men's health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/mens-health",
+   "blurb": "Prostate, testicular, ED, male mental health/suicide, preventive care for men.",
+   "guidelines": [
+    {
+     "title": "Red Book (men's screening)",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Andrology Australia",
+     "url": "https://www.healthymale.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 28,
+   "type": "contextual",
+   "number": 21,
+   "name": "Mental health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/mental-health",
+   "blurb": "Depression, anxiety, bipolar, psychosis, suicide risk, perinatal mental health.",
+   "guidelines": [
+    {
+     "title": "RACGP depression guideline / beyondblue guide",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/depression",
+     "tier": 1
+    },
+    {
+     "title": "LIFE framework (suicide prevention)",
+     "url": "https://lifeinmindaustralia.com.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "beyondblue",
+     "url": "https://www.beyondblue.org.au",
+     "kind": "org"
+    },
+    {
+     "label": "QLD Mental Health Line 1300 642 255",
+     "url": "tel:1300642255",
+     "kind": "tel"
+    }
+   ]
+  },
+  {
+   "id": 29,
+   "type": "contextual",
+   "number": 22,
+   "name": "Migrant, refugee and asylum seeker health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/migrant-refugee-and-asylum-seeker-health",
+   "blurb": "Arrival screening, interpreters, torture/trauma awareness, Medicare access.",
+   "guidelines": [
+    {
+     "title": "ASID refugee health guidelines",
+     "url": "https://www.asid.net.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Foundation House",
+     "url": "https://www.foundationhouse.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 30,
+   "type": "contextual",
+   "number": 23,
+   "name": "Military and veteran health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/military-and-veteran-health",
+   "blurb": "Veteran-specific conditions, DVA, PTSD, moral injury.",
+   "guidelines": [
+    {
+     "title": "DVA health care arrangements",
+     "url": "https://www.dva.gov.au",
+     "tier": 3
+    }
+   ],
+   "materials": [
+    {
+     "label": "Open Arms",
+     "url": "https://www.openarms.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 31,
+   "type": "contextual",
+   "number": 24,
+   "name": "Musculoskeletal presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/musculoskeletal-presentations",
+   "blurb": "Back pain, joint pain, arthritis, osteoporosis, injuries, gout.",
+   "guidelines": [
+    {
+     "title": "RACGP OA guideline",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/osteoarthritis",
+     "tier": 2
+    },
+    {
+     "title": "Healthy Bones Australia",
+     "url": "https://healthybonesaustralia.org.au",
+     "tier": 2
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 32,
+   "type": "contextual",
+   "number": 25,
+   "name": "Neurological presentations",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/neurological-presentations",
+   "blurb": "Headache, dizziness, stroke/TIA, epilepsy, dementia, Parkinson disease, neuropathy.",
+   "guidelines": [
+    {
+     "title": "Stroke Foundation \u2013 Clinical Guidelines for Stroke Management",
+     "url": "https://www.strokefoundation.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Austroads driving (seizure/dementia)",
+     "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Stroke Foundation",
+     "url": "https://www.strokefoundation.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 33,
+   "type": "contextual",
+   "number": 26,
+   "name": "Occupational and environmental medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/occupational-and-environmental-medicine",
+   "blurb": "Work-related injury, certification, workers comp, Q fever/leptospirosis (QLD), environmental risks.",
+   "guidelines": [
+    {
+     "title": "Safe Work Australia",
+     "url": "https://www.safeworkaustralia.gov.au",
+     "tier": 3
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 34,
+   "type": "contextual",
+   "number": 27,
+   "name": "Older persons' health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/older-persons-health",
+   "blurb": "Comprehensive geriatric assessment, polypharmacy, falls, cognition, RACF care, elder abuse.",
+   "guidelines": [
+    {
+     "title": "RACGP Silver Book",
+     "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/silver-book",
+     "tier": 1
+    },
+    {
+     "title": "Austroads (dementia driving)",
+     "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive",
+     "tier": 2
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 35,
+   "type": "contextual",
+   "number": 28,
+   "name": "Pain management",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/pain-management",
+   "blurb": "Acute vs persistent pain, opioids, non-drug strategies, pain programs.",
+   "guidelines": [
+    {
+     "title": "eTG Analgesic",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "Faculty of Pain Medicine guidance",
+     "url": "https://www.anzca.edu.au",
+     "tier": 3
+    }
+   ],
+   "materials": [
+    {
+     "label": "ACI pain management network",
+     "url": "https://www.aci.health.nsw.gov.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 36,
+   "type": "contextual",
+   "number": 29,
+   "name": "Palliative care",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/palliative-care",
+   "blurb": "Symptom control, dying phase, ACP, VAD (QLD), carer support.",
+   "guidelines": [
+    {
+     "title": "eTG Palliative Care",
+     "url": "https://tg.org.au",
+     "tier": 1
+    },
+    {
+     "title": "CareSearch",
+     "url": "https://www.caresearch.com.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Palliative Care Australia",
+     "url": "https://palliativecareaustralia.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 37,
+   "type": "contextual",
+   "number": 30,
+   "name": "Pregnancy and reproductive health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/pregnancy-and-reproductive-health",
+   "blurb": "Antenatal care, first visit, pregnancy complications, postnatal care, lactation, contraception.",
+   "guidelines": [
+    {
+     "title": "Dept Health Pregnancy Care Guidelines",
+     "url": "https://www.health.gov.au/our-work/clinical-practice-guidelines-pregnancy-care",
+     "tier": 1
+    },
+    {
+     "title": "RANZCOG C-Gen",
+     "url": "https://ranzcog.edu.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "Quit for pregnancy (13QUIT)",
+     "url": "https://www.quit.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 38,
+   "type": "contextual",
+   "number": 31,
+   "name": "Research in general practice",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/research-in-general-practice",
+   "blurb": "Critical appraisal, audit, research participation.",
+   "guidelines": [
+    {
+     "title": "RACGP research unit",
+     "url": "https://www.racgp.org.au",
+     "tier": 3
+    }
+   ],
+   "materials": []
+  },
+  {
+   "id": 39,
+   "type": "contextual",
+   "number": 32,
+   "name": "Respiratory health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/respiratory-health",
+   "blurb": "Asthma, COPD, cough, haemoptysis, sleep apnoea, lung cancer.",
+   "guidelines": [
+    {
+     "title": "Australian Asthma Handbook",
+     "url": "https://www.nationalasthma.org.au/australian-asthma-handbook/complete-handbook",
+     "tier": 1
+    },
+    {
+     "title": "COPD-X",
+     "url": "https://copdx.org.au/copd-x-plan/",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "Asthma Australia",
+     "url": "https://asthma.org.au",
+     "kind": "org"
+    },
+    {
+     "label": "Lung Foundation Australia",
+     "url": "https://lungfoundation.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 40,
+   "type": "contextual",
+   "number": 33,
+   "name": "Sexual health and gender diversity",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/sexual-health-and-gender-diversity",
+   "blurb": "STI screening/treatment, PrEP/PEP, HIV, sexual function, gender diversity care.",
+   "guidelines": [
+    {
+     "title": "Australian STI Management Guidelines",
+     "url": "http://sti.guidelines.org.au/",
+     "tier": 1
+    }
+   ],
+   "materials": [
+    {
+     "label": "ASHM",
+     "url": "https://ashm.org.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 41,
+   "type": "contextual",
+   "number": 34,
+   "name": "Travel medicine",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/travel-medicine",
+   "blurb": "Pre-travel risk assessment, vaccines, malaria prophylaxis, returned traveller.",
+   "guidelines": [
+    {
+     "title": "CDC Yellow Book",
+     "url": "https://wwwnc.cdc.gov/travel",
+     "tier": 2
+    },
+    {
+     "title": "WHO travel health",
+     "url": "https://www.who.int",
+     "tier": 3
+    }
+   ],
+   "materials": [
+    {
+     "label": "Travelvax",
+     "url": "https://www.travelvax.com.au",
+     "kind": "org"
+    }
+   ]
+  },
+  {
+   "id": 42,
+   "type": "contextual",
+   "number": 35,
+   "name": "Women's health",
+   "racgp_url": "https://www.racgp.org.au/education/education-providers/curriculum/curriculum-and-syllabus/units/womens-health",
+   "blurb": "Cervical screening, menopause, PCOS, heavy menstrual bleeding, breast symptoms, contraception.",
+   "guidelines": [
+    {
+     "title": "NCSP guidelines",
+     "url": "https://screening.cancer.org.au/cervical/",
+     "tier": 1
+    },
+    {
+     "title": "Menopause resources (AMS)",
+     "url": "https://www.menopause.org.au",
+     "tier": 2
+    }
+   ],
+   "materials": [
+    {
+     "label": "BreastScreen Australia",
+     "url": "https://www.breastscreen.org.au",
+     "kind": "org"
+    }
+   ]
+  }
+ ],
+ "topics": [
+  {
+   "unit": "Cardiovascular health",
+   "category": "Presentation",
+   "name": "Chest pain",
+   "priority": "VH",
+   "must_know": "Immediate ACS rule-out: ECG within 10 minutes of arrival; aspirin 300 mg unless contraindicated; 000/ED transfer if suspected ACS. Discriminate GORD, musculoskeletal, PE, pericarditis, aortic dissection.",
+   "should_know": "Tropinin pathways and safe rule-out; when CT coronary angiography is appropriate; PE risk scores.",
+   "nice_to_know": "Aortic dissection risk scores; pericarditis ECG changes."
+  },
+  {
+   "unit": "Applied professional knowledge and skills",
+   "category": "Presentation",
+   "name": "Tiredness / fatigue",
+   "priority": "VH",
+   "must_know": "Screen for depression, sleep, alcohol, anaemia, diabetes, hypothyroid, coeliac, meds. Targeted first-line tests: FBE, UEC, LFT, TSH, ferritin, BGL/HbA1c, CRP if inflammatory cause suspected.",
+   "should_know": "When to add B12, folate, coeliac serology, EBV/other infective screen; chronic fatigue syndrome criteria and management.",
+   "nice_to_know": "Sleep apnoea screening tools (STOP-BANG)."
+  },
+  {
+   "unit": "Neurological presentations",
+   "category": "Presentation",
+   "name": "Headache",
+   "priority": "VH",
+   "must_know": "Red flags: thunderclap sudden onset, fever/neck stiffness, papilloedema/focal neurology, new headache >50y, GCA features >50y, medication-overuse. Primary headaches: migraine, tension, cluster.",
+   "should_know": "Migraine acute and prophylactic management (Australian choices); GCA workup (ESR/CRP, urgent steroid, temporal artery); benign intracranial hypertension.",
+   "nice_to_know": "Cluster treatments (oxygen, sumatriptan)."
+  },
+  {
+   "unit": "Neurological presentations",
+   "category": "Presentation",
+   "name": "Dizziness / vertigo",
+   "priority": "H",
+   "must_know": "Separate peripheral (BPPV, vestibular neuronitis) from central (stroke, MS). HINTS exam. Dix-Hallpike for BPPV + Epley. Postural BP in older patients on antihypertensives.",
+   "should_know": "Vestibular migraine; Red flags requiring urgent neuroimaging (acute persistent, neuro signs, inability to walk).",
+   "nice_to_know": "Vestibular rehabilitation referral."
+  },
+  {
+   "unit": "Gastrointestinal health",
+   "category": "Presentation",
+   "name": "Abdominal pain",
+   "priority": "VH",
+   "must_know": "Surgical abdomen signs; discriminate biliary, appendicitis, diverticulitis, renal colic, gynae (ectopic in women of reproductive age - always consider pregnancy), mesenteric ischaemia in elderly.",
+   "should_know": "Chronic: IBS criteria, coeliac, IBD red flags, cancer (change in bowel habit, PR bleeding).",
+   "nice_to_know": "Functional abdominal pain management."
+  },
+  {
+   "unit": "Respiratory health",
+   "category": "Presentation",
+   "name": "Dyspnoea",
+   "priority": "VH",
+   "must_know": "Immediate: asthma, COPD exacerbation, heart failure, PE, pneumothorax, pneumonia. Examination triage: respiratory distress, SpO2, accessory muscles. When to send to ED.",
+   "should_know": "Chronic causes: interstitial disease, anaemia, deconditioning, anxiety. BNP role.",
+   "nice_to_know": "Pulmonary function interpretation subtleties."
+  },
+  {
+   "unit": "Respiratory health",
+   "category": "Presentation",
+   "name": "Cough",
+   "priority": "H",
+   "must_know": "Duration drives workup: acute (URTI, bronchitis, pneumonia, pertussis); chronic >4 weeks (post-infectious, asthma, GORD, upper airway cough syndrome, ACE inhibitor, lung cancer in smokers). Red flags: haemoptysis, weight loss, smoker.",
+   "should_know": "Pertussis testing and public health notification; when CXR.",
+   "nice_to_know": "Cough hypersensitivity syndrome."
+  },
+  {
+   "unit": "Applied professional knowledge and skills",
+   "category": "Presentation",
+   "name": "Weight loss",
+   "priority": "H",
+   "must_know": "Malignancy, hyperthyroid, depression/dementia in elderly, diabetes, coeliac, TB. Red flags: >5% body weight in 6 months, dysphagia, PR bleeding, night sweats. Structured workup; consider malignancy review.",
+   "should_know": "Elder safe assessment: eat/walk/dementia; sarcopenia vs cachexia.",
+   "nice_to_know": "HIV testing in risk groups."
+  },
+  {
+   "unit": "Infectious diseases",
+   "category": "Presentation",
+   "name": "Fever in adults",
+   "priority": "H",
+   "must_know": "Common viral vs bacterial; focal exam; when blood cultures before antibiotics; sepsis recognition (qSOFA); immunosuppressed febrile patient = urgent ED.",
+   "should_know": "Q fever/leptospirosis risk occupations (QLD farmers, abbatoir workers); returned traveller fever (malaria risk - urgent if falciparum zone).",
+   "nice_to_know": "Notifiable diseases list and mechanisms (QLD)."
+  },
+  {
+   "unit": "Dermatological presentations",
+   "category": "Presentation",
+   "name": "Rash",
+   "priority": "H",
+   "must_know": "Life-threatening: meningococcal (petechiae + fever = ED), SJS/TEN, necrotising fasciitis, eczema herpeticum. Common: urticaria, dermatitis, psoriasis, tinea, drug eruption.",
+   "should_know": "Describe lesions formally (morphology, distribution); biopsy rules; photosensitivity; melanoma ABCD + ugly duckling.",
+   "nice_to_know": "Dermoscopy patterns."
+  },
+  {
+   "unit": "Musculoskeletal presentations",
+   "category": "Presentation",
+   "name": "Joint pain",
+   "priority": "VH",
+   "must_know": "Inflammatory pattern: morning stiffness >60 min, swelling, small joints. Septic arthritis = joint aspiration same day (ED) - do not start antibiotics before aspiration. Gout acute treatment. New RA - early referral.",
+   "should_know": "Osteoarthritis non-surgical ladder; safe NSAID use; PMR >50 with shoulder/hip girdle pain + ESR.",
+   "nice_to_know": "Seronegative spondyloarthritis features."
+  },
+  {
+   "unit": "Musculoskeletal presentations",
+   "category": "Presentation",
+   "name": "Back pain",
+   "priority": "VH",
+   "must_know": "Red flags: cauda equina (saddle anaesthesia, urinary retention - ED), cancer history, fever (discitis), weight loss, trauma. Most acute low back pain: stay active, no imaging in first 4-6 weeks.",
+   "should_know": "Radicular pain and radiculopathy management; when physio; chronic pain pathway.",
+   "nice_to_know": "Specific exercises controversial."
+  },
+  {
+   "unit": "Applied professional knowledge and skills",
+   "category": "Presentation",
+   "name": "Abnormal blood tests",
+   "priority": "VH",
+   "must_know": "Anaemia, high/low platelets, high WCC, high ESR/CRP, abnormal LFTs, eGFR decline: each needs structured interpretation, repeat/confirm, and a clear next step. Do not discharge or ignore persistent unexplained abnormal results - investigate or refer.",
+   "should_know": "Incidental thrombocytosis (iron deficiency, inflammation); monoclonal protein/paraprotein - haematology referral.",
+   "nice_to_know": "Unexplained high ESR/CRP workups."
+  },
+  {
+   "unit": "Gastrointestinal health",
+   "category": "Presentation",
+   "name": "Abnormal liver function tests",
+   "priority": "H",
+   "must_know": "Pattern: hepatocellular (ALT) vs cholestatic (ALP+GGT). Common: NAFLD, alcohol, drugs. Screen: repeat LFT, viral serology (Hep B/C), ferritin, autoimmune (ANA/ASMA), ultrasound. ALP isolated high: check GGT; bone source.",
+   "should_know": "When to refer; fatty liver monitoring; hepatotoxic meds (amoxiclav, statins).",
+   "nice_to_know": "Gilbert syndrome; Wilson disease in young."
+  },
+  {
+   "unit": "Haematological presentations",
+   "category": "Presentation",
+   "name": "Anaemia",
+   "priority": "VH",
+   "must_know": "Microcytic (iron deficiency - always find cause in adults: coeliac, malignancy esp. bowel; men and postmenopausal women need GI workup) vs macrocytic (B12/folate, alcohol, hypothyroid) vs normocytic (CKD, anaemia of chronic disease).",
+   "should_know": "Ferritin optimal >30 (some use >50 with inflammation); anaemia in pregnancy; reticulocytes.",
+   "nice_to_know": "Haemoglobinopathies."
+  },
+  {
+   "unit": "Kidney and urinary health",
+   "category": "Presentation",
+   "name": "Haematuria",
+   "priority": "VH",
+   "must_know": "Visible haematuria in >40s: exclude malignancy - urgent urology/CT urogram; glomerular (dysmorphic RBC/proteinuria) vs urological. UTI treatment before re-testing after infection.",
+   "should_know": "IgA nephropathy; thin basement membrane; ACR role.",
+   "nice_to_know": "Exercise-induced haematuria."
+  },
+  {
+   "unit": "Child and youth health",
+   "category": "Presentation",
+   "name": "Child with fever",
+   "priority": "VH",
+   "must_know": "Infant <3 months with fever = urgent hospital referral. Traffic light (NICE/RCH): green - manage, amber - review 24h, red - refer. Fever without focus; petechial rash = ED; meningococcal signs in children.",
+   "should_know": "Fever duration and urine testing in young children; Kawasaki features (fever >5 days + red eyes, mucositis).",
+   "nice_to_know": "Periodic fever syndromes."
+  },
+  {
+   "unit": "Pregnancy and reproductive health",
+   "category": "Presentation",
+   "name": "Pregnancy-related presentations",
+   "priority": "H",
+   "must_know": "First trimester bleeding/pain: ectopic must be excluded (quantitative bhCG, ultrasound). BP >=140/90 in pregnancy = review same day; severe headache/visual symptoms/RUQ pain = urgent obstetric review. Postnatal depression screen (EPDS).",
+   "should_know": "Antenatal schedule; medication safety in pregnancy; hyperemesis management.",
+   "nice_to_know": "Non-invasive prenatal testing options."
+  },
+  {
+   "unit": "Mental health",
+   "category": "Presentation",
+   "name": "Behavioural concern",
+   "priority": "H",
+   "must_know": "In children: developmental, autism, ADHD, family stress, school issues; in elderly: delirium vs dementia vs depression. Always check safety (self-harm, harm to others, child protection).",
+   "should_know": "Autism referral pathways (QLD: NDIS, paediatrician); conduct disorder.",
+   "nice_to_know": "Parenting programs."
+  },
+  {
+   "unit": "Population health and the context of general practice",
+   "category": "Presentation",
+   "name": "Screening consultation",
+   "priority": "VH",
+   "must_know": "Australian programs: cervical (25-74, 5-yearly HPV test, self-collection choice), bowel (45-74, 2-yearly iFOBT), breast (50-74 invited 2-yearly, 40+ eligible). Also: Aboriginal and Torres Strait Islander health checks (annual, MBS 715), 75+ health assessment, 45-49 health assessment, STI screening by risk, CVD risk assessment.",
+   "should_know": "Preventive activities from Red Book (10th ed 2024); lifestyle: smoking, alcohol, activity, diet, sun; immunisation status; family history of cancer criteria.",
+   "nice_to_know": "Unproven screening to avoid (whole-body scans, routine tumour markers) - Red Book lists tests NOT to do."
+  },
+  {
+   "unit": "Cardiovascular health",
+   "category": "System",
+   "name": "Hypertension",
+   "priority": "VH",
+   "must_know": "Diagnosis: confirm with repeat + out-of-office (ABPM/HBPM) before treating. Assess absolute CVD risk (Aus CVD Risk Calculator) not BP alone. Lifestyle first, then pharmacotherapy per risk. 2026 Australian HTN guideline due Q4 2026 (Heart Foundation/Stroke Foundation/Hypertension Australia) - watch for threshold changes.",
+   "should_know": "White coat hypertension; resistant HTN; secondary causes screening (young <40, sudden, resistant: renin, aldosterone, renal artery, sleep apnoea, drugs).",
+   "nice_to_know": "Home BP meter validation."
+  },
+  {
+   "unit": "Cardiovascular health",
+   "category": "System",
+   "name": "Ischaemic heart disease and ACS",
+   "priority": "VH",
+   "must_know": "Secondary prevention post-ACS per 2025 Australian ACS guideline; angina assessment; stress testing limitations. Primary prevention: absolute risk approach. Statins intensity by risk.",
+   "should_know": "Aspirin primary prevention NOT routinely recommended; antiplatelet + DOAC combinations.",
+   "nice_to_know": "CAC score role."
+  },
+  {
+   "unit": "Cardiovascular health",
+   "category": "System",
+   "name": "Atrial fibrillation",
+   "priority": "VH",
+   "must_know": "Screen opportunistically by pulse/ECG in >65y. CHA2DS2-VA (Australian 2018 guideline dropped the sex category) for stroke risk. Anticoagulate (DOAC preferred) when score >=2 (>=1 in some); rate vs rhythm control.",
+   "should_know": "DOAC selection with renal impairment; bleeding risk discussion; alcohol as precipitant.",
+   "nice_to_know": "Catheter ablation indications."
+  },
+  {
+   "unit": "Cardiovascular health",
+   "category": "System",
+   "name": "Heart failure",
+   "priority": "H",
+   "must_know": "Diagnosis: BNP/NT-proBNP + echo. HFrEF quadruple therapy: ACEi/ARB or ARNI, beta blocker, MRA, SGLT2i. Acute decompensation red flags.",
+   "should_know": "When MBS-supported chronic disease management plan items apply.",
+   "nice_to_know": "Cardiac resynchronisation."
+  },
+  {
+   "unit": "Respiratory health",
+   "category": "System",
+   "name": "Asthma",
+   "priority": "VH",
+   "must_know": "Diagnosis: variable airflow obstruction (spirometry with reversibility). Australian Asthma Handbook (NAC): SABA-only treatment is OUT - every patient with a diagnosis needs ICS-containing therapy; ICS-formoterol as needed (AIR) or maintenance. Written action plan. Reliever overuse = review.",
+   "should_know": "FeNO role; inhaler technique checks; exercise-induced bronchoconstriction.",
+   "nice_to_know": "Anti-IgE/biologics referral."
+  },
+  {
+   "unit": "Respiratory health",
+   "category": "System",
+   "name": "COPD",
+   "priority": "VH",
+   "must_know": "Diagnosis: spirometry post-bronchodilator FEV1/FVC <0.7. Lung Foundation Australia COPD-X consensus: smoking cessation is the only intervention that changes trajectory; pulmonary rehab; vaccinations; SAMA/SABA then LAMA/LABA + ICS if eosinophils/exacerbations.",
+   "should_know": "Oxygen assessment; exacerbation management (steroids, antibiotics when indicated); non-invasive ventilation.",
+   "nice_to_know": "Lung volume reduction."
+  },
+  {
+   "unit": "Endocrine and metabolic health",
+   "category": "System",
+   "name": "Type 2 diabetes",
+   "priority": "VH",
+   "must_know": "Diagnosis: HbA1c >=6.5% (confirm if asymptomatic) or fasting BGL >=7.0 or OGTT 2hr >=11.1, or random >=11.1 with symptoms. Management: lifestyle + metformin; ADD-STEP: early comorbidity-based agent choice (SGLT2i/GLP-1 for CVD/CKD/obesity); retinal + foot + ACR screening annually; individualised HbA1c target (generally <=7%).",
+   "should_know": "GLP-1 agonist practicalities; insulin initiation; steroid-induced hyperglycaemia; driving standards (Austroads) for insulin-treated drivers.",
+   "nice_to_know": "CGM for T2DM."
+  },
+  {
+   "unit": "Endocrine and metabolic health",
+   "category": "System",
+   "name": "Thyroid disease",
+   "priority": "H",
+   "must_know": "TSH-first testing. Overt: treat. Subclinical: repeat 6-8 weeks, TPO antibodies; treat hypothyroidism if TSH >10 or pregnant/infertility. Thyroid nodule: check TSH, ultrasound, FNA per malignancy risk.",
+   "should_know": "Amiodarone thyroid effects; post-partum thyroiditis; levothyroxine absorption (iron, calcium).",
+   "nice_to_know": "Graves ophthalmopathy referral."
+  },
+  {
+   "unit": "Kidney and urinary health",
+   "category": "System",
+   "name": "Chronic kidney disease",
+   "priority": "H",
+   "must_know": "Staging: eGFR category (G1-G5) + albuminuria (A1-A3). eGFR <60 for >3 months, or ACR >=3 mg/mmol persistently. Kidney Health Australia: BP control, RAAS blockade if albuminuria, SGLT2i, avoid nephrotoxins (NSAIDs, dehydration + contrast). Refer nephrology per criteria (eGFR <30, rapid decline, proteinuria, haematuria).",
+   "should_know": "Medication dose adjustment by eGFR; sick day rules.",
+   "nice_to_know": "Genetic cystic disease."
+  },
+  {
+   "unit": "Musculoskeletal presentations",
+   "category": "System",
+   "name": "Osteoporosis",
+   "priority": "H",
+   "must_know": "First Fracture Prevention: any low-trauma fracture after 50 = investigate (DEXA) and treat. Calcium (diet) + vitamin D + resistance exercise; bisphosphonate first-line; treat 3-5 years then reassess. Secondary causes screen.",
+   "should_know": "Glucocorticoid-induced osteoporosis prevention; denosumab practicalities (must not delay next dose).",
+   "nice_to_know": "Anabolic agents."
+  },
+  {
+   "unit": "Mental health",
+   "category": "System",
+   "name": "Depression and anxiety",
+   "priority": "VH",
+   "must_know": "Screen (PHQ-9, GAD-7, K10); suicide risk assessment (thoughts, plan, means, intent, protective factors). Stepped care: psychological therapy first for mild-moderate; add SSRI for moderate-severe. Review 2 weeks then 4-6 weeks. Black dog Institute/RACGP guidance.",
+   "should_know": "Perinatal mental health; older persons depression; IPT; medication interactions (SSRI + tramadol = serotonin syndrome).",
+   "nice_to_know": "Treatment-resistant pathways; rTMS."
+  },
+  {
+   "unit": "Mental health",
+   "category": "System",
+   "name": "Suicide risk assessment",
+   "priority": "VH",
+   "must_know": "Ask directly. Safety planning (not no-suicide contracts). Means restriction. Lethality: plan/intent/access. Involve mental health service, safety net carers, remove access. Document.",
+   "should_know": "QLD pathways: Mental Health Line 1300 642 255; ED vs community options; Mental Health Act QLD involuntary assessment criteria.",
+   "nice_to_know": "chronic vs acute risk framing."
+  },
+  {
+   "unit": "Women's health",
+   "category": "System",
+   "name": "Contraception",
+   "priority": "VH",
+   "must_know": "UKMEC categories; LARC first-line discussion (implant, IUDs); copper IUD = emergency contraception most effective; ulipristal 5 days; levonorgestrel 120h weight caveat (efficacy reduced >70-80 kg). Prescribing: BP, history.",
+   "should_know": "IUD insertion pathways; Quick start; missed pill rules; contraception in perimenopause.",
+   "nice_to_know": "Permanent options counselling."
+  },
+  {
+   "unit": "Women's health",
+   "category": "System",
+   "name": "Menopause and perimenopause",
+   "priority": "H",
+   "must_know": "MHT indications/contraindications; timing hypothesis (window of opportunity <60y or <10y since menopause); vaginal oestrogen for GSM; bone protection.",
+   "should_know": "Non-hormonal options; compounded hormones NOT recommended (menopause society position).",
+   "nice_to_know": "Testosterone role."
+  },
+  {
+   "unit": "Dermatological presentations",
+   "category": "System",
+   "name": "Skin cancer",
+   "priority": "VH",
+   "must_know": "Australia: highest melanoma incidence. ABCD/E + ugly duckling + change; NMSC (BCC/SCC) common. Biopsy rules: excision 2mm BCC, 2mm + 4mm SCC margins (in practice refer face/large); photography for surveillance; total body skin exam.",
+   "should_know": "Melanoma risk factors (naevi, family, colouring); 3 monthly self-check; cryotherapy limits.",
+   "nice_to_know": "Dermoscopy; targeted therapy era."
+  },
+  {
+   "unit": "Infectious diseases",
+   "category": "System",
+   "name": "Antimicrobial stewardship and common infections",
+   "priority": "VH",
+   "must_know": "Therapeutic Guidelines (eTG) is the reference. Common: UTI (nitrofurantoin first-line uncomplicated), cellulitis (flucloxacillin), community pneumonia (amoxycillin; doxycycline if atypical cover), impetigo, otitis media (watchful waiting), sinusitis, strep pharyngitis (penicillin). Penicillin allergy de-labelling.",
+   "should_know": "Resistance patterns (QLD); when to swab; MRSA coverage; clindamycin resistance for Group A strep pharyngitis in far north QLD (empiric benzylpenicillin safe).",
+   "nice_to_know": "Newer agents (ceftaroline)."
+  },
+  {
+   "unit": "Infectious diseases",
+   "category": "System",
+   "name": "Immunisation",
+   "priority": "VH",
+   "must_know": "NIP Schedule (current: 21vPCV replacing 13vPCV/23vPPV in adults from mid-2026; RSV program; MenB with paracetamol prophylaxis). AIR checking; catch-up rules; valid contraindications (anaphylaxis, immunosuppression live vaccines); timing with other vaccines.",
+   "should_know": "ATAGI statements; vaccine errors management; adverse event reporting; pregnancy vaccination (influenza, pertussis 20-32w, COVID).",
+   "nice_to_know": "Clinical trial data details."
+  },
+  {
+   "unit": "Sexual health and gender diversity",
+   "category": "System",
+   "name": "HIV and sexual health",
+   "priority": "H",
+   "must_know": "Australian STI Management Guidelines for GPs; ASHM. Screening by risk; contact tracing; test of choice by site (NAAT first void urine etc). HIV: treat all diagnosed (same-day start after confirmatory), PrEP eligibility (gay/bisexual men, trans, heterosexual with risk) - PBS-listed; PEP within 72h.",
+   "should_know": "HIV indicator conditions; syphilis interpretation (avoid the prozone); neonatal STI.",
+   "nice_to_know": "Doxycycline PEP-STI."
+  },
+  {
+   "unit": "Haematological presentations",
+   "category": "System",
+   "name": "Anticoagulation",
+   "priority": "VH",
+   "must_know": "DOACs first-line for AF/VTE in eligible; renal dosing; perioperative management (stop timing by bleeding risk); reversal agents; warfarin for mechanical valves. VTE treatment duration: provoked 3 months, unprovoked >=3 months then reassess; cancer-associated = indefinite.",
+   "should_know": "Bleeding risk scores; aspirin+anticoagulant = avoid unless recent ACS/stent.",
+   "nice_to_know": "Tranexamic acid use."
+  },
+  {
+   "unit": "Neurological presentations",
+   "category": "System",
+   "name": "Stroke and TIA",
+   "priority": "H",
+   "must_know": "FAST recognition; call 000 - thrombolysis/thrombectomy windows are time-critical (4.5h/24h). TIA = urgent assessment (same day) - ABCD2 not for triage in Australia; risk of early stroke post-TIA. Post-stroke secondary prevention.",
+   "should_know": "Carotid imaging; AF detection post-stroke; aspirin + clopidogrel dual for minor stroke.",
+   "nice_to_know": "Patent foramen ovale closure."
+  },
+  {
+   "unit": "Neurological presentations",
+   "category": "System",
+   "name": "Headache: migraine",
+   "priority": "H",
+   "must_know": "Diagnostic criteria (5 attacks, 4-72h, 2 of 4 features, 1 of 2 nausea/photo); triptans acute (not with aura-only? safe), prophylaxis if >=4 days/month (propranolol, amitriptyline, topiramate); contraceptive caveats with aura (avoid oestrogen if migraine with aura).",
+   "should_know": "CGRP antagonists (PBS restricted); medication-overuse headache.",
+   "nice_to_know": "Neuromodulation."
+  },
+  {
+   "unit": "Gastrointestinal health",
+   "category": "System",
+   "name": "Inflammatory bowel disease and functional GI",
+   "priority": "H",
+   "must_know": "IBD red flags (nocturnal symptoms, weight loss, PR bleeding, family history) - refer; exclude infection (stool MC&S) before steroids. IBS: positive diagnosis (Rome IV), dietary steps, low FODMAP diet with dietitian.",
+   "should_know": "5-ASA, biologics overview; colonoscopic surveillance.",
+   "nice_to_know": "Faecal calprotectin use."
+  },
+  {
+   "unit": "Gastrointestinal health",
+   "category": "System",
+   "name": "Liver disease",
+   "priority": "H",
+   "must_know": "NAFLD/MASLD: commonest chronic liver disease; diagnose by exclusion + fibrosis assessment (FIB-4, elastography). Viral hepatitis B and C: test (estimated undiagnosed cohorts), hepatitis C = curable (direct-acting antivirals, PBS), screen for cirrhosis (all HCV), hepatocellular carcinoma surveillance 6-monthly ultrasound if cirrhotic.",
+   "should_know": "Vaccination (Hep A/B in chronic liver disease); alcohol thresholds; fibroscan access.",
+   "nice_to_know": "Non-invasive fibrosis markers."
+  },
+  {
+   "unit": "Gastrointestinal health",
+   "category": "System",
+   "name": "Coeliac disease",
+   "priority": "M",
+   "must_know": "Test BEFORE gluten-free diet: tTG-IgA + total IgA. Biopsy confirm (adults). 6-12 monthly review; DEXA, vaccinations (pneumococcal).",
+   "should_know": "Dermatitis herpetiformis; family screening.",
+   "nice_to_know": "Refractory coeliac."
+  },
+  {
+   "unit": "Endocrine and metabolic health",
+   "category": "System",
+   "name": "Obesity",
+   "priority": "H",
+   "must_know": "BMI class + waist; stigma-free care; 5-10% weight loss goals; GLP-1 pharmacotherapy now PBS for eligible (semaglutide criteria); multidisciplinary referral; bariatric surgery criteria (BMI >=35 with comorbidity).",
+   "should_know": "Obesity as chronic disease; weight cycling.",
+   "nice_to_know": "Emerging agents."
+  },
+  {
+   "unit": "Cardiovascular health",
+   "category": "System",
+   "name": "Lipids",
+   "priority": "H",
+   "must_know": "Absolute CVD risk drives statin prescribing (2023 Australian Guideline: assess 45-74 from 30 in ATSI, consider >75). Statins: high-intensity for established CVD, high risk, diabetes >=50 (or with risk); familial hypercholesterolaemia red flags (LDL >5 mmol/L, family) - refer.",
+   "should_know": "Statin myalgia management (rechallenge/alternate); ezetimibe; PCSK9i access.",
+   "nice_to_know": "Lp(a) once in lifetime."
+  },
+  {
+   "unit": "Men's health",
+   "category": "System",
+   "name": "Prostate and mens health screening",
+   "priority": "M",
+   "must_know": "PSA: shared decision-making, no population screening program (RACGP recommends AGAINST organised screening; discuss harms/benefits from 50, 40 if family history or ATSI). Erectile dysfunction: assess CVS risk (ED = marker). Testicular - no routine screening. Health checks and mental health/suicide risk in men.",
+   "should_know": "Lower urinary tract symptoms treatment ladder; active surveillance.",
+   "nice_to_know": "5-alpha reductase effects."
+  },
+  {
+   "unit": "Eye presentations",
+   "category": "System",
+   "name": "Ophthalmology in general practice",
+   "priority": "H",
+   "must_know": "Red flags: acute vision loss = same-day ED/ophthalmology (GCA, retinal artery occlusion, CRAO), acute angle closure, chemical injury (irrigate first), penetrating injury (shield, nil by mouth, ED), contact lens keratitis. Diabetes retinal screening; glaucoma opportunistic.",
+   "should_know": "Red eye triage tree; fluorescein use; trichiasis.",
+   "nice_to_know": "OCT use."
+  },
+  {
+   "unit": "Ear, nose, throat and oral health",
+   "category": "System",
+   "name": "ENT and oral health",
+   "priority": "H",
+   "must_know": "Otitis media management (watchful waiting; when abx); sore throat (centor criteria); epistaxis first aid; hearing loss patterns (Rinne/Weber); nasal steroids for sinusitis; oral cancer red flags (non-healing ulcer >3 weeks).",
+   "should_know": "Tonsillectomy criteria; grommets; vertigo ENT causes.",
+   "nice_to_know": "Rhinology advances."
+  },
+  {
+   "unit": "Child and youth health",
+   "category": "System",
+   "name": "Child development and behavioural problems",
+   "priority": "H",
+   "must_know": "Developmental milestones red flags at each age; surveillance vs screening; ASD/ADHD pathways in QLD; school refusal; enuresis (behavioural first, alarms); constipation (disimpaction then maintenance - PEG).",
+   "should_know": "FASD; prematurity follow-up; child health nurse partnership.",
+   "nice_to_know": "Genetic syndromes."
+  },
+  {
+   "unit": "Child and youth health",
+   "category": "System",
+   "name": "Common paediatric conditions",
+   "priority": "H",
+   "must_know": "Bronchiolitis (supportive, no bronchodilators/steroids/antibiotics per RCH CPG), croup (dexamethasone 0.15 mg/kg), URTI, gastroenteritis (oral rehydration, no routine antiemetics - ondansetron single dose may reduce admission in selected; zinc/rotavirus vaccine), febrile convulsion advice, eczema (steroid ladder, bleach baths).",
+   "should_know": "Intussusception; appendingitis in young children; UTI collection methods.",
+   "nice_to_know": "Persistent bacterial bronchitis."
+  },
+  {
+   "unit": "Older persons' health",
+   "category": "System",
+   "name": "Older persons comprehensive care",
+   "priority": "VH",
+   "must_know": "75+ health assessment; polypharmacy review (deprescribing); falls assessment (orthostatic BP, vision, home hazards, vitamin D if deficient); cognition assessment (cognitive screen then...); elder abuse screen; driving (Austroads: dementia standards, on-road assessment); end-of-life planning; RACF and aged care standards; Silver Book (Medical care of older persons in RACFs) as the reference.",
+   "should_know": "Aged care GP programs (including 2024+ funding model); delirium prevention; sarcopenia.",
+   "nice_to_know": "Anti-aging hype."
+  },
+  {
+   "unit": "Palliative care",
+   "category": "System",
+   "name": "Palliative care",
+   "priority": "H",
+   "must_know": "Terminal care in the home/RACF; symptom control basics (Palliative Care Australia, Therapeutic Guidelines Palliative Care): pain ladder, nausea, breathlessness, secretions, delirium; anticipatory prescribing; Recognising the dying phase (imminent death signs); Carer support; Therapeutic Guidelines: palliative version available free via RACGP.",
+   "should_know": "Palliative care referral criteria; MBS items for palliative; MTGP planning (voluntary assisted dying - QLD legal since 2023: eligibility, process, safeguards).",
+   "nice_to_know": "Paediatric palliative."
+  },
+  {
+   "unit": "Addiction medicine",
+   "category": "System",
+   "name": "Alcohol and other drugs",
+   "priority": "H",
+   "must_know": "Screening: AUDIT-C; brief intervention; alcohol withdrawal (CIWA-Ar, thiamine before glucose); opioid substitution (buprenorphine-naloxone PBS); methadone; safe opioid prescribing; overdose prevention; smoking cessation: brief intervention, Ask-Advise-Help; pharmacotherapy (varenicline first-line now PBS wide, bupropion, NRT); needle programs.",
+   "should_know": "Cannabis legalisation QLD 2025 changes; vaping cessation; synthetic drugs.",
+   "nice_to_know": "Mandala/other new agents."
+  },
+  {
+   "unit": "Abuse and violence",
+   "category": "System",
+   "name": "Family and domestic violence",
+   "priority": "VH",
+   "must_know": "Ask directly, privately (never with partner/children present); safety assessment; LIVE-FRISK principles (Western Australia/Australian-adopted framework) or e-ki (for practise); White Book is the RACGP reference; mandatory reporting only for children (and QLD: adults in some contexts).",
+   "should_know": "Duluth tools; referral pathways; reproductive coercion; strangulation risk.",
+   "nice_to_know": "Restorative programs."
+  },
+  {
+   "unit": "Aboriginal and Torres Strait Islander health",
+   "category": "Population",
+   "name": "Aboriginal and Torres Strait Islander health",
+   "priority": "VH",
+   "must_know": "Closing the Gap; annual 715 health check; cultural safety definition and practice; PBS CTG scripts for medicines; chronic conditions targeted support; specific high-priority conditions (diabetes, CVD from younger ages - risk assessment from 30y, kidney disease, rheumatic heart disease in some regions, otitis media, smoking rates, mental health, suicide); mums and bubs programs; acknowledge Country appropriately.",
+   "should_know": "National Agreement on Closing the Gap; First Nations-led services (Community Controlled Health Organisations); CTG scripts bridging the gap with conventional registers.",
+   "nice_to_know": "Local MM/Torres Strait context (Minjerribah/North Stradbroke Island community)."
+  }
+ ]
+}

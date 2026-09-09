@@ -1,0 +1,212 @@
+[
+ {
+  "domain": "Preventive medicine / screening",
+  "primary_res": "RACGP Red Book 10th ed (2024)",
+  "secondary_res": "Health.gov.au program pages (cervical, bowel, breast)",
+  "rapid_review": "Personal screening-intervals card",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book"
+ },
+ {
+  "domain": "Cardiovascular disease",
+  "primary_res": "2023 Australian CVD Risk guideline + Aus CVD Risk Calculator",
+  "secondary_res": "eTG Cardiovascular",
+  "rapid_review": "Risk-band statin table",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/cardiovascular-disease-risk-assessment"
+ },
+ {
+  "domain": "Hypertension",
+  "primary_res": "Heart Foundation HTN resources (2016 guideline; 2026 update pending Q4)",
+  "secondary_res": "eTG",
+  "rapid_review": "Confirm-then-treat flowchart",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/hypertension"
+ },
+ {
+  "domain": "Atrial fibrillation",
+  "primary_res": "Australian AF guideline (2018, current)",
+  "secondary_res": "eTG Cardiovascular; ACS 2025 for AF+ACS combos",
+  "rapid_review": "CHA2DS2-VA card",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/atrial-fibrillation-resources"
+ },
+ {
+  "domain": "Asthma",
+  "primary_res": "Australian Asthma Handbook",
+  "secondary_res": "eTG Respiratory",
+  "rapid_review": "AIR algorithm card",
+  "url": "https://www.nationalasthma.org.au/australian-asthma-handbook/complete-handbook"
+ },
+ {
+  "domain": "COPD",
+  "primary_res": "COPD-X",
+  "secondary_res": "Lung Foundation resources",
+  "rapid_review": "Step-up logic card",
+  "url": "https://copdx.org.au/copd-x-plan/"
+ },
+ {
+  "domain": "Diabetes",
+  "primary_res": "RACGP/Diabetes Australia T2DM guidelines",
+  "secondary_res": "ADS (Australian Diabetes Society) position statements",
+  "rapid_review": "Cycle-of-care card",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/type-2-diabetes"
+ },
+ {
+  "domain": "CKD",
+  "primary_res": "Kidney Health Australia CKD in primary care",
+  "secondary_res": "eTG Kidney",
+  "rapid_review": "eGFR/ACR grid",
+  "url": "https://kidney.org.au/health-professionals/chronic-kidney-disease-management-in-primary-care"
+ },
+ {
+  "domain": "Immunisation",
+  "primary_res": "Australian Immunisation Handbook (living)",
+  "secondary_res": "NIP schedule PDF; ATAGI statements",
+  "rapid_review": "NIP schedule card (update after each change!)",
+  "url": "https://immunisationhandbook.health.gov.au/"
+ },
+ {
+  "domain": "Infections/antibiotics",
+  "primary_res": "eTG Antibiotic",
+  "secondary_res": "Australian Commission on Safety and Quality - AURA",
+  "rapid_review": "Top-20 antibiotic choices card",
+  "url": "https://tg.org.au"
+ },
+ {
+  "domain": "Mental health",
+  "primary_res": "RACGP depression guidelines; beyondblue clinical practice",
+  "secondary_res": "RANZCP clinical practice guidelines",
+  "rapid_review": "K10/PHQ-9 + action card",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/depression"
+ },
+ {
+  "domain": "Suicide risk",
+  "primary_res": "LIFE Framework; RACGP suicide prevention resources",
+  "secondary_res": "QLD Mental Health Line protocols",
+  "rapid_review": "Risk assessment template",
+  "url": "https://lifeinmindaustralia.com.au"
+ },
+ {
+  "domain": "Women's health - cervical",
+  "primary_res": "NCSP guidelines (Cancer Council)",
+  "secondary_res": "health.gov.au NCSP pages",
+  "rapid_review": "Result-pathway flowchart",
+  "url": "https://screening.cancer.org.au/cervical/"
+ },
+ {
+  "domain": "Contraception",
+  "primary_res": "FSRH/SHQ (QLD) resources; Mirena/insertion training",
+  "secondary_res": "eTG Reproductive",
+  "rapid_review": "UKMEC card",
+  "url": "https://shq.org.au"
+ },
+ {
+  "domain": "Menopause",
+  "primary_res": "IMS/Australasian Menopause Society",
+  "secondary_res": "Jean Hailes",
+  "rapid_review": "MHT decision card",
+  "url": "https://www.menopause.org.au"
+ },
+ {
+  "domain": "Sexual health / STI",
+  "primary_res": "Australian STI Management Guidelines",
+  "secondary_res": "ASHM resources; QLD Sexual Health",
+  "rapid_review": "Site-Test-Treat table",
+  "url": "http://sti.guidelines.org.au/"
+ },
+ {
+  "domain": "Pregnancy / antenatal",
+  "primary_res": "Dept Health Clinical Practice Guidelines Pregnancy Care",
+  "secondary_res": "RANZCOG C-Gen statements",
+  "rapid_review": "Antenatal schedule card",
+  "url": "https://www.health.gov.au/our-work/clinical-practice-guidelines-pregnancy-care"
+ },
+ {
+  "domain": "Paediatrics",
+  "primary_res": "RCH Clinical Practice Guidelines",
+  "secondary_res": "eTG Paediatrics",
+  "rapid_review": "Doses + red flags card",
+  "url": "https://www.rch.org.au/clinicalguide/"
+ },
+ {
+  "domain": "Older persons / RACF",
+  "primary_res": "RACGP Silver Book",
+  "secondary_res": "Aged care standards; deprescribing guides",
+  "rapid_review": "Deprescribing triggers card",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/silver-book"
+ },
+ {
+  "domain": "Palliative care",
+  "primary_res": "eTG Palliative Care",
+  "secondary_res": "Palliative Care Australia / CareSearch",
+  "rapid_review": "Anticipatory drugs card",
+  "url": "https://tg.org.au"
+ },
+ {
+  "domain": "Aboriginal and Torres Strait Islander health",
+  "primary_res": "RACGP ATSI health resources + NACCHO",
+  "secondary_res": "health.gov.au Closing the Gap; local AMS",
+  "rapid_review": "715 + CTG items card",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/atsi-health"
+ },
+ {
+  "domain": "Musculoskeletal / arthritis",
+  "primary_res": "RACGP OA guideline + ARA (Rheumatology) resources",
+  "secondary_res": "Osteoporosis Australia (healthy bones)",
+  "rapid_review": "Gout/OA/OP drug table",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines"
+ },
+ {
+  "domain": "Osteoporosis",
+  "primary_res": "Osteoporosis Australia / Royal Aust College Physicians FRACX fracture prevention",
+  "secondary_res": "eTG Musculoskeletal",
+  "rapid_review": "Fragility-fracture action card",
+  "url": "https://healthybonesaustralia.org.au"
+ },
+ {
+  "domain": "Skin cancer",
+  "primary_res": "Cancer Council Australia clinical guidelines (melanoma, NMSC)",
+  "secondary_res": "RACGP skin cancer resources",
+  "rapid_review": "Biopsy rule card",
+  "url": "https://www.cancer.org.au/clinical-guidelines"
+ },
+ {
+  "domain": "Eye",
+  "primary_res": "RANZCO / Optometry Australia resources",
+  "secondary_res": "eTG",
+  "rapid_review": "Red-eye + vision loss triage card",
+  "url": "https://www.ranzco.edu"
+ },
+ {
+  "domain": "Travel medicine",
+  "primary_res": "CDC Yellow Book / WHO; QLD Health travel advice",
+  "secondary_res": "Travelvax Australia",
+  "rapid_review": "Region-vaccine table",
+  "url": "https://wwwnc.cdc.gov/travel"
+ },
+ {
+  "domain": "Legal / ethics",
+  "primary_res": "AHPRA + AMA + RACGP ethics guidance",
+  "secondary_res": "Austroads Fitness to Drive",
+  "rapid_review": "Mandatory reporting list",
+  "url": "https://www.medicalboard.gov.au"
+ },
+ {
+  "domain": "Health systems / Medicare",
+  "primary_res": "MBS online + Services Australia",
+  "secondary_res": "RACGP business in practice",
+  "rapid_review": "GP item card (715, 721-723, health assessments)",
+  "url": "http://mbsonline.gov.au"
+ },
+ {
+  "domain": "Refugee / migrant health",
+  "primary_res": "ASID/RACGP refugee health resources",
+  "secondary_res": "Foundation House",
+  "rapid_review": "Arrival screen checklist",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines"
+ },
+ {
+  "domain": "QLD-specific pathways",
+  "primary_res": "QLD Health Clinical Guidelines + HealthPathways (Metro South access via MSH)",
+  "secondary_res": "Metro South Health intranet",
+  "rapid_review": "Local referral contacts card",
+  "url": "https://www.health.qld.gov.au/clinical-practice-guidelines"
+ }
+]

@@ -1,0 +1,60 @@
+name: CI + Deploy to Cloudflare
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install wrangler
+        run: npm install wrangler@4 --no-fund --no-audit
+      - name: Create local D1 + apply schema + seed (incl. v2 curriculum)
+        run: |
+          npx wrangler d1 execute racgp-study-db --local --file=schema.sql
+          npx wrangler d1 execute racgp-study-db --local --file=seed/seed.sql
+          npx wrangler d1 execute racgp-study-db --local --file=seed/content.sql
+          npx wrangler d1 execute racgp-study-db --local --file=schema_v2.sql
+          npx wrangler d1 execute racgp-study-db --local --file=seed/curriculum_v2.sql
+      - name: Smoke-test the worker locally
+        run: |
+          npx wrangler dev --port 8787 &
+          sleep 25
+          curl -sf http://localhost:8787/api/health | grep '"ok":true'
+          TOPICS=$(curl -sf http://localhost:8787/api/topics | jq 'length')
+          [ "$TOPICS" -ge 50 ] || { echo "expected >=50 topics, got $TOPICS"; exit 1; }
+          UNITS=$(curl -sf http://localhost:8787/api/units | jq 'length')
+          [ "$UNITS" -eq 42 ] || { echo "expected 42 curriculum units, got $UNITS"; exit 1; }
+          Q=$(curl -sf http://localhost:8787/api/questions | jq 'length')
+          [ "$Q" -ge 20 ] || { echo "expected >=20 questions, got $Q"; exit 1; }
+          echo "Smoke test OK: $TOPICS topics, $UNITS units, $Q questions"
+
+  deploy:
+    needs: test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install wrangler
+        run: npm install wrangler@4 --no-fund --no-audit
+      - name: Apply schema + seed to remote D1 (idempotent)
+        run: |
+          npx wrangler d1 execute racgp-study-db --remote --file=schema.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=seed/seed.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=seed/content.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=schema_v2.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=seed/curriculum_v2.sql
+      - name: Deploy Worker
+        run: npx wrangler deploy

@@ -1,0 +1,222 @@
+[
+ {
+  "tier": 1,
+  "title": "Guidelines for preventive activities in general practice (Red Book), 10th edition",
+  "publisher": "RACGP",
+  "year": "2024",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/red-book",
+  "key_points": "The reference for what to screen, when, and what NOT to screen. GRADE-based recommendations; expanded women's health across the reproductive lifespan.",
+  "thresholds": "Cervical 25-74 5-yearly HPV; bowel 45-74 2-yearly iFOBT; breast 50-74 2-yearly (40+ eligible); BP checks at every visit; CVD risk 45-74 (30+ ATSI); T2DM screening by risk (every 3 years from 40, or 18 in high-risk groups).",
+  "exam_relevance": "AKT asks screening intervals/thresholds directly; KFP builds screening-consultation cases; CCE uses screening conversations."
+ },
+ {
+  "tier": 1,
+  "title": "Australian Asthma Handbook",
+  "publisher": "National Asthma Council Australia",
+  "year": "Current (living)",
+  "url": "https://www.nationalasthma.org.au/australian-asthma-handbook/complete-handbook",
+  "key_points": "SABA-only treatment is out; ICS-formoterol reliever/maintenance (AIR) for most; assessment of severity/control; written action plans.",
+  "thresholds": "Reliever use >2x/week = poor control; preventer indicated.",
+  "exam_relevance": "Recurring AKT topic and common KFP scenario (the SABA-overuser)."
+ },
+ {
+  "tier": 1,
+  "title": "Therapeutic Guidelines (eTG complete)",
+  "publisher": "Therapeutic Guidelines Ltd",
+  "year": "Living/updated",
+  "url": "https://tgldcdp-tg-org-au.ezproxy.library.uq.edu.au/ (or https://tg.org.au)",
+  "key_points": "The antibiotic reference for Australian GP: first-line choices for common infections, durations, and allergy alternatives.",
+  "thresholds": "Antibiotic choices, durations, and when not to treat.",
+  "exam_relevance": "Directly examinable: first-line antibiotic choices for UTI, cellulitis, pneumonia, sore throat."
+ },
+ {
+  "tier": 1,
+  "title": "Australian Immunisation Handbook",
+  "publisher": "Australian Government Dept Health / ATAGI",
+  "year": "Living (major updates June 2026)",
+  "url": "https://immunisationhandbook.health.gov.au/",
+  "key_points": "21vPCV replaced 13vPCV/23vPPV in adult schedule (2026); RSV program expansion; MenB (with paracetamol prophylaxis); catch-up rules.",
+  "thresholds": "NIP schedule ages; valid contraindications; minimum intervals.",
+  "exam_relevance": "AKT favourite: schedule ages, contraindications, catch-up logic."
+ },
+ {
+  "tier": 1,
+  "title": "2023 Australian Guideline for assessing and managing cardiovascular disease risk",
+  "publisher": "Heart Foundation",
+  "year": "2023",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/cardiovascular-disease-risk-assessment",
+  "key_points": "Absolute risk approach using Aus CVD Risk Calculator; assess from 45 (30 ATSI); statin decisions by risk band not LDL alone.",
+  "thresholds": "Low <10%, moderate 10-15%, high >15% (5-year). High risk: treat. Diabetes >=50, established CVD, CKD, FH = treat regardless.",
+  "exam_relevance": "Core AKT/KFP territory: who gets a statin."
+ },
+ {
+  "tier": 1,
+  "title": "Australian Clinical Guidelines for Diagnosis and Management of Atrial Fibrillation",
+  "publisher": "Heart Foundation + CSANZ",
+  "year": "2018 (current)",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/atrial-fibrillation-resources",
+  "key_points": "CHA2DS2-VA (no sex category - Australian change); opportunistic screening pulse/ECG >65; rate vs rhythm.",
+  "thresholds": "Anticoagulate CHA2DS2-VA >=2 (>=1 in some higher-risk contexts).",
+  "exam_relevance": "AKT: anticoagulation threshold and DOAC choice; KFP: AF review cases."
+ },
+ {
+  "tier": 1,
+  "title": "COPD-X (Australian and New Zealand guidelines for COPD)",
+  "publisher": "Lung Foundation Australia",
+  "year": "Current",
+  "url": "https://copdx.org.au/copd-x-plan/",
+  "key_points": "Confirm with spirometry; smoking cessation changes trajectory; pulmonary rehab; inhaler step-up by exacerbations/eosinophils.",
+  "thresholds": "Post-bronchodilator FEV1/FVC <0.7 = diagnosis; ICS if eos >=0.3 or >=2 exacerbations.",
+  "exam_relevance": "AKT: step-up logic. KFP: the frequent exacerbator."
+ },
+ {
+  "tier": 1,
+  "title": "Australian STI Management Guidelines for Use in Primary Care",
+  "publisher": "ASHM",
+  "year": "Living",
+  "url": "http://sti.guidelines.org.au/",
+  "key_points": "Site-specific NAAT testing, first-line treatments (as per eTG align), partner notification duties.",
+  "thresholds": "Screening intervals by risk; test of cure intervals.",
+  "exam_relevance": "AKT: STI treatment choices; CCE: sexual history technique."
+ },
+ {
+  "tier": 1,
+  "title": "National Cervical Screening Program: Guidelines for the management of screen-detected abnormalities",
+  "publisher": "Cancer Council Australia / Dept Health",
+  "year": "2016 (updated Dec 2020; current)",
+  "url": "https://screening.cancer.org.au/cervical/",
+  "key_points": "HPV-based screening; self-collection equality; intermediate/higher-risk pathways; exit testing 70-74.",
+  "thresholds": "25-74, 5-yearly; self-collected samples with HPV (not 16/18) require return for LBC.",
+  "exam_relevance": "AKT: program intervals; KFP: the overdue/anxious screener."
+ },
+ {
+  "tier": 2,
+  "title": "Comprehensive Australian Clinical Guideline for ACS (2025)",
+  "publisher": "Heart Foundation + CSANZ",
+  "year": "2025",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/acute-coronary-syndromes",
+  "key_points": "New 2025 guideline: ACS pathways, DAPT duration choices, secondary prevention bundle, DOAC+antiplatelet strategies in AF+ACS.",
+  "thresholds": "DAPT duration by bleeding/ischaemic risk; step-down strategies.",
+  "exam_relevance": "AKT: post-ACS medication bundles."
+ },
+ {
+  "tier": 2,
+  "title": "Guideline for diagnosis and management of hypertension in adults (2016)",
+  "publisher": "Heart Foundation",
+  "year": "2016 (2026 guideline in development - Q4 2026)",
+  "url": "https://www.heartfoundation.org.au/for-professionals/clinical-resources/hypertension",
+  "key_points": "Confirm before treating; out-of-office measurement; absolute risk context; new 2026 guideline due Q4 2026 - watch for changes.",
+  "thresholds": "Diagnosis generally >=140/90 clinic confirmed; management by absolute risk.",
+  "exam_relevance": "AKT: who to treat; KFP: white-coat scenario."
+ },
+ {
+  "tier": 2,
+  "title": "Australian guideline for MASLD (fatty liver)",
+  "publisher": "Various (consensus-based)",
+  "year": "2023-2025",
+  "url": "",
+  "key_points": "FIB-4 first-line fibrosis staging; 7-10% weight loss core therapy; cardiovascular risk is the main driver of mortality in MASLD.",
+  "thresholds": "FIB-4 <1.3 low risk (age <65); elastography if intermediate.",
+  "exam_relevance": "KFP: abnormal LFT cases; AKT: diagnosis pattern."
+ },
+ {
+  "tier": 2,
+  "title": "RACGP Silver Book - Medical care of older persons in residential aged care facilities",
+  "publisher": "RACGP",
+  "year": "Current edition",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/silver-book",
+  "key_points": "RACF-specific: advance care planning, deprescribing, falls, palliative, behaviour management (avoid chemical restraint).",
+  "thresholds": "Frailty-aware targets; restrictive practice minimisation.",
+  "exam_relevance": "CCE loves RACF scenarios; KFP older-person cases."
+ },
+ {
+  "tier": 2,
+  "title": "Austroads Assessing Fitness to Drive",
+  "publisher": "Austroads",
+  "year": "2024 (current)",
+  "url": "https://austroads.com.au/drivers-and-vehicles/driver-health/assessing-fitness-to-drive",
+  "key_points": "Standards for medical conditions and driving: dementia, epilepsy, diabetes, sleep apnoea, CVD, alcohol. Both patient and practitioner notification duties.",
+  "thresholds": "Private vs commercial standards differ; e.g., diabetes on insulin: 5-yearly review.",
+  "exam_relevance": "AKT/CCE: the driving conversation is high-yield CCE."
+ },
+ {
+  "tier": 2,
+  "title": "RANZCOG pregnancy care guidelines / antenatal care",
+  "publisher": "RANZCOG / Dept Health",
+  "year": "Current",
+  "url": "https://www.health.gov.au/our-work/clinical-practice-guidelines-pregnancy-care",
+  "key_points": "Antenatal visit schedule, screening tests each trimester, medication safety in pregnancy.",
+  "thresholds": "First visit by 10-12 weeks; GTT 24-28 weeks; anti-D timings.",
+  "exam_relevance": "AKT: antenatal schedule/test timing."
+ },
+ {
+  "tier": 2,
+  "title": "Type 2 diabetes management in general practice",
+  "publisher": "RACGP/Diabetes Australia",
+  "year": "2020 (update in development)",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/type-2-diabetes",
+  "key_points": "ADD-STEP comorbidity-based agent selection; annual cycle of care; individualised targets.",
+  "thresholds": "HbA1c generally <=7%; retinal/foot/ACR annually.",
+  "exam_relevance": "Core of multiple AKT questions and KFP reviews."
+ },
+ {
+  "tier": 2,
+  "title": "Kidney Health Australia - CKD management in primary care",
+  "publisher": "Kidney Health Australia",
+  "year": "Current",
+  "url": "https://kidney.org.au/health-professionals/chronic-kidney-disease-management-in-primary-care",
+  "key_points": "eGFR + ACR staging; RAAS blockade with albuminuria; SGLT2i; nephrology referral criteria.",
+  "thresholds": "Refer if eGFR <30, ACR >60, rapid decline, or haematuria + proteinuria.",
+  "exam_relevance": "KFP: CKD review case; AKT: referral thresholds."
+ },
+ {
+  "tier": 2,
+  "title": "Voluntary Assisted Dying (QLD)",
+  "publisher": "Queensland Health",
+  "year": "2023 (in force)",
+  "url": "https://www.health.qld.gov.au/__data/assets/pdf_file/0032/1143366/vad-guidance-for-health-practitioners.pdf",
+  "key_points": "VAD legal in QLD since Jan 2023: eligibility (adult, resident, decision-capable, intolerable suffering from advanced condition), first/second request process, coordinating practitioner role, conscientious objection rights for doctors.",
+  "thresholds": "Eligibility is assessed - not all requests proceed; process is strictly legal.",
+  "exam_relevance": "CCE ethics stations; AKT legal questions."
+ },
+ {
+  "tier": 3,
+  "title": "eTG Palliative Care / Therapeutic Guidelines Palliative Care",
+  "publisher": "TG Ltd",
+  "year": "Current",
+  "url": "https://tg.org.au",
+  "key_points": "Anticipatory prescribing sets, terminal care pathways, symptom algorithms.",
+  "thresholds": "Dosing conversions opioid routes.",
+  "exam_relevance": "KFP palliative cases; AKT symptom drug choices."
+ },
+ {
+  "tier": 3,
+  "title": "RCH Clinical Practice Guidelines (Paediatrics)",
+  "publisher": "Royal Children's Hospital Melbourne",
+  "year": "Living",
+  "url": "https://www.rch.org.au/clinicalguide/",
+  "key_points": "Practical paediatric protocols: fever, bronchiolitis, croup, gastro, asthma, head injury, analgesia dosing.",
+  "thresholds": "Weight-based dosing; referral criteria.",
+  "exam_relevance": "AKT paediatric dosing and criteria; KFP child cases."
+ },
+ {
+  "tier": 3,
+  "title": "RACGP Green Book - Putting prevention into practice",
+  "publisher": "RACGP",
+  "year": "Current",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/green-book",
+  "key_points": "How to build prevention into practice systems rather than individual willpower.",
+  "thresholds": "Practice-level recall and reminder systems.",
+  "exam_relevance": "Occasional AKT on practice systems."
+ },
+ {
+  "tier": 3,
+  "title": "White Book - Abuse and violence: working with our patients",
+  "publisher": "RACGP",
+  "year": "Current",
+  "url": "https://www.racgp.org.au/clinical-resources/clinical-guidelines/key-racgp-guidelines/view-all-guidelines/white-book",
+  "key_points": "How to ask, respond, safety-assess, document, and refer for FDV; practice-level safety.",
+  "thresholds": "Strangulation = high risk marker.",
+  "exam_relevance": "CCE FDV station is common; KFP documentation/management questions."
+ }
+]

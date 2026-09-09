@@ -1,0 +1,66 @@
+[
+ {
+  "title": "Emergency red flags",
+  "content": "STEMI: 000 + aspirin. | Sepsis: confusion + RR>=22 + SBP<=100 = 000. | Anaphylaxis: IM adrenaline 500 mcg 1:1000 anterolateral thigh, repeat 5 min. | Meningococcal: fever + non-blanching rash = ED. | Ectopic: positive pregnancy test + abdominal pain/pv bleeding + shoulder tip = ED. | Cauda equina: saddle anaesthesia/urinary retention = ED. | Cord compression (cancer): new weakness = MRI today. | Visible haematuria >40y: urgent urology. | Infant <3/12 fever: ED. | Chemical eye: irrigate 30 min first. | Acute vision loss: same-day ED. | Hanging/attempted suicide: same-day psychiatry."
+ },
+ {
+  "title": "Paediatric red flags",
+  "content": "<3 months + fever 38 = ED. | Drowsy/ill-looking/inconsolable = ED. | Petechiae + fever = ED. | Grunting, severe recession, SpO2<92% = ED. | Bile-stained vomit = ED surgical. | Fever >5 days (think Kawasaki). | Non-blanching rash. | Dehydration: dry mucosae, no urine >8h, sunken fontanelle. | Meningeal signs. | Abdominal pain + flexed hips (intussusception)."
+ },
+ {
+  "title": "Pregnancy red flags",
+  "content": "BP >=140/90 = same-day review; >=160/110 + symptoms = ED. | Severe headache, visual changes, RUQ pain = pre-eclampsia until proven otherwise. | PV bleeding + pain in 1st trimester = ectopic until excluded (bhCG + US). | Reduced movements >26 weeks = obstetric review same day. | Rupture of membranes + fever = ED. | Heavy bleeding any stage = ED."
+ },
+ {
+  "title": "Medication contraindications (top tested)",
+  "content": "DOACs: eGFR thresholds per drug; mechanical valves = warfarin only. | Metformin: eGFR caution <30 stop. | NSAIDs: avoid eGFR<60, GI bleed risk, heart failure. | ACEi/ARB: pregnancy contraindicated. | Warfarin: pregnancy (except specific valve cases). | Isotretinoin: pregnancy ABSOLUTE. | Methotrexate: pregnancy, heavy alcohol. | Valproate: pregnancy ABSOLUTE (unless no alternative). | DOAC + strong CYP3A4 inhibitors. | Trimethoprim: eGFR<30 + hyperkalaemia + potassium-sparing combos. | Beta blockers: asthma (relative), severe bradycardia. | Amiodarone: thyroid disease, iodine allergy. | Propylthiouracil: pregnancy preferred over methimazole/carbimazole (teratogenicity data)."
+ },
+ {
+  "title": "Screening intervals (Australia, current)",
+  "content": "Cervical: 25-74, HPV every 5 years, self-collect available; exit 70-74. | Bowel: 45-74, iFOBT every 2 years. | Breast: 50-74, 2-yearly (40-49 eligible). | CVD risk: 45-74 (30+ ATSI), 5-yearly recall. | T2DM risk: every 3 years from 40 (18 high-risk). | 715 health check: annual ATSI. | 75+ health assessment: annual. | Osteoporosis DEXA: not population screened; test after fragility fracture or risk factors."
+ },
+ {
+  "title": "Immunisation quick sheet (post-2026 changes)",
+  "content": "Adults >=70: 21vPCV (12 months after any previous pneumococcal). | ATSI >=50: 21vPCV. | Risk groups incl. COPD + chronic liver disease: NIP-funded 21vPCV. | Influenza: annual >=6 months; <9y first year = 2 doses 4 weeks apart. | RSV: program per 2025-26 arrangements (pregnancy and infant programs). | Pertussis: 20-32 weeks each pregnancy. | MenB: paracetamol prophylaxis with dosing in infants. | dTpa booster: every 10 years for HCWs/65+ per ATAGI 2026 advice (not NIP)."
+ },
+ {
+  "title": "Diabetes targets",
+  "content": "HbA1c: generally <=7% (individualise: <65y fit 6.5-7%; frail/elderly 7.5-8.5%). | BP: <130/80 if CKD/young; <140/90 older. | Lipids: statin per absolute risk; diabetes >=50 = statin. | Retinal, foot (monofilament), ACR: annually. | eGFR/UEC at least annually. | Weight: 5-10% loss changes trajectory."
+ },
+ {
+  "title": "CVS risk numbers",
+  "content": "Risk bands: low <10%, moderate 10-15%, high >15% (5-year). | Treat high risk with statin + BP. | Established CVD, diabetes >=50y, CKD with proteinuria, FH: treat as high risk regardless of score. | Start assessment at 45 (30 ATSI). | BP thresholds: treatment individualised to absolute risk; generally treat confirmed >=140/90."
+ },
+ {
+  "title": "CKD staging",
+  "content": "G1 eGFR >=90, G2 60-89, G3a 45-59, G3b 30-44, G4 15-29, G5 <15. | A1 ACR <3, A2 3-30, A3 >30 mg/mmol. | Refer: eGFR <30, ACR >60, persistent haematuria + proteinuria, rapid decline, refractory HTN. | Actions: RAAS blockade if A2+, SGLT2i if A2+/G3+, avoid NSAIDs + dehydration + contrast prep."
+ },
+ {
+  "title": "Anaemia approach",
+  "content": "Microcytic: iron deficiency (find the cause! men/postmenopausal = GI malignancy workup; premenopausal = menstrual most likely but exclude coeliac). Ferritin <30 = deficient. | Macrocytic: B12/folate, alcohol, hypothyroid, MDS. | Normocytic: CKD, inflammation, marrow. | Reticulocytes tell production story. | Always: repeat to confirm + review blood film."
+ },
+ {
+  "title": "Thyroid interpretation",
+  "content": "TSH high + fT4 low = overt hypothyroidism: treat. | TSH high + fT4 normal = subclinical: repeat 6-8w; treat if TSH >10, pregnancy/infertility, symptoms, or rising. | TSH low + fT4 high = overt thyrotoxicosis: treat/Refer. | TSH low + fT4 normal = subclinical hyper: repeat; assess cause. | Pregnancy TSH targets tighter (trimester-specific)."
+ },
+ {
+  "title": "Mental health risk assessment",
+  "content": "Ask: thoughts, plan, means, access, intent, timeframe. | Past attempts = strongest predictor. | Protective: children, supports, engagement, future plans. | Act: safety plan, means restriction, follow-up in days, crisis numbers. | Never: no-suicide contracts. | QLD Mental Health Line: 1300 642 255. | Qld Mental Health Act 2016: involuntary criteria = mental illness + risk to self/others + less-restrictive options exhausted."
+ },
+ {
+  "title": "Mandatory reporting (QLD)",
+  "content": "Children: reasonable suspicion of significant harm -> report to QLD Child Safety (mandatory for doctors). | Sexual activity <16: consider reporting; know consent laws. | Blood donors: mandatory. | Notifiable infectious diseases: QLD public health. | AHPRA: mandatory notification if doctor practising while intoxicated, substantially impaired, sex with patient, or placing public at risk (treating practitioner exemption applies to impairment)."
+ },
+ {
+  "title": "Driving standards highlights",
+  "content": "Dementia: assess function + on-road; report to transport authority. | Epilepsy: seizure-free per condition-specific periods (private typically 12 months). | Diabetes on insulin/SU: hypo awareness + 2-5 yearly reviews. | Syncope: investigate + per cause. | Sleep apnoea: severity + compliance + driving type. | Private vs commercial standards always differ. | Both patient and doctor have notification duties (QLD: police/transport)."
+ },
+ {
+  "title": "Abnormal LFT approach",
+  "content": "Repeat to confirm + pattern: hepatocellular (ALT) vs cholestatic (ALP+GGT). | Screen: viral B/C, ferritin/TSAT, UEC, ultrasound; autoimmune if not settling. | MASLD workup: metabolic context + FIB-4. | Isolated high ALP: GGT confirms liver vs bone source. | ALT >2x ULN persistent = full workup. | Alcohol: CAGE + granulocyte ratio. | Drug culprits: amoxiclav, statins, methotrexate, flucloxacillin, herbal."
+ },
+ {
+  "title": "Antibiotic quick picks (eTG-aligned)",
+  "content": "UTI (uncomplicated, female): nitrofurantoin 100 mg bd 5 days (first-line). | Cellulitis: flucloxacillin 500 mg qid 5-7d. | Community pneumonia: amoxycillin 1g tds; atypical cover doxycycline (or macro) if suspected. | Sinusitis: none unless >10-14d worsening pattern. | Strep pharyngitis: penicillin V 500 bd 10d. | Impetigo: topical if localised; oral if extensive. | Otitis media: watchful waiting 48-72h in most. | Bites: amoxycillin-clavulanate. | PID: ceftriaxone + doxycycline + metronidazole per guideline. | Qld far north strep: clindamycin resistance - use penicillin. | Sepsis: transfer; do not start oral abx."
+ }
+]

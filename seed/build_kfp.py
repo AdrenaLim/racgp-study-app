@@ -1,0 +1,118 @@
+#!/usr/bin/env python
+"""Build seed JSON files from Python source (guarantees valid JSON)."""
+import json, pathlib
+
+D = pathlib.Path(r"C:\Users\Kang\racgp-study-app\seed\data")
+
+kfp = [
+ dict(type="KFP", topic="Chest pain", unit="Cardiovascular health",
+  stem="A 62-year-old man presents with 2 hours of central chest pain radiating to his jaw, sweating and nausea. He is a smoker with hypertension. Pain is 7/10. Obs: BP 155/95, HR 96, RR 20, SpO2 97%, afebrile.",
+  parts=[
+   dict(q="List the FOUR most important immediate actions in the practice.",
+    options=["Call 000 for emergency transfer","ECG (already done - review) + continuous monitoring if available","Aspirin 300 mg chewed (unless contraindicated)","GTN sublingual if BP allows / relief of pain","Troponin at the practice","Oral beta blocker immediately","Start enoxaparin","Allow him to drive himself to hospital"],
+    correct=[0,1,2,3],
+    marks="Any 4 of the first 4. Emergency transfer, ECG review, aspirin, GTN if tolerated. Troponin at GP practice delays transfer; he must not drive."),
+   dict(q="The ECG shows ST elevation in V2-V4. What is the diagnosis and what happens next?",
+    options=["Anterior STEMI - 000, PCI-capable hospital","NSTEMI - admit under cardiology","Unstable angina - serial troponin","Pericarditis - NSAIDs","Costochondritis - analgesia"],
+    correct=[0],
+    marks="Anterior STEMI = emergency reperfusion. Call 000; primary PCI within 90 minutes of first medical contact.")]),
+ dict(type="KFP", topic="Child with fever", unit="Child and youth health",
+  stem="A 6-month-old boy presents with fever 38.8 for 24 hours, runny nose, slightly reduced feeding but alert and smiling. No focus on examination. Urine clean catch negative. Immunisations up to date.",
+  parts=[
+   dict(q="This presentation is in which traffic-light risk category, and what is the appropriate management?",
+    options=["Green (low risk) - home with safety-net advice and review if worsening","Amber (intermediate) - review within 24h","Red (high risk) - refer to ED","Needs immediate IV antibiotics","Needs chest X-ray"],
+    correct=[0],
+    marks="Alert, smiling, feeding reasonably, normal hydration = green. Safety-net: what to watch for, when to return. Paracetamol for comfort, not to normalise temperature."),
+   dict(q="List THREE features that would change him to red/high risk requiring ED referral.",
+    options=["Non-blanching rash/petechiae","Drowsy, difficult to rouse","Grunting, severe work of breathing, SpO2 <92%","Fever >5 days","Poor feeding <50% normal","Bile-stained vomiting","Temp 39.5 even if playful","Signs of dehydration (dry mucosae, reduced urine)"],
+    correct=[0,1,2,3,4,5,7],
+    marks="Any 3 of the serious features. High temp alone in a well child is not a red flag by itself.")]),
+ dict(type="KFP", topic="Tiredness", unit="General",
+  stem="A 45-year-old woman presents with 6 months of fatigue. She works full-time, has 2 children, snores, and drinks 3-4 standard drinks nightly. Heavy but regular periods. Exam: BMI 32, BP 132/84. No focal findings.",
+  parts=[
+   dict(q="List the SIX most appropriate first-line investigations.",
+    options=["FBE","UEC","LFT","TSH","Ferritin","HbA1c or fasting glucose","CRP","B12/folate","Coeliac serology","Sleep study","EBV serology","CT chest"],
+    correct=[0,1,2,3,4,5],
+    marks="FBE, UEC, LFT, TSH, ferritin, and glucose/HbA1c cover first-line fatigue workup. CRP if inflammation suspected; B12/folate/coeliac second line; sleep study only if STOP-BANG indicates; not CT."),
+   dict(q="All results normal except ferritin 15. What are the TWO most likely explanations and the next step for each?",
+    options=["Iron deficiency from heavy menstrual bleeding - iron therapy and review of HMB","Iron deficiency from coeliac disease - add coeliac serology","Anaemia of chronic disease - repeat in 3 months","Thalassaemia trait - haemoglobinopathy studies","Ferritin 15 is normal - no action","Menopause transition - reassure"],
+    correct=[0,1],
+    marks="Ferritin 15 in a premenopausal woman with heavy periods = iron deficiency from menstrual loss (most likely); coeliac must be considered. In men and postmenopausal women, iron deficiency = GI malignancy until proven otherwise.")]),
+ dict(type="KFP", topic="Older person falling", unit="Older persons health",
+  stem="An 82-year-old woman in a RACF has had 2 falls in 3 months. Medications: amlodipine 5, temazepam 10 nocte, omeprazole 20, paracetamol. BP 138/78 lying, 118/70 standing (asymptomatic). She uses a frame. MMSE 26/30.",
+  parts=[
+   dict(q="List the FOUR most important interventions to reduce falls risk.",
+    options=["Stop temazepam (deprescribe benzodiazepine)","Address postural drop - review amlodipine, slow morning rises","Physiotherapy strength and balance program","Vitamin D level +/- supplementation if deficient","Home/RACF environment hazard assessment","Start a beta blocker for safety","Restrict fluids to reduce nocturia","Bed rest to prevent falls"],
+    correct=[0,1,2,3,4],
+    marks="Any 4: medication review (benzos first), postural BP management, exercise, vitamin D if deficient, environment. Beta blockers and bed rest are harmful; fluid restriction is wrong."),
+   dict(q="Her daughter asks if she should be on aspirin for falls prevention. Explain your reasoning.",
+    options=["No - aspirin is not for falls prevention; discuss harms vs benefits of any future anticoagulant/fracture prevention individually","Yes - low-dose aspirin prevents falls","Only if she has AF","Yes if DEXA is normal","Aspirin with omeprazole"],
+    correct=[0],
+    marks="Aspirin does not prevent falls. Falls prevention = the interventions above + bone protection if osteoporotic. A common family misconception - the KFP wants clear risk/benefit explanation.")]),
+ dict(type="KFP", topic="Abnormal LFTs", unit="Gastrointestinal health",
+  stem="A 52-year-old asymptomatic man has ALT 95 (ULN 40), ALP 120, GGT 150, bilirubin normal on routine testing. BMI 33, fasting glucose 6.4, lipids mildly raised. Drinks 20 g alcohol/week. No meds.",
+  parts=[
+   dict(q="List the FOUR most appropriate next investigations.",
+    options=["Repeat LFTs to confirm","Hepatitis B and C serology","Ferritin, transferrin saturation","Ultrasound abdomen","Autoimmune antibodies (ANA, ASMA, immunoglobulins)","Urgent CT abdomen","Liver biopsy now","Refer immediately to gastroenterology"],
+    correct=[0,1,2,3,4],
+    marks="Any 4. Standard tiered MASLD workup: confirm, viral serology, iron studies, ultrasound, autoimmune screen. Biopsy and urgent referral are premature before non-invasive fibrosis staging (FIB-4/elastography)."),
+   dict(q="The ultrasound shows steatosis. FIB-4 score is 1.1 (low risk). What is the diagnosis and the THREE key management steps?",
+    options=["Metabolic dysfunction-associated steatotic liver disease (MASLD)","Weight loss 7-10% via diet and exercise","Diabetes prevention - address prediabetes","Optimise lipids and BP per absolute CVD risk","Referral for bariatric surgery","Long-term ursodeoxycholic acid","Alcohol abstinence only"],
+    correct=[0,1,2,3],
+    marks="MASLD with low fibrosis risk: weight loss is the core therapy, plus metabolic risk factor management. Surgery for selected patients; UDCA not recommended; alcohol minimisation sensible but not the whole answer.")]),
+ dict(type="KFP", topic="Haemoptysis", unit="Respiratory health",
+  stem="A 68-year-old man presents with 3 weeks of intermittent small-volume haemoptysis. 40 pack-year smoker. Weight loss 4 kg. CXR shows a 3 cm right upper lobe mass.",
+  parts=[
+   dict(q="List the THREE most appropriate actions.",
+    options=["Urgent respiratory physician referral","CT chest","Sputum for cytology/microbiology","Bronchoscopy scheduling by the practice","Reassure and repeat CXR in 6 weeks","Treat as bronchitis with antibiotics","Arrange D-dimer"],
+    correct=[0,1,2],
+    marks="Suspected lung cancer (smoker, weight loss, haemoptysis, mass): urgent respiratory referral + CT chest. Reassurance or delayed repeat imaging = dangerous delay; D-dimer irrelevant."),
+   dict(q="He asks about his prognosis if it is cancer. List THREE principles of communicating this situation.",
+    options=["Assess what he already knows and wants to know first","Use clear, plain language without euphemism","Provide information in small chunks with pauses for questions","Give a detailed statistical survival breakdown immediately","Refer all questions to the oncologist","Avoid the topic until results are back"],
+    correct=[0,1,2],
+    marks="Any 3: ask first, plain language, chunk and check. Acknowledge uncertainty honestly. Deflection to the oncologist leaves the GP role undone.")]),
+ dict(type="KFP", topic="Contraception", unit="Women's health",
+  stem="A 28-year-old woman 6 weeks postpartum, breastfeeding, not using contraception, wants effective contraception. She has migraine without aura. BP normal. BMI 27.",
+  parts=[
+   dict(q="List the FOUR most suitable options for her situation.",
+    options=["Progestogen-only pill (desogestrel or POP)","Etonogestrel implant","Copper IUD or LNG-IUD","Lactational amenorrhoea alone as ongoing contraception","Combined oral contraceptive","DMPA injection","Diaphragm","Withdrawal method"],
+    correct=[0,1,2],
+    marks="Any 3 of the first 3. Breastfeeding: progestogen-only methods and IUDs suitable; combined methods avoided while breastfeeding. LAM alone unreliable at 6 weeks; DMPA acceptable but discuss bone density and return of fertility."),
+   dict(q="She chooses the implant. List the THREE most important counselling points.",
+    options=["Common side effects: irregular bleeding (most common reason for discontinuation)","Duration of action 3 years, removable anytime","Effective within 7 days if inserted outside day 1-5 of cycle - backup needed until then","It protects against STIs","It causes infertility after removal","Insertion requires local anaesthetic only - bruising/soreness for days"],
+    correct=[0,1,2,5],
+    marks="Any 3: bleeding profile, 3-year duration, effectiveness timing, insertion expectations. It does NOT protect against STIs and does NOT cause infertility.")]),
+ dict(type="KFP", topic="Type 2 diabetes review", unit="Endocrine and metabolic health",
+  stem="A 60-year-old man with T2DM for 8 years attends for review. HbA1c 8.5%. On metformin 1g bd and gliclazide 80. eGFR 62, ACR 4 mg/mmol, no retinopathy, BP 138/82, LDL 2.6. BMI 33. Smoker.",
+  parts=[
+   dict(q="List the FOUR most important management changes today.",
+    options=["Add an SGLT2 inhibitor (CKD-protective, glycaemic and weight benefit)","Optimise BP - target generally <130/80 for diabetes with CKD; review therapy","Address lipids - statin indicated (T2DM aged >=50)","Smoking cessation - brief intervention + pharmacotherapy","Add insulin now","Increase gliclazide to max dose","Add sitagliptin","Refer for gastric banding today"],
+    correct=[0,1,2,3],
+    marks="Any 4 of first 4. SGLT2i (CKD/weight), BP control, statin (diabetes >=50), smoking cessation. Insulin not yet at HbA1c 8.5 with other options available; sitagliptin adds little."),
+   dict(q="He asks about driving. List the TWO key medicolegal points for a diabetic driver on sulfonylurea.",
+    options=["Counsel on recognising and managing hypoglycaemia while driving (SU carries hypo risk)","Reporting obligations to the licensing authority per Austroads if specified conditions develop (e.g., severe hypo requiring assistance)","His licence is automatically suspended","He must stop driving","No restrictions apply to diabetes","Only insulin-treated drivers need counselling"],
+    correct=[0,1],
+    marks="Hypoglycaemia counselling + Austroads reporting duties. Not automatic suspension; SU-treated drivers also need counselling.")]),
+ dict(type="KFP", topic="Mental health crisis", unit="Mental health",
+  stem="A 35-year-old woman presents with 3 months of low mood, anhedonia, insomnia, and 8 kg weight loss. PHQ-9 = 18. She has been thinking life is not worth living, but no plan or intent. She has two children aged 3 and 6 at home.",
+  parts=[
+   dict(q="List the FOUR most important elements of your risk assessment.",
+    options=["Ask directly about suicidal thoughts, plan, means, intent","Assess protective factors (children, supports, treatment engagement)","Review access to lethal means and safety planning","Explore substance use and screen for psychotic features","Contact police immediately","Remove children from the home","Arrange admission without assessment"],
+    correct=[0,1,2,3],
+    marks="Direct questions, protective factors, means restriction + safety plan, substance use and psychotic features. Police/child removal premature with no intent disclosed; safety planning with follow-up is the GP standard."),
+   dict(q="List the FOUR most appropriate management steps for moderate-severe depression with passive suicidal ideation, no plan/intent.",
+    options=["Agree a safety plan (warning signs, steps, contacts)","Same-week review or phone check; close follow-up arranged","Start an SSRI (e.g., sertraline) with 2-week review","Refer to a psychologist (mental health treatment plan)","Advise alcohol reduction and sleep hygiene","Immediate involuntary admission","ECT referral","Do nothing until next routine appointment"],
+    correct=[0,1,2,3,4],
+    marks="Any 4 of the first 5. Safety plan + follow-up + SSRI + psychological referral + lifestyle. Admission not indicated for passive SI without plan/intent; ECT not first-line.")]),
+]
+
+(D / "questions_kfp.json").write_text(json.dumps(kfp, indent=1), encoding="utf-8")
+print("KFP written:", len(kfp), "cases")
+
+# Validate the AKT file written earlier
+akt = json.loads((D / "questions_akt.json").read_text(encoding="utf-8"))
+print("AKT valid:", len(akt), "questions")
+prs = json.loads((D / "presentations.json").read_text(encoding="utf-8"))
+print("Presentations valid:", len(prs))
+sys_j = json.loads((D / "systems.json").read_text(encoding="utf-8"))
+print("Systems valid:", len(sys_j))

@@ -1,0 +1,20 @@
+{
+  "$schema": "https://unpkg.com/wrangler/config-schema.json",
+  "name": "racgp-study",
+  "main": "src/index.js",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "racgp-study-db",
+      "database_id": "0e0aa3ba-41c2-4fc2-8bc2-85e81e0c2f88"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}

@@ -1,0 +1,202 @@
+[
+ {
+  "title": "Angry patient - delayed referral",
+  "category": "Difficult consultation",
+  "testing": "Professionalism, conflict de-escalation, maintaining a safe therapeutic relationship while addressing the complaint; complaints handling.",
+  "must_hits": "Acknowledge and legitimise the frustration without becoming defensive; apologise for the experience ('I am sorry this has been stressful'); stay calm and non-defensive; find out what happened from the patient's view; identify what they want to happen now; offer clear next steps with a timeframe; offer a follow-up appointment; mention practice complaints process if unresolved.",
+  "traps": "Becoming defensive or justifying the system; matching the patient's anger; dismissing the complaint; immediately blaming the specialist/hospital; over-promising; failing to acknowledge emotion before problem-solving.",
+  "structure": "Opening: acknowledge early ('I can see this has been really frustrating'). Information gathering: open questions about timeline and impact; screen for clinical harm (did they miss treatment windows?). Explanation: honest account of what you can and cannot control. Management: concrete plan with timeframe. Closure: check understanding, thank them for raising it, arrange review.",
+  "phrases": "'That sounds genuinely frustrating and I want to understand exactly what happened.' / 'I am sorry you have had this experience.' / 'What would a good outcome look like for you from here?' / 'Here is what I can do this week, and here is what I will find out and get back to you about by Friday.'",
+  "scoring": "Examiner marks cluster around: empathy without defensiveness, taking ownership of a system failure, converting anger into a concrete plan, safe clinical review of the underlying condition."
+ },
+ {
+  "title": "Demanding antibiotics for a viral URTI",
+  "category": "Difficult consultation",
+  "testing": "Antimicrobial stewardship communication, shared decision making, holding a safe line under pressure without damaging the relationship.",
+  "must_hits": "Explore ICE (ideas, concerns, expectations) - why antibiotics, what do they fear (missing work, complications, child care); acknowledge the misery of the illness; give a clear diagnosis and explanation of viral vs bacterial; explain antibiotic harms (side effects, resistance, gut effects); offer a serious alternative plan: symptom relief, safety-netting, a script to use only if deteriorating (delayed prescribing where appropriate); check understanding.",
+  "traps": "Prescribing to end the consultation; lecturing; dismissing expectations without exploring them; vague safety-netting; not offering alternatives.",
+  "structure": "Opening: agenda. Information gathering: ICE + focused history. Explanation: name the diagnosis (viral URTI/bronchitis), explain natural history timeline. Management: symptom relief options, delayed prescription, what to watch for. Closure: check questions, confirm the plan is acceptable.",
+  "phrases": "'Can I ask what you know about why this keeps happening?' / 'Most people find the cough lasts up to three weeks and that is normal - what would make you want to be seen again?' / 'There is a real chance this medicine would give you diarrhoea and no benefit.'",
+  "scoring": "Marks for: exploring expectations before refusing; framing antibiotic harms concretely; delayed prescribing as a middle path; explicit safety-netting; maintaining alliance."
+ },
+ {
+  "title": "Opioid request from a patient on repeat oxycodone",
+  "category": "Difficult consultation",
+  "testing": "Chronic pain management, safe opioid prescribing, boundary setting with empathy, dependence recognition.",
+  "must_hits": "Full pain assessment (site, character, function, flare pattern); assess for opioid misuse red flags (early scripts, lost scripts, multiple prescribers); review PDMP/script history where available; assess function not just pain scores; explain the plan: not increasing the dose; offer a pain management review (multidisciplinary, physio, psychologist-lead pain program); consider opioid tapering discussion; safety-netting for dependence; involve a drug and alcohol service if dependence signs; document.",
+  "traps": "Increasing the dose to end the consultation; framing the patient as drug-seeking without assessment; abrupt cessation without support; missing dependence signs; failing to offer alternatives; being judgemental.",
+  "structure": "Opening: confirm the agenda (pain review + script request). Information gathering: pain story, function, sleep, mood, medication use pattern. Explanation: findings, risks of escalating doses at current levels. Management: structured plan, review interval, alternatives, what you will and will not do. Closure: written plan, follow-up date.",
+  "phrases": "'Tell me what a good day and a bad day look like now.' / 'I want to help your pain, and increasing this medicine will not do that - it will change your risk of harm.' / 'Let us get you into the pain program and review this together in two weeks.'",
+  "scoring": "Marks for: assessing before deciding; clear boundary with reason; offering real alternatives; dependence awareness; structured follow-up."
+ },
+ {
+  "title": "Vaccine hesitancy in a parent",
+  "category": "Preventive medicine",
+  "testing": "Risk communication, addressing misinformation, maintaining the relationship, child protection awareness.",
+  "must_hits": "Non-judgemental exploration of specific concerns (which vaccine, what feared outcome, information source); correct the specific misconception with plain-language evidence (address autism myth directly if raised); strong clear recommendation (vaccination is safe and recommended); avoid dismissing; leave the door open; address the schedule; document the discussion; safety-netting if unimmunised.",
+  "traps": "Dismissiveness ('the science is settled'); overwhelming with data; ignoring the specific fear; ultimatums; failing to give a clear recommendation; not offering another appointment.",
+  "structure": "Opening: rapport. Information gathering: specific concerns. Explanation: address each concern directly; acknowledge uncertainty honestly where it exists (rare adverse events). Management: recommendation + plan; offer follow-up conversation. Closure: warm, non-conditional relationship regardless of decision today.",
+  "phrases": "'What have you read or heard that worries you most?' / 'The measles vaccine is about 97% effective at preventing measles, and the risk of a serious reaction to the vaccine itself is far smaller than the risks of measles.' / 'I am happy to talk more about this any time - my advice is to go ahead.'",
+  "scoring": "Marks for: exploring the specific concern; a clear personal recommendation; not burning the relationship; a concrete plan for catch-up or follow-up."
+ },
+ {
+  "title": "Abnormal result delivery - high PSA",
+  "category": "Results and safety",
+  "testing": "Breaking news, risk communication, safety-netting, arranging clear follow-up, managing patient anxiety.",
+  "must_hits": "Prepare the setting; warn (a shot across the bow: 'I need to talk about a test result that needs more checking'); give the result in plain terms; pause and respond to emotion before details; explain what it may and may not mean (PSA is not a cancer diagnosis); explain the next steps (repeat test, examination, referral pathway, timeframes); check understanding; arrange a definite follow-up point (date, who, where); written information.",
+  "traps": "Cavalier delivery without warning; drowning in statistics before acknowledging emotion; vague 'come back if worried' without a scheduled review; over-diagnosing ('you have cancer'); no written plan.",
+  "structure": "Opening: agenda + warning shot. Delivery: the headline result in one sentence. Pause: acknowledge and address the emotional response. Explanation: what this might mean, differential. Management: investigations, referrals and timeframes. Closure: summarise, check questions, next appointment.",
+  "phrases": "'I need to talk with you about a test result today - is now still a good time?' / 'The test is abnormal, and it does not mean you have cancer - it means we need more tests to be sure.' / 'Here is the plan and here is the date we will know more.'",
+  "scoring": "Marks for: warning before delivering; chunking; tolerance of silence; concrete timeframe; explicit safety-netting; checking understanding."
+ },
+ {
+  "title": "Cancer diagnosis consultation",
+  "category": "Difficult consultation",
+  "testing": "Breaking bad news (SPIKES framework), emotional responsiveness, information structuring, appropriate GP role in the cancer pathway.",
+  "must_hits": "Setting (private, uninterrupted, support person offered); perception ('what do you know so far'); invitation ('how much detail would you like'); knowledge - warn then deliver the diagnosis in plain language; pause and acknowledge emotion (name it: 'I can see this is a shock'); strategy - treatment pathway, referral, timeframe; safety-netting (symptoms to report); offer a follow-up appointment; offer written information.",
+  "traps": "Delivering the diagnosis without a warning shot; rushing past emotion to logistics; excluding the support person; drowning in staging detail; not offering a next GP contact point.",
+  "structure": "SPIKES with GP flavour: Setting, Perception, Invitation, Knowledge, Emotions, Strategy and Summary.",
+  "phrases": "'Are you happy for me to go through everything now, or would you rather take it step by step?' / 'I am sorry - it is cancer.' (pause, let silence work) / 'You will not be navigating this alone - here is exactly what happens next.'",
+  "scoring": "Marks for: following a recognisable breaking-bad-news structure; genuine emotional handling; clear timeframe; explicit GP continuity role."
+ },
+ {
+  "title": "Domestic violence disclosure",
+  "category": "Safety and ethics",
+  "testing": "Safety assessment, confidentiality, validated screening approach, response to disclosure, knowledge of legal duties.",
+  "must_hits": "Private enquiry (never with partner or children present); direct, normalising question; believe and validate ('this is not your fault'); immediate safety assessment: recent escalation, threats to kill, strangulation, weapons, children's safety; risk of harm assessment; give information (1800RESPECT, DV connect) without writing it down if unsafe at home; patient-led decision making - do not force leaving; child protection assessment (QLD: witnessing FDV is a reportable harm); document carefully (legible, factual, time-stamped - records can support DVO applications); safety-planning; arrange follow-up.",
+  "traps": "Asking with the partner present; giving advice to leave immediately (peak danger time); breaking confidentiality by involving police without consent (unless imminent risk to life/child safety); failing to assess children; writing information on paper the partner may find.",
+  "structure": "Opening: alone, confidentially. Information gathering: violence pattern, safety, children. Explanation: it is not your fault; there are services. Management: safety plan, referrals, documentation, child assessment. Closure: follow-up plan.",
+  "phrases": "'Can I ask you a few personal questions? Everything here is confidential.' / 'Nothing you have told me changes my respect for you.' / 'Is it safe for you to go home tonight?' / 'If you ever need it, this number can be called from a locked phone.'",
+  "scoring": "Marks for: privacy ensured; direct questioning; validation; children assessed; safety planning; documentation; patient-led pace."
+ },
+ {
+  "title": "Adolescent confidentiality - contraception at 15",
+  "category": "Ethics and law",
+  "testing": "Gillick competence assessment, confidentiality and its limits, adolescent-friendly consultation, mandatory reporting awareness.",
+  "must_hits": "See the patient alone (explain why to both parent and teen); assess Gillick competence explicitly (understands treatment, benefits, risks, alternatives, consequences of refusing); confidentiality and its limits up-front (will break it if risk of serious harm to self or others); TAKE history (Time alone, Attention, Kick out parents/guardian, Establish confidentiality); contraception discussion; STI screening; mandatory reporting: sexual activity under 16 requires consideration of reportable concerns in most jurisdictions (consent laws vary by state) - know QLD rules; document.",
+  "traps": "Refusing contraception outright because of age; breaking confidentiality to parents without cause; failing to consider mandatory reporting when the partner is older; lecturing; not assessing coercion/exploitation.",
+  "structure": "Opening: contract for confidentiality. Information gathering: HEADSS assessment. Clinical: contraception + STI + safety. Legal: competence + reporting considerations. Closure: plan, follow-up, crisis contacts.",
+  "phrases": "'Whatever we discuss stays between us unless I think you or someone else is at serious risk.' / 'Can I check what you already know about how this works?' / 'Everything you tell me helps me look after you better.'",
+  "scoring": "Marks for: seeing alone; explicit competence assessment; stating confidentiality limits; considering reporting duties; non-judgemental rapport."
+ },
+ {
+  "title": "Child protection concern - suspicious injury",
+  "category": "Safety and ethics",
+  "testing": "Recognising abuse patterns, mandatory reporting obligations (QLD), handling the consultation, documentation.",
+  "must_hits": "Recognise inconsistent injury/history (story does not fit the injury, delay in presentation, changing accounts); pattern injuries; do NOT confront or accuse the caregiver in the room; complete a full head-to-toe examination when safe; document verbatim quotes, body maps; understand QLD mandatory reporting: report to Child Safety (QLD) if you suspect a child has suffered, is suffering, or is at risk of significant harm - GP reporting is mandatory under legislation; consult paediatrics/child protection unit if unsure; safety-netting the child's immediate situation; do not let the child leave if imminent danger (call police if needed).",
+  "traps": "Confronting the parent (child may be put at further risk); waiting for certainty before reporting (the threshold is reasonable suspicion, not proof); poor documentation (he said/she said without quotes); not reporting because social work 'might not do anything'; missing siblings' safety.",
+  "structure": "Information gathering: history verbatim, inconsistencies noted gently. Examination: complete, documented. Decision: reporting threshold. Action: report, consult, safety plan. Documentation: exact quotes, timing, who was present.",
+  "phrases": "'Can you help me understand how this happened - tell me about that day from the beginning.' / 'I need to make sure Tom is safe - I am going to talk with the child protection team who help us with this.'",
+  "scoring": "Marks for: pattern recognition; threshold understanding (reasonable suspicion); not confronting; verbatim documentation; correct QLD pathway."
+ },
+ {
+  "title": "Elderly patient with cognitive decline + driving",
+  "category": "Older persons",
+  "testing": "Capacity vs cognitive impairment, fitness-to-drive legal duties, balancing autonomy and safety, family dynamics.",
+  "must_hits": "Differentiate dementia vs delirium vs depression; objective cognitive testing plus functional assessment (finance, meds, cooking); ask about driving directly and assess insight; legal duty: conditions likely to affect safe driving must be reported to the licensing authority (Austroads; QLD: Qld Transport) - both patient duty to notify and practitioner reporting pathway; discuss transport alternatives and the identity/financial impacts of losing the licence; involve family with consent; safety-net for getting lost, fires, financial abuse; RACF/GP management plan options.",
+  "traps": "Ignoring the driving issue because it is awkward; assuming capacity is absent because of the diagnosis; breaching confidentiality by reporting without discussing first where safe; focusing only on cognition score rather than function.",
+  "structure": "Information gathering: cognition + function + driving + insight + supports. Explanation: what is happening to memory, what must legally happen about driving. Management: reporting process with patient, alternatives, supports, safety. Closure: follow-up, family meeting.",
+  "phrases": "'How have you been finding the driving lately - any close calls?' / 'The law says doctors must let the transport authority know about conditions that affect safe driving - I want us to do this together properly.' / 'Losing the licence is a huge life change - let us plan how you keep your independence.'",
+  "scoring": "Marks for: recognising the legal reporting duty; assessing insight; patient-first process; planning alternatives; distinguishing dementia/delirium/depression."
+ },
+ {
+  "title": "Capacity assessment - refusing a needed operation",
+  "category": "Ethics and law",
+  "testing": "Capacity assessment structure, four-component test, autonomy, escalation when capacity is impaired.",
+  "must_hits": "Capacity is decision-specific and time-specific; assess for THIS decision; four abilities: understand the information, retain it, weigh it, communicate the choice; use a structured tool where needed; look for reversible causes (delirium, infection, depression); ensure information is given in the best way (interpreter, simple language) BEFORE declaring incapacity; if capacity present: respect the refusal and document; if absent: substitute decision-maker hierarchy (QLD), emergency doctrine for urgent; second opinion for significant decisions; document the assessment itself.",
+  "traps": "Using MMSE as a capacity test; assuming a 'bad' decision means no capacity; not treating reversible delirium first; skipping the attempt at supported communication; not documenting the assessment process.",
+  "structure": "Information gathering: cognition, delirium screen, mental state. Assessment: the four abilities with the actual decision. Outcome: capacity/no capacity; decision pathway. Documentation and follow-up.",
+  "phrases": "'I want to make sure this decision is truly yours - let me go through it again and check what matters most to you.' / 'You have the right to refuse this operation, even if I think it is a mistake - my job is to make sure you have all the facts.'",
+  "scoring": "Marks for: decision-specific framing; four-abilities structure; reversible causes; correct pathway if impaired; documentation."
+ },
+ {
+  "title": "Medication error disclosure",
+  "category": "Professionalism and safety",
+  "testing": "Open disclosure, duty of candour, incident management, clinical governance, apology without admission of legal liability (per open disclosure framework).",
+  "must_hits": "Recognise the error and its clinical impact; prioritise clinical safety of the patient first (assess harm, treat); open disclosure: honest timely communication of what happened; apologise for the harm ('I am sorry this happened to you') - express regret for the outcome; explain what happened and what will be done; avoid speculation and blame of colleagues; report through the practice incident system; reflect on prevention (system change); document the conversation; offer follow-up and questions; support for the doctor involved (doctors' health).",
+  "traps": "Concealment or minimising; blaming a colleague or the system ('the nurse's fault'); promising no consequences; legalese refusal to discuss; failing to treat the clinical consequences first.",
+  "structure": "Immediate: clinical assessment of the patient. Then: open disclosure conversation. Then: incident report, practice learning, documentation, follow-up.",
+  "phrases": "'I need to tell you about something that should not have happened.' / 'I am sorry - this should not have happened, and here is what we are doing about it now.' / 'Here is how we will prevent this happening to someone else.'",
+  "scoring": "Marks for: clinical safety first; genuine apology for harm; no blame-shifting; incident reporting; prevention thinking; documentation."
+ },
+ {
+  "title": "Colleague impairment concern",
+  "category": "Professionalism and safety",
+  "testing": "Professional obligation to protect patients, doctors' health pathways, non-judgemental handling, escalation ladder.",
+  "must_hits": "Obligation: patient safety comes first - you cannot ignore impairment concerns; approach the colleague directly with concern (health and behaviour observations only, not accusations); strongly encourage the doctor to contact the doctors' health service (QLD Doctors' Health Programme) or their own GP; escalate: if they refuse and risk persists - notify the practice principal, Medical Board (mandatory notification for impairment risk, intoxication while practising, or significant departure from standards - 'mandatory notification' applies to treating practitioners rarely but colleagues have an obligation); not anonymous gossip; documentation.",
+  "traps": "Doing nothing; diagnosing the colleague; going straight to AHPRA without addressing first where safe; gossiping with other staff; taking over their patient load without addressing the cause.",
+  "structure": "Observation: specific, factual concerns. Conversation: concerned, private, supportive. Pathway: own GP / Doctors' Health. Escalation: if refusal + risk. Documentation.",
+  "phrases": "'I am worried about you - I have noticed X, and I would want someone to say it to me. Can I help you get some support?' / 'My first obligation is to patients - I cannot un-see this if nothing changes.'",
+  "scoring": "Marks for: patient-safety-first framing; direct supportive approach; knowing doctors' health services; knowing the escalation duty; avoiding diagnosis/gossip."
+ },
+ {
+  "title": "Cultural safety - Aboriginal or Torres Strait Islander patient",
+  "category": "Cultural safety",
+  "testing": "Cultural safety (not mere awareness), communication, health system navigation, CTG PBS/close the gap items, racism-aware practice.",
+  "must_hits": "Ask (don't assume) how the patient identifies and what they prefer ('do you identify as Aboriginal or Torres Strait Islander?') - asking respectfully supports access to CTG benefits; build understanding of family/community context for decisions; check preferred way of receiving information; use interpreters when needed (Torres Strait Creole etc); offer/flag 715 health check and CTG PBS prescriptions; acknowledge Country where appropriate to the practice context; be aware of institutional barriers past and present (Stolen Generations, stolen wages) and their effect on trust; refer to Aboriginal Community Controlled Health Organisations where the patient prefers; do not treat the person as a spokesperson for their community.",
+  "traps": "Assuming identification from appearance; ignoring CTG entitlements; cultural 'competence' performance (tokenism); treating culture as a checklist; missing specific clinical risks (e.g. CVD risk assessment from age 30).",
+  "structure": "Opening: rapport, ask about preferences. Information gathering: family, community, social circumstances, holistic health. Clinical: high-priority conditions (diabetes, CVD from 30, kidney). Management: 715 check, CTG scripts, preferred services. Closure: clear follow-up.",
+  "phrases": "'Can I ask - do you identify as Aboriginal or Torres Strait Islander? It helps me make sure you get everything you are entitled to.' / 'Who else in your family would you like involved in these decisions?'",
+  "scoring": "Marks for: respectful enquiry; CTG items knowledge; family/community context; avoiding stereotypes; genuine two-way communication."
+ },
+ {
+  "title": "Interpreter use with a newly arrived patient",
+  "category": "Migrant and refugee health",
+  "testing": "Working with interpreters, health literacy, refugee health basics, cost barriers, Medicare access.",
+  "must_hits": "Book a professional interpreter (TIS National - free for GPs for Medicare-eligible patients; document language and dialect); speak to the patient, not the interpreter; short sentences, one idea at a time; teach-back to confirm understanding; be alert to refugee health issues (torture/trauma awareness - do not force disclosure; screening for TB, hepatitis B, parasites, vitamin D, iron); check Medicare/visa status implications for care; cultural mediators where needed; written information in language where possible.",
+  "traps": "Using family members (especially children) as interpreters - breaches confidentiality and accuracy; speaking to the interpreter instead of the patient; assuming English proficiency from a few phrases; missing health-care-access barriers (cost, transport, visa); over-focusing on exotic disease and missing common problems.",
+  "structure": "Opening: introduce via interpreter, confirm language/dialect. Information gathering: presenting complaint + targeted refugee screen when appropriate/consented. Explanation: teach-back. Management: access arrangements, interpreters for future visits. Closure: confirm plan in-language.",
+  "phrases": "'I will get an interpreter so we can be sure we understand each other properly.' / 'Just so I know I explained it well - can you tell me in your own words what we will do?'",
+  "scoring": "Marks for: professional interpreter; direct address; teach-back; refugee health awareness; access solutions."
+ },
+ {
+  "title": "Suicidal patient consultation",
+  "category": "Mental health",
+  "testing": "Risk assessment depth, safety planning, escalation, documentation, GP confidence with psychiatric emergencies.",
+  "must_hits": "Direct, calm questioning: thoughts, plan, means access, intent, timeframe, past attempts, substances; risk formulation: acute vs chronic risk; protective factors; means restriction (medication supply, weapons); safety plan (warning signs, coping steps, who to contact, crisis lines); involve supports with consent; decide: community management vs urgent psychiatric assessment vs ED; know when to use the Mental Health Act; document the assessment and plan; follow-up arranged (within days, not weeks); give written crisis numbers.",
+  "traps": "Relying on 'no-suicide contracts'; asking only 'are you thinking of harming yourself?' without plan/means/intent; missing intoxication; prescribing lethal quantities without a plan; vague 'come back next week'.",
+  "structure": "Opening: direct, unhurried. Assessment: thoughts/plan/means/intent/timeline, past history, substances, protective factors. Formulation: level of risk. Management: safety plan, means restriction, supports, follow-up, escalation if needed. Documentation.",
+  "phrases": "'When you say you do not want to wake up - do you have thoughts of ending your life?' / 'Have you thought about how you would do it? Do you have access to that?' / 'Here is our plan if things get worse this week - who will you call first?'",
+  "scoring": "Marks for: depth and directness of assessment; means restriction; safety planning (not contracts); appropriate escalation; concrete follow-up."
+ },
+ {
+  "title": "Chronic disease review - GP chronic disease management",
+  "category": "Chronic disease",
+  "testing": "Structured chronic disease review, GP management plan items (MBS 721/723/725 for chronic condition + complex), team care coordination, self-management support, multimorbidity prioritisation.",
+  "must_hits": "Structured review of each condition (T2DM, HTN, lipids) with targets reviewed; lifestyle as foundation (exercise, diet, smoking, alcohol); medication review and simplification; complication screening (eyes, feet, kidneys - the annual cycle); GP management plan + team care arrangements when eligible (MBS items); self-management goals with the patient (SMART goals); prioritise what matters most to the patient where multimorbidity competes; coordinate team (dietitian, diabetes educator, podiatry); follow-up interval clear.",
+  "traps": "Glycaemic tunnel vision (ignoring BP/lipids/smoking which often kill more); prescribing without review; not using MBS items to fund team care; excluding the patient from priorities; vague lifestyle advice ('eat better, move more').",
+  "structure": "Opening: agenda + what matters to the patient. Assessment: targets, complications, function. Management: medication changes, team care, plan items, self-management goals. Closure: written plan, next review.",
+  "phrases": "'Of everything we manage today - what matters most to you?' / 'Your blood pressure is what lowers your risk of stroke most - let us start there.' / 'I will organise the plan that lets the dietitian and diabetes educator be bulk-billed for you.'",
+  "scoring": "Marks for: structured comprehensive review; multimorbidity prioritisation; team coordination; patient-centred goals; MBS item knowledge."
+ },
+ {
+  "title": "Perimenopause symptom counselling",
+  "category": "Women's health",
+  "testing": "Menopause management, MHT risk-benefit communication, individualised care, lifestyle, non-hormonal options.",
+  "must_hits": "Symptom assessment (VMS, sleep, mood, GSM); frame menopause as normal life stage with a treatment decision, not a disease; MHT: most effective for VMS; discuss type (oestrogen + progestogen if uterus intact), timing hypothesis (start <60y or within 10 years of menopause for favourable risk-benefit), contraindications (hormone-dependent cancer, VTE history, CVD risks); non-hormonal options (SSRIs/SNRIs, clonidine, gabapentin); vaginal oestrogen for GSM (minimal systemic absorption, long-term ok); bone health; lifestyle (weight, exercise, alcohol, smoking); review plan.",
+  "traps": "Either/or thinking (MHT or nothing); treating everyone with MHT; ignoring contraception in perimenopause (still needed 12 months post LMP or age 50-55 rules); forgetting GSM treatment; outdated absolute risk framing (WHI-era blanket fear).",
+  "structure": "Opening: symptom inventory + goals. Information gathering: bleeding pattern, risk factors, family history. Explanation: what is happening; treatment options with risks/benefits. Management: shared decision - MHT type or alternatives, lifestyle. Closure: review in 6-8 weeks, when to report bleeding.",
+  "phrases": "'There is no right answer for everyone - let us weigh your symptoms against your personal risks.' / 'The hottest data we have says starting MHT within 10 years of menopause has a favourable safety profile for most women.' / 'You still need contraception in perimenopause even if periods are irregular.'",
+  "scoring": "Marks for: individualised risk-benefit framing; timing hypothesis knowledge; non-hormonal options; GSM addressed; contraception not forgotten."
+ },
+ {
+  "title": "Pregnancy counselling - unintended pregnancy",
+  "category": "Sexual and reproductive health",
+  "testing": "Options counselling (parenting, adoption, termination), non-directiveness, legal knowledge (QLD termination to 22 weeks; >22 weeks specific criteria), signposting, contraception follow-through.",
+  "must_hits": "Confirm pregnancy dating (dates, ultrasound); non-directive counselling: all three options (continue + parent, continue + adoption, termination) explored without steering; QLD law: termination available on request up to 22 weeks gestation; beyond 22 weeks requires two doctors agreeing specific grounds; provide referral information for whichever option chosen (termination services, antenatal care, perinatal mental health); discuss contraception plan regardless of choice; check for coercion (partner/family pressure either way); screen mental health; document; safety-net (ectopic symptoms).",
+  "traps": "Directiveness (subtle or overt) toward any option; misinformation about termination legality; assuming the partner's view is hers; forgetting contraception and mental health; missing coercion.",
+  "structure": "Opening: agenda + non-judgemental contract. Information gathering: circumstances, supports, coercion screen, health. Information: options with pathways and timeframes (time-critical). Decision: patient-led. Plan: referral, contraception, follow-up within days. Safety-net.",
+  "phrases": "'There are three paths from here and I will walk any of them with you - what are you leaning toward?' / 'Whatever you choose, we will sort out contraception so this does not happen again unless you want it to.'",
+  "scoring": "Marks for: genuine non-directiveness; accurate QLD law; time-sensitivity awareness; coercion screen; contraception and follow-up."
+ },
+ {
+  "title": "Lifestyle counselling - motivational interviewing",
+  "category": "Preventive medicine",
+  "testing": "Brief behaviour-change intervention, motivational interviewing technique, avoiding the expert trap, SMART goals.",
+  "must_hits": "Permission to discuss ('would it be ok if we talked about weight/smoking?'); explore importance ('why is this a 6 and not a 2 for you?'); explore confidence ('what would make it easier?'); reflective listening over advice-giving; elicit change talk; avoid the righting reflex; one behaviour at a time; SMART goal agreed; arrange follow-up; know pharmacotherapy/program options to offer when ready.",
+  "traps": "The righting reflex (arguing for change); vague advice; targeting everything at once; judgement; no follow-up arranged.",
+  "structure": "Opening: permission. MI: importance and confidence rulers, reflective listening. Planning: SMART goal, supports. Closure: follow-up date.",
+  "phrases": "'Would you mind if we talked about your drinking today?' / 'You said it is a 6 - why a 6 and not a 2?' / 'What would need to be different for that to feel possible?'",
+  "scoring": "Marks for: permission seeking; MI technique (rulers, reflections, change talk); one SMART goal; follow-up."
+ }
+]

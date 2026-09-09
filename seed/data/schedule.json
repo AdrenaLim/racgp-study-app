@@ -1,0 +1,128 @@
+[
+ {
+  "week": 1,
+  "phase": "1 - Foundation",
+  "focus": "Cardiovascular + preventive medicine",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 2,
+  "phase": "1 - Foundation",
+  "focus": "Respiratory (asthma, COPD) + infectious disease basics",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 3,
+  "phase": "1 - Foundation",
+  "focus": "Endocrine + renal (diabetes, thyroid, CKD)",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 4,
+  "phase": "1 - Foundation",
+  "focus": "Mental health + suicide risk + addiction",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 5,
+  "phase": "1 - Foundation",
+  "focus": "Women's health + contraception + antenatal",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 6,
+  "phase": "1 - Foundation",
+  "focus": "Paediatrics + child development",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 7,
+  "phase": "1 - Foundation",
+  "focus": "Older persons + polypharmacy + palliative",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 8,
+  "phase": "1 - Foundation",
+  "focus": "Musculoskeletal + dermatology + skin cancer",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 9,
+  "phase": "2 - Consolidation",
+  "focus": "Presentations I: chest pain, dyspnoea, cough, haemoptysis",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 10,
+  "phase": "2 - Consolidation",
+  "focus": "Presentations II: fatigue, weight loss, headache, dizziness",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 11,
+  "phase": "2 - Consolidation",
+  "focus": "Presentations III: abdominal pain, LFTs, GI, haematuria",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 12,
+  "phase": "2 - Consolidation",
+  "focus": "Presentations IV: rash, joint pain, back pain, falls",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 13,
+  "phase": "2 - Consolidation",
+  "focus": "Aboriginal + Torres Strait Islander health; refugee/migrant health",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 14,
+  "phase": "2 - Consolidation",
+  "focus": "Ethics, law, mandatory reporting, driving, Medicare",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 15,
+  "phase": "3 - Exam prep",
+  "focus": "Timed AKT blocks + KFP technique drills + error review",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 16,
+  "phase": "3 - Exam prep",
+  "focus": "Full mock: 150 AKT (4h) + 70 KFP (4h) + review",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 17,
+  "phase": "4 - Final revision",
+  "focus": "Weak areas + guideline rapid sheets + numbers",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ },
+ {
+  "week": 18,
+  "phase": "4 - Final revision",
+  "focus": "Final week: rapid revision sheets, sleep, exam logistics",
+  "objectives": "Cover the week's topics via the topic list; complete all AKT/KFP items; log errors to mistake log.",
+  "activities": "Weekdays: 20 min topic review + 20 min questions + 10 min mistake review. Weekend: 2-4 h deep session incl. one CCE practice case per week from week 5."
+ }
+]
