@@ -20,8 +20,8 @@ jobs:
           npx wrangler d1 execute racgp-study-db --local --file=schema.sql
           npx wrangler d1 execute racgp-study-db --local --file=seed/seed.sql
           npx wrangler d1 execute racgp-study-db --local --file=seed/content.sql
-          npx wrangler d1 execute racgp-study-db --local --file=schema_v2.sql
-          npx wrangler d1 execute racgp-study-db --local --file=seed/curriculum_v2.sql
+          npx wrangler d1 execute racgp-study-db --local --file=schema_v3_deploy.sql
+          npx wrangler d1 execute racgp-study-db --local --file=seed/curriculum_v3.sql
       - name: Smoke-test the worker locally
         run: |
           npx wrangler dev --port 8787 &
@@ -54,7 +54,7 @@ jobs:
           npx wrangler d1 execute racgp-study-db --remote --file=schema.sql
           npx wrangler d1 execute racgp-study-db --remote --file=seed/seed.sql
           npx wrangler d1 execute racgp-study-db --remote --file=seed/content.sql
-          npx wrangler d1 execute racgp-study-db --remote --file=schema_v2.sql
-          npx wrangler d1 execute racgp-study-db --remote --file=seed/curriculum_v2.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=schema_v3_deploy.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=seed/curriculum_v3.sql
       - name: Deploy Worker
         run: npx wrangler deploy
