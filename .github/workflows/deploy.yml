@@ -15,6 +15,8 @@ jobs:
           node-version: '22'
       - name: Install wrangler
         run: npm install wrangler@4 --no-fund --no-audit
+      - name: 'Gate: frontend inline JS must compile'
+        run: node check-frontend.cjs
       - name: Create local D1 + apply schema + seed (incl. v2 curriculum)
         run: |
           npx wrangler d1 execute racgp-study-db --local --file=schema.sql

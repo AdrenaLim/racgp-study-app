@@ -8,9 +8,12 @@
     "dev": "wrangler dev",
     "db:local": "wrangler d1 execute racgp-study-db --local --file=schema.sql && wrangler d1 execute racgp-study-db --local --file=seed/seed.sql",
     "db:remote": "wrangler d1 execute racgp-study-db --remote --file=schema.sql && wrangler d1 execute racgp-study-db --remote --file=seed/seed.sql",
-    "deploy": "wrangler deploy"
+    "deploy": "wrangler deploy",
+    "smoke:live": "node test-all-tabs.cjs"
   },
   "devDependencies": {
-    "wrangler": "^4.129.1"
-  }
+    "wrangler": "^4.129.1",
+    "jsdom": "^30.0.1"
+  },
+  "dependencies": {}
 }
