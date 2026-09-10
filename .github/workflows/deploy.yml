@@ -17,13 +17,15 @@ jobs:
         run: npm install wrangler@4 --no-fund --no-audit
       - name: 'Gate: frontend inline JS must compile'
         run: node check-frontend.cjs
-      - name: Create local D1 + apply schema + seed (incl. v2 curriculum)
+      - name: Create local D1 + apply schema + seed (v1-v4)
         run: |
           npx wrangler d1 execute racgp-study-db --local --file=schema.sql
           npx wrangler d1 execute racgp-study-db --local --file=seed/seed.sql
           npx wrangler d1 execute racgp-study-db --local --file=seed/content.sql
           npx wrangler d1 execute racgp-study-db --local --file=schema_v3_deploy.sql
           npx wrangler d1 execute racgp-study-db --local --file=seed/curriculum_v3.sql
+          npx wrangler d1 execute racgp-study-db --local --file=seed/schema_v4.sql
+          npx wrangler d1 execute racgp-study-db --local --file=seed/curriculum_v4.sql
       - name: Smoke-test the worker locally
         run: |
           npx wrangler dev --port 8787 &
@@ -51,12 +53,14 @@ jobs:
           node-version: '22'
       - name: Install wrangler
         run: npm install wrangler@4 --no-fund --no-audit
-      - name: Apply schema + seed to remote D1 (idempotent)
+      - name: Apply schema + seed to remote D1 (idempotent, v1-v4)
         run: |
           npx wrangler d1 execute racgp-study-db --remote --file=schema.sql
           npx wrangler d1 execute racgp-study-db --remote --file=seed/seed.sql
           npx wrangler d1 execute racgp-study-db --remote --file=seed/content.sql
           npx wrangler d1 execute racgp-study-db --remote --file=schema_v3_deploy.sql
           npx wrangler d1 execute racgp-study-db --remote --file=seed/curriculum_v3.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=seed/schema_v4.sql
+          npx wrangler d1 execute racgp-study-db --remote --file=seed/curriculum_v4.sql
       - name: Deploy Worker
         run: npx wrangler deploy
