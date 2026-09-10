@@ -189,6 +189,19 @@ pre.sched{white-space:pre-wrap;font-size:.85rem;line-height:1.65;background:rgba
   padding:14px;border-radius:10px;border:1px solid var(--border)}
 .subtle{color:var(--dim);font-size:.82rem}
 
+/* MODAL / POPUP */
+.modal-back{position:fixed;inset:0;background:rgba(0,0,8,.7);backdrop-filter:blur(4px);
+  z-index:200;display:flex;align-items:flex-start;justify-content:center;padding:40px 16px;
+  overflow-y:auto;animation:fadeIn .15s ease both}
+.modal{background:#0c0c1c;border:1px solid var(--border-glow);border-radius:16px;
+  max-width:760px;width:100%;padding:22px 24px;position:relative;
+  box-shadow:0 24px 80px rgba(0,0,0,.6)}
+.modal .modal-x{position:absolute;top:14px;right:14px}
+.modal h3{font-size:1.15rem;margin:0 24px 2px 0;line-height:1.35}
+.modal .sec{margin:10px 0}
+.clickable{cursor:pointer}
+.clickable:hover{text-decoration:underline}
+
 /* ANIMATIONS */
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .glass,details.unit,.stat,.meta-chip{animation:fadeIn .3s ease both}
@@ -214,6 +227,89 @@ const app = document.getElementById('app');
 const api = async (p, opts) => (await fetch('/api'+p, opts)).json();
 const esc = s => String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pj = s => { try { return typeof s==='string'? JSON.parse(s): s; } catch { return s; } };
+
+// ---------- modal engine ----------
+function openModal(html){
+  closeModal();
+  const back = document.createElement('div');
+  back.className = 'modal-back';
+  back.id = 'modalBack';
+  back.innerHTML = `<div class="modal" id="modalBox">${html}</div>`;
+  back.onclick = e => { if (e.target === back) closeModal(); };
+  document.body.appendChild(back);
+  document.body.style.overflow = 'hidden';
+}
+function closeModal(){
+  const m = document.getElementById('modalBack');
+  if (m) m.remove();
+  document.body.style.overflow = '';
+}
+window.closeModal = closeModal;
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+// ---------- topic detail popup ----------
+window.topicPopup = async name => {
+  openModal('<div class="empty" style="padding:30px">Loading topic…</div>');
+  try {
+    const d = await api('/topic-detail?name=' + encodeURIComponent(name));
+    const t = d.topic, u = d.unit, st = d.stats, rv = d.review;
+    const STATUS = ['not started','learning','solid','exam ready'];
+    const resList = (list, kind) => (list||[]).length ? `
+      <div style="margin:8px 0">
+        <div class="sec-h">${kind}</div>
+        <ul class="res-list">${(list||[]).map(r=>`<li><a href="${esc(r.url)}" target="_blank">${esc(r.label||r.title)} ↗</a></li>`).join('')}</ul>
+      </div>` : '';
+    openModal(`
+      <button class="btn subtle tiny modal-x" onclick="closeModal()">✕</button>
+      <h3>${esc(t.name)}</h3>
+      <div class="subtle" style="margin-bottom:10px">
+        ${u?`<span class="pill tier2">${esc(u.name)}</span> `:''}
+        <span class="pill ${t.priority}">${t.priority==='VH'?'🔴':t.priority==='H'?'🟠':t.priority==='M'?'🟡':'🟢'} ${esc(t.priority)}</span>
+        ${st.attempted?` · ${st.correct}/${st.attempted} correct (${st.accuracy}%)`:''}
+        ${rv?` · review due ${esc(rv.due)} (streak ${rv.streak})`:''}
+      </div>
+
+      <div class="sec"><div class="sec-h">What to know</div>
+        <p><b>Must know:</b> ${esc(t.must_know)}</p>
+        ${t.should_know?`<p><b>Should know:</b> ${esc(t.should_know)}</p>`:''}
+        ${t.nice_to_know?`<p><b>Nice to know:</b> ${esc(t.nice_to_know)}</p>`:''}
+      </div>
+
+      <div class="sec"><div class="sec-h">Status</div>
+        <div class="row" style="gap:8px">
+          ${STATUS.map(s=>`<button class="btn subtle tiny ${t.status===s?'active-status':''}" style="${t.status===s?'border-color:var(--cyan);color:var(--cyan)':''}" onclick="setTopicStatus('${esc(t.name)}','${s}',${t.id})">${s}</button>`).join('')}
+        </div>
+      </div>
+
+      ${u?`
+      <div class="sec"><div class="sec-h">Resources · ${esc(u.name)}</div>
+        ${resList(u.guidelines, 'Guidelines & sources')}
+        ${resList(u.materials, 'Study materials')}
+        ${u.racgp_url?`<div style="margin-top:6px"><a href="${esc(u.racgp_url)}" target="_blank" class="gl-link">Official RACGP unit page ↗</a></div>`:''}
+      </div>
+      ${(u.wisdom||[]).length?`
+      <div class="sec"><div class="sec-h">Words of wisdom</div>
+        ${u.wisdom.map(w=>`<div class="wis"><span>💡</span><span>${esc(w)}</span></div>`).join('')}
+      </div>`:''}`:''}
+
+      ${(d.questions||[]).length?`
+      <div class="sec"><div class="sec-h">Questions on this topic (${d.questions.length})</div>
+        ${(d.questions).map(q=>`<div class="li subtle" style="margin:4px 0"><span class="pill ${q.type==='AKT'?'tier1':'tier2'}">${q.type}</span> ${esc(q.stem.slice(0,160))}${q.stem.length>160?'…':''}</div>`).join('')}
+        <div style="margin-top:8px"><button class="btn tiny" onclick="closeModal();S.tab='questions';render();">Practise these →</button></div>
+      </div>`:''}
+    `);
+  } catch (e) {
+    openModal(`<button class="btn subtle tiny modal-x" onclick="closeModal()">✕</button><div class="empty" style="padding:20px">⚠️ ${esc(e.message)}</div>`);
+  }
+};
+window.setTopicStatus = async (name, status, id) => {
+  const cur = await api('/topics');
+  const t = cur.find(x=>x.id===id);
+  if (!t) return;
+  await api('/topics/'+id, {method:'PUT',headers:{'Content-Type':'application/json'},body:JSON.stringify({...t, status})});
+  topicPopup(name); // reopen refreshed
+  render();         // refresh underlying view
+};
 
 const NAV = [
   ['today','📅 Today'],['dashboard','📊 Dashboard'],['curriculum','📚 Curriculum'],['questions','❓ Questions'],
@@ -267,7 +363,7 @@ async function vToday() {
       ${(u.topics||[]).length?`<table style="margin-top:10px">
         <tr><th>Topic</th><th>Yield</th><th>Status</th><th>Focus</th></tr>
         ${u.topics.map(tp=>`<tr>
-          <td><b>${esc(tp.name)}</b></td>
+          <td><b class="clickable" onclick="topicPopup('${esc(tp.name)}')">${esc(tp.name)}</b></td>
           <td><span class="pill ${tp.priority}">${tp.priority==='VH'?'🔴':tp.priority==='H'?'🟠':tp.priority==='M'?'🟡':'🟢'}</span></td>
           <td><span class="pill st-${esc(tp.status)}">${esc(tp.status)}</span></td>
           <td class="subtle" style="max-width:320px">${esc((tp.must_know||'').slice(0,90))}${(tp.must_know||'').length>90?'…':''}</td>
@@ -298,11 +394,11 @@ async function vToday() {
   <div class="glass" style="margin-top:14px">
     <div class="flex-between"><h3 style="margin:0;font-size:1rem">🔁 Reviews due</h3><span class="subtle">${(t.due_reviews||[]).length} topic(s)</span></div>
     ${(t.due_reviews||[]).length? `<div style="margin-top:6px">${t.due_reviews.slice(0,12).map(tp=>`
-      <div class="due-row"><span>${esc(tp)}</span>
+      <div class="due-row"><span><b class="clickable" onclick="topicPopup('${esc(tp)}')">${esc(tp)}</b></span>
         <span class="row" style="gap:6px">
-          <button class="btn subtle tiny" onclick="revQ('${esc(tp)}','again')">Again</button>
-          <button class="btn tiny" onclick="revQ('${esc(tp)}','good')">Good</button>
-          <button class="btn green tiny" onclick="revQ('${esc(tp)}','easy')">Easy</button>
+          <button class="btn subtle tiny" onclick="event.stopPropagation();revQ('${esc(tp)}','again')">Again</button>
+          <button class="btn tiny" onclick="event.stopPropagation();revQ('${esc(tp)}','good')">Good</button>
+          <button class="btn green tiny" onclick="event.stopPropagation();revQ('${esc(tp)}','easy')">Easy</button>
         </span></div>`).join('')}</div>` : '<div class="empty" style="padding:12px">Nothing due — answer questions to drive the scheduler</div>'}
   </div>
 
@@ -378,11 +474,11 @@ async function vDashboard() {
   <div class="glass" style="margin-top:14px">
     <div class="flex-between"><h3 style="margin:0;font-size:1rem">🔁 Reviews due today</h3><span class="subtle">${d.due_reviews.length} topic(s)</span></div>
     ${d.due_reviews.length? `<div style="margin-top:8px">${d.due_reviews.slice(0,12).map(t=>`
-      <div class="due-row"><span>${esc(t)}</span>
+      <div class="due-row"><span><b class="clickable" onclick="topicPopup('${esc(t)}')">${esc(t)}</b></span>
         <span class="row" style="gap:6px">
-          <button class="btn subtle tiny" onclick="revQ('${esc(t)}','again')">Again</button>
-          <button class="btn tiny" onclick="revQ('${esc(t)}','good')">Good</button>
-          <button class="btn green tiny" onclick="revQ('${esc(t)}','easy')">Easy</button>
+          <button class="btn subtle tiny" onclick="event.stopPropagation();revQ('${esc(t)}','again')">Again</button>
+          <button class="btn tiny" onclick="event.stopPropagation();revQ('${esc(t)}','good')">Good</button>
+          <button class="btn green tiny" onclick="event.stopPropagation();revQ('${esc(t)}','easy')">Easy</button>
         </span></div>`).join('')}${d.due_reviews.length>12? `<div class="subtle" style="margin-top:8px">…and ${d.due_reviews.length-12} more</div>`:''}</div>`
       : '<div class="empty">Nothing due — answer questions to drive the scheduler</div>'}
   </div>
@@ -466,10 +562,10 @@ async function vCurriculum() {
       <div class="sec" style="border-color:rgba(34,211,238,.25)"><div class="sec-h" style="color:var(--cyan)">Your study tracker</div>
         ${ts.length? `<table><tr><th>Topic</th><th>Yield</th><th>Status</th><th>Focus</th></tr>
         ${ts.map(t=>`<tr data-t="${esc(t.name)}">
-          <td><b>${esc(t.name)}</b></td>
+          <td><b class="clickable" onclick="topicPopup('${esc(t.name)}')">${esc(t.name)}</b></td>
           <td><span class="pill ${t.priority}">${t.priority==='VH'?'🔴':t.priority==='H'?'🟠':t.priority==='M'?'🟡':'🟢'}</span></td>
           <td><span class="pill st-${esc(t.status)}" style="cursor:pointer" onclick="cycleStatus(${t.id},'${esc(t.status)}')">${esc(t.status)}</span></td>
-          <td class="subtle" style="max-width:300px">${esc((t.must_know||'').slice(0,100))}… <span class="expand" onclick="tDetail(${t.id})">more</span></td>
+          <td class="subtle" style="max-width:300px">${esc((t.must_know||'').slice(0,100))}… <span class="expand" onclick="topicPopup('${esc(t.name)}')">more</span></td>
         </tr>`).join('')}</table>` : '<span class="subtle">No mapped study topics — learn from the guiding topics above</span>'}
         ${u.racgp_url?`<div style="margin-top:8px"><a href="${esc(u.racgp_url)}" target="_blank" class="gl-link">Official RACGP unit page ↗</a></div>`:''}
       </div>
@@ -484,7 +580,7 @@ async function vCurriculum() {
   <div class="row" style="margin-bottom:14px"><input type="text" id="tfilter" placeholder="Filter topics…" oninput="filterTopics(this.value)" style="flex:1;min-width:200px"></div>
   <div class="glass"><h3 style="margin:0 0 10px;font-size:.95rem;color:var(--cyan)">Core units</h3>${units.filter(u=>u.type==='core').map(unitCard).join('')}</div>
   <div class="glass" style="margin-top:12px"><h3 style="margin:0 0 10px;font-size:.95rem;color:var(--purple)">Contextual units</h3>${units.filter(u=>u.type==='contextual').map(unitCard).join('')}</div>
-  <div id="tdetail"></div>`;
+  `;
   const allNotes = await api('/notes');
   window.NOTES_CACHE = allNotes;
   renderUnitNotes(allNotes);
@@ -523,17 +619,6 @@ window.cycleStatus = async (id, cur) => {
 let TOPICS_CACHE = [];
 window.currentTopic = id => TOPICS_CACHE.find(t=>t.id===id);
 window.filterTopics = q => { q=(q||'').toLowerCase(); document.querySelectorAll('[data-t]').forEach(tr=>{ tr.style.display = tr.dataset.t.toLowerCase().includes(q)?'':'none'; }); };
-window.tDetail = async id => {
-  const t = TOPICS_CACHE.find(x=>x.id===id); if (!t) return;
-  document.getElementById('tdetail').innerHTML = `
-  <div class="glass" style="border-color:var(--cyan);margin-top:12px">
-    <div class="flex-between"><h3 style="margin:0;font-size:1rem">${esc(t.name)}</h3><button class="btn subtle tiny" onclick="document.getElementById('tdetail').innerHTML=''">Close</button></div>
-    <p style="margin:8px 0"><b>Must know:</b> ${esc(t.must_know)}</p>
-    <p style="margin:6px 0"><b>Should know:</b> ${esc(t.should_know)}</p>
-    <p style="margin:6px 0"><b>Nice to know:</b> ${esc(t.nice_to_know)}</p>
-  </div>`;
-  document.getElementById('tdetail').scrollIntoView({behavior:'smooth'});
-};
 
 // ========== QUESTIONS ==========
 async function vQuestions() {

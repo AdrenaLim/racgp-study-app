@@ -86,8 +86,8 @@ export default {
           await DB.prepare('UPDATE reviews SET level=?, due=?, streak=?, updated_at=date("now") WHERE id=?')
             .bind(b.correct ? streak : 0, due, streak, existing.id).run();
         } else {
-          await DB.prepare('INSERT INTO reviews (topic, level, due, streak, updated_at) VALUES (?,?,?,1,date("now"))')
-            .bind(q.topic, b.correct ? streak : 0, due).run();
+          await DB.prepare('INSERT INTO reviews (topic, level, due, streak, updated_at) VALUES (?,?,?,?,date("now"))')
+            .bind(q.topic, b.correct ? streak : 0, due, streak).run();
         }
       }
       return json({ ok: true });
@@ -166,6 +166,28 @@ export default {
       await DB.prepare('UPDATE reviews SET level=?, due=?, streak=?, updated_at=date("now") WHERE topic=?')
         .bind(level, due, streak, b.topic).run();
       return json({ ok: true, topic: b.topic, level, due });
+    }
+
+    // ---------- topic detail (popup) ----------
+    if (path === '/api/topic-detail' && method === 'GET') {
+      const name = url.searchParams.get('name');
+      if (!name) return err('name required', 400);
+      const t = await DB.prepare('SELECT * FROM topics WHERE name=?').bind(name).first();
+      if (!t) return err('topic not found', 404);
+      const unit = t.unit ? await DB.prepare('SELECT id, name, racgp_url, guidelines, materials, guiding_topics, competencies FROM units WHERE name=?').bind(t.unit).first() : null;
+      const wisdom = unit ? await DB.prepare('SELECT tips FROM unit_wisdom WHERE unit_id=?').bind(unit.id).first() : null;
+      const qs = await DB.prepare('SELECT id, type, topic, stem FROM questions WHERE topic=? ORDER BY id').bind(name).all();
+      const at = await DB.prepare('SELECT COUNT(*) AS n, SUM(correct) AS c FROM attempts a JOIN questions q ON q.id=a.question_id WHERE q.topic=?').bind(name).first();
+      const rv = await DB.prepare('SELECT level, due, streak FROM reviews WHERE topic=?').bind(name).first();
+      const guiding = unit ? parseJson(unit.guiding_topics, []) : [];
+      return json({
+        topic: t,
+        unit: unit ? { id: unit.id, name: unit.name, racgp_url: unit.racgp_url, guidelines: parseJson(unit.guidelines, []), materials: parseJson(unit.materials, []), wisdom: parseJson(wisdom?.tips, []) } : null,
+        guiding,
+        questions: qs.results.map(q => ({ ...q, stem: (q.stem || '').slice(0, 400) })),
+        stats: { attempted: at.n ?? 0, correct: at.c ?? 0, accuracy: at.n ? Math.round(100 * (at.c ?? 0) / at.n) : null },
+        review: rv ?? null
+      });
     }
 
     // ---------- dashboard ----------
