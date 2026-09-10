@@ -34,7 +34,7 @@ const sleep = ms => new Promise(r => setTimeout(r, ms));
   const results = [];
   for (const tab of TABS) {
     // buttons are in NAV order; map tab id -> index (labels contain emojis: 'meta' renders as 'Exam Map')
-    const NAV_IDS = ['dashboard', 'curriculum', 'questions', 'cce', 'guidelines', 'resources', 'rapid', 'schedule', 'mistakes', 'meta'];
+    const NAV_IDS = ['today','dashboard','curriculum','questions','cce','guidelines','resources','rapid','schedule','mistakes','meta'];
     const idx = NAV_IDS.indexOf(tab);
     const btn = idx >= 0 ? [...window.document.querySelectorAll('nav button')][idx] : null;
     if (!btn) { results.push([tab, 'NO BUTTON']); continue; }

@@ -200,14 +200,14 @@ pre.sched{white-space:pre-wrap;font-size:.82rem;line-height:1.6;background:rgba(
 </header>
 <main id="app"><div class="empty" style="margin-top:40px">Loading…</div></main>
 <script>
-const S = { tab:'dashboard' };
+const S = { tab:'today' };
 const app = document.getElementById('app');
 const api = async (p, opts) => (await fetch('/api'+p, opts)).json();
 const esc = s => String(s??'').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const pj = s => { try { return typeof s==='string'? JSON.parse(s): s; } catch { return s; } };
 
 const NAV = [
-  ['dashboard','📊 Dashboard'],['curriculum','📚 Curriculum'],['questions','❓ Questions'],
+  ['today','📅 Today'],['dashboard','📊 Dashboard'],['curriculum','📚 Curriculum'],['questions','❓ Questions'],
   ['cce','🗣️ CCE'],['guidelines','📋 Guidelines'],['resources','🔗 Resources'],
   ['rapid','⚡ Rapid Revision'],['schedule','🗓️ Schedule'],['mistakes','🧠 Mistakes'],['meta','🏫 Exam Map']
 ];
@@ -226,7 +226,8 @@ document.querySelector('header').appendChild(nav());
 async function render() {
   app.innerHTML = '<div class="empty" style="margin-top:40px">Loading…</div>';
   try {
-    if (S.tab==='dashboard') await vDashboard();
+    if (S.tab==='today') await vToday();
+    else if (S.tab==='dashboard') await vDashboard();
     else if (S.tab==='curriculum') await vCurriculum();
     else if (S.tab==='questions') await vQuestions();
     else if (S.tab==='cce') await vCCE();
@@ -239,6 +240,52 @@ async function render() {
   } catch (e) {
     app.innerHTML = `<div class="glass" style="border-color:var(--red);margin:40px 0">⚠️ Error: ${esc(e.message)}</div>`;
   }
+}
+
+// ========== TODAY ==========
+async function vToday() {
+  const t = await api('/today');
+  const resLinks = rs => (pj(rs)||[]).map(r=>`<a href="${esc(r.url)}" target="_blank" class="gl-link">${esc(r.label||r.title)} ↗</a>`).join(' · ') || '<span class="subtle">—</span>';
+  const focusCards = (t.focus||[]).map(u=>`
+    <div class="glass" style="margin-bottom:12px">
+      <div class="flex-between">
+        <h3 style="margin:0;font-size:1rem">${esc(u.name)}</h3>
+        <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.question_count} questions</span>
+      </div>
+      ${t.week?`<div class="subtle" style="margin-top:2px">Week ${t.week} focus</div>`:''}
+      ${(u.topics||[]).length?`<div style="margin-top:8px">${u.topics.map(tp=>`
+        <div class="due-row"><span><span class="pill ${tp.priority}">${tp.priority==='VH'?'🔴':tp.priority==='H'?'🟠':tp.priority==='M'?'🟡':'🟢'}</span> <b>${esc(tp.name)}</b> <span class="subtle" style="margin-left:4px">${esc(tp.status)}</span></span>
+        <span class="subtle" style="max-width:60%">${esc((tp.must_know||'').slice(0,80))}${(tp.must_know||'').length>80?'…':''}</span></div>`).join('')}</div>`:'<div class="empty">No topics mapped to this unit</div>'}
+      <div style="margin-top:10px"><span class="sec-h">Resources</span><br>${resLinks(u.guidelines)}<br>${resLinks(u.materials)}</div>
+      ${(u.wisdom||[]).length?`<details style="margin-top:8px"><summary>💡 ${u.wisdom.length} GP tips</summary><div style="margin:6px 0">${u.wisdom.map(w=>`<div class="li">💡 ${esc(w)}</div>`).join('')}</div></details>`:''}
+    </div>`).join('');
+
+  app.innerHTML = `
+  <h2>Today · ${new Date().toLocaleDateString('en-AU',{weekday:'long', day:'numeric', month:'long'})}</h2>
+  <p class="lead">${t.week?`Week ${t.week} of 18`:''} · ${t.daysToExam} days to AKT/KFP (15 Jan 2027)</p>
+
+  ${t.week? `<div class="glass" style="border-color:var(--cyan)">
+    <div class="flex-between"><h3 style="margin:0;font-size:1rem">🎯 This week's focus</h3><span class="subtle">from the 18-week plan</span></div>
+    <p class="subtle" style="margin:6px 0 2px;font-size:.85rem">Weekday rhythm: 20 min topic review + 20 min questions + 10 min mistakes. Weekend: one 2-4 h deep block.</p>
+  </div>`:''}
+
+  ${(t.focus||[]).length? focusCards : `<div class="glass" style="margin-top:12px"><div class="empty">No units scheduled this week — exam prep phase. Hit the Rapid Revision tab, or work your weakest topics below.</div></div>`}
+
+  <div class="glass" style="margin-top:12px">
+    <div class="flex-between"><h3 style="margin:0;font-size:1rem">🔁 Reviews due</h3><span class="subtle">${(t.due_reviews||[]).length} topic(s)</span></div>
+    ${(t.due_reviews||[]).length? `<div style="margin-top:6px">${t.due_reviews.slice(0,12).map(tp=>`
+      <div class="due-row"><span>${esc(tp)}</span>
+        <span class="row" style="gap:6px">
+          <button class="btn subtle tiny" onclick="revQ('${esc(tp)}','again')">Again</button>
+          <button class="btn tiny" onclick="revQ('${esc(tp)}','good')">Good</button>
+          <button class="btn green tiny" onclick="revQ('${esc(tp)}','easy')">Easy</button>
+        </span></div>`).join('')}</div>` : '<div class="empty">Nothing due — answer questions to drive the scheduler</div>'}
+  </div>
+
+  ${(t.weakest||[]).length?`<div class="glass" style="margin-top:12px">
+    <h3 style="margin:0 0 6px;font-size:1rem">📉 Weakest topics (≥2 attempts)</h3>
+    ${t.weakest.map(w=>`<div class="due-row"><span>${esc(w.topic)}</span><span class="subtle">${w.pct}% · ${w.n} attempts</span></div>`).join('')}
+  </div>`:''}`;
 }
 
 // ========== DASHBOARD ==========
@@ -327,41 +374,66 @@ function listOrEmpty(arr,fn){ return arr&&arr.length? arr.map(fn).join(''): '<di
 function countdown(dateStr){ return Math.round((new Date(dateStr)-Date.now())/86400000); }
 
 // ========== CURRICULUM ==========
+let WISDOM_CACHE = {};
 async function vCurriculum() {
-  const [topics, units] = await Promise.all([api('/topics'), api('/units')]);
+  const [topics, units, wisdom] = await Promise.all([api('/topics'), api('/units'), api('/wisdom')]);
   TOPICS_CACHE = topics; window.UNITS_CACHE = units;
+  WISDOM_CACHE = {}; wisdom.forEach(w => { WISDOM_CACHE[w.unit_id] = pj(w.tips)||[]; });
   const topicsByUnit = {};
   topics.forEach(t => { (topicsByUnit[t.unit] ??= []).push(t); });
 
   const unitCard = u => {
     const ts = topicsByUnit[u.name] || [];
-    const competencies = pj(u.competencies)||[];
-    const strategies = pj(u.learning_strategies)||[];
+    const comps = pj(u.competencies)||[];   // [{domain, outcomes:[{text, codes}]}]
+    const strategies = pj(u.learning_strategies)||[];  // [{context, items:[]}]
     const guiding = pj(u.guiding_topics)||[];
     const guidelines = pj(u.guidelines)||[];
     const materials = pj(u.materials)||[];
+    const wisdom = WISDOM_CACHE[u.id] || [];
+    const kase = pj(u.case_example);        // {narrative, questions:[]}
     const rationale = u.rationale || u.blurb || '';
 
-    const glLinks = guidelines.map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)} (${esc(g.tier||'')}) ↗</a>`).join('&ensp;') || '<span class="subtle">—</span>';
-    const matLinks = materials.map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)} ↗</a>`).join('&ensp;') || '<span class="subtle">—</span>';
+    const glLinks = guidelines.map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)} ↗</a>`).join(' · ') || '<span class="subtle">—</span>';
+    const matLinks = materials.map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)} ↗</a>`).join(' · ') || '<span class="subtle">—</span>';
+
+    const compHTML = comps.map(c=>`
+      <div style="margin:8px 0">
+        <div class="subtle" style="color:var(--cyan);font-weight:700">${esc(c.domain)}</div>
+        ${(c.outcomes||[]).map(o=>`<div class="li">▸ ${esc(o.text)} <span class="subtle">[${esc(o.codes)}]</span></div>`).join('')}
+      </div>`).join('') || '<span class="subtle">See RACGP curriculum page</span>';
+
+    const stratHTML = strategies.map(s=>`
+      <div style="margin:8px 0">
+        <div class="subtle" style="color:var(--purple);font-weight:700">${esc(s.context)}</div>
+        ${(s.items||[]).slice(0,6).map(i=>`<label class="li chk"><input type="checkbox"> ${esc(i)}</label>`).join('')}
+        ${(s.items||[]).length>6?`<div class="subtle" style="margin-top:4px">…and ${s.items.length-6} more in the RACGP unit page ↗</div>`:''}
+      </div>`).join('') || '<span class="subtle">—</span>';
+
+    const caseHTML = kase && kase.narrative ? `
+      <p class="case">${esc(kase.narrative)}</p>
+      <details><summary style="font-size:.8rem">Reflect: ${(kase.questions||[]).length} questions mapped to CCE assessment areas</summary>
+        ${(kase.questions||[]).map(q=>`<div class="li" style="margin:6px 0"><span class="subtle" style="color:var(--amber)">[${esc(q.area)}]</span> ${esc(q.q)}</div>`).join('')}
+      </details>` : '';
+
+    const wisdomHTML = wisdom.length?`
+      <details style="margin-top:6px"><summary>💡 Words of wisdom (${wisdom.length} tips from experienced GPs)</summary>
+        <div style="margin:6px 0">${wisdom.map(w=>`<div class="li">💡 ${esc(w)}</div>`).join('')}</div>
+      </details>`:'';
 
     return `<details class="unit" data-unit="${esc(u.name)}"><summary>
       <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.type==='core'?'CORE':'CTX'} ${u.number}</span>
       <b>${esc(u.name)}</b>
       ${ts.length? `<span class="subtle">${ts.length} topic${ts.length>1?'s':''}</span>` : ''}
+      ${guiding.length? `<span class="subtle">${guiding.length} guiding topics</span>` : ''}
     </summary>
     <div class="unit-body">
-      <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(rationale)}</p></div>
-      <div class="sec"><div class="sec-h">2 · Competencies & learning outcomes</div>
-        ${competencies.length ? competencies.map(c=>`<div class="li">▸ ${esc(c)}</div>`).join('') : '<span class="subtle">See RACGP curriculum page</span>'}
-      </div>
+      <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(rationale)}</p>${wisdomHTML}</div>
+      <div class="sec"><div class="sec-h">2 · Competencies & learning outcomes</div>${compHTML}</div>
       <div class="sec"><div class="sec-h">3 · Curricula in context</div>
         ${u.racgp_url?`<a href="${esc(u.racgp_url)}" target="_blank" class="gl-link">Official RACGP unit page ↗</a>`:'<span class="subtle">—</span>'}
       </div>
-      ${u.case_example?`<div class="sec"><div class="sec-h">4 · Case consultation example</div><p class="case">${esc(u.case_example)}</p></div>`:''}
-      <div class="sec"><div class="sec-h">5 · Learning strategies</div>
-        ${strategies.length ? strategies.map(s=>`<label class="li chk"><input type="checkbox"> ${esc(s)}</label>`).join('') : '<span class="subtle">—</span>'}
-      </div>
+      <div class="sec"><div class="sec-h">4 · Case consultation example</div>${caseHTML || '<span class="subtle">—</span>'}</div>
+      <div class="sec"><div class="sec-h">5 · Learning strategies</div>${stratHTML}</div>
       <div class="sec"><div class="sec-h">6 · Guiding topics</div>
         ${guiding.length ? guiding.map(g=>`<div class="li">▸ ${esc(g)}</div>`).join('') : '<span class="subtle">—</span>'}
       </div>
@@ -372,7 +444,7 @@ async function vCurriculum() {
           <td><span class="pill ${t.priority}">${t.priority==='VH'?'🔴':t.priority==='H'?'🟠':t.priority==='M'?'🟡':'🟢'}</span></td>
           <td><span class="pill st-${esc(t.status)}" style="cursor:pointer" onclick="cycleStatus(${t.id},'${esc(t.status)}')">${esc(t.status)}</span></td>
           <td class="subtle" style="max-width:300px">${esc((t.must_know||'').slice(0,100))}… <span class="expand" onclick="tDetail(${t.id})">more</span></td>
-        </tr>`).join('')}</table>` : '<span class="subtle">No study topics mapped yet</span>'}
+        </tr>`).join('')}</table>` : '<span class="subtle">No study topics mapped yet — use the guiding topics above</span>'}
       </div>
       <div class="sec"><div class="sec-h">8 · Learning resources</div>
         <div style="margin:6px 0"><b>Guidelines & sources:</b><br>${glLinks}</div>

@@ -74,6 +74,22 @@ export default {
       const b = await request.json(); // { question_id, user_answer, correct }
       await DB.prepare('INSERT INTO attempts (question_id, user_answer, correct, created_at) VALUES (?,?,?,datetime("now"))')
         .bind(b.question_id, JSON.stringify(b.user_answer ?? null), b.correct ? 1 : 0).run();
+      // schedule spaced repetition for the question's topic (creates row on first attempt)
+      const q = await DB.prepare('SELECT topic FROM questions WHERE id=?').bind(b.question_id).first();
+      if (q?.topic) {
+        const existing = await DB.prepare('SELECT id, streak FROM reviews WHERE topic=?').bind(q.topic).first();
+        const intervals = [1, 3, 7, 14, 30];
+        const streak = existing ? (b.correct ? (existing.streak ?? 0) + 1 : 0) : (b.correct ? 1 : 0);
+        const days = b.correct ? intervals[Math.min(streak - 1, intervals.length - 1)] : 1;
+        const due = new Date(Date.now() + days * 86400000).toISOString().slice(0, 10);
+        if (existing) {
+          await DB.prepare('UPDATE reviews SET level=?, due=?, streak=?, updated_at=date("now") WHERE id=?')
+            .bind(b.correct ? streak : 0, due, streak, existing.id).run();
+        } else {
+          await DB.prepare('INSERT INTO reviews (topic, level, due, streak, updated_at) VALUES (?,?,?,1,date("now"))')
+            .bind(q.topic, b.correct ? streak : 0, due).run();
+        }
+      }
       return json({ ok: true });
     }
 
@@ -173,9 +189,39 @@ export default {
       });
     }
 
+    // ---------- today (what to study now) ----------
+    if (path === '/api/today' && method === 'GET') {
+      const startRow = await DB.prepare("SELECT value FROM settings WHERE key='start_date'").first();
+      const start = startRow?.value ? new Date(startRow.value + 'T00:00:00Z') : null;
+      const week = start ? Math.min(18, Math.max(1, Math.floor((Date.now() - start.getTime()) / (7*86400000)) + 1)) : null;
+      const daysToExam = Math.round((new Date('2027-01-15T00:00:00+10:00') - Date.now()) / 86400000);
+      const schedRow = week ? await DB.prepare('SELECT units FROM schedule_focus WHERE week=?').bind(week).first() : null;
+      const focusUnitNames = schedRow ? parseJson(schedRow.units, []) : [];
+      const due = await DB.prepare("SELECT topic FROM reviews WHERE due <= date('now') ORDER BY due").all();
+      const focus = [];
+      for (const name of focusUnitNames) {
+        const u = await DB.prepare('SELECT id, type, number, name, blurb, guidelines, materials FROM units WHERE name=?').bind(name).first();
+        if (!u) continue;
+        const tops = await DB.prepare("SELECT id, name, priority, status, must_know FROM topics WHERE unit=? ORDER BY CASE priority WHEN 'VH' THEN 0 WHEN 'H' THEN 1 WHEN 'M' THEN 2 ELSE 3 END, name").bind(name).all();
+        const w = await DB.prepare('SELECT tips FROM unit_wisdom WHERE unit_id=?').bind(u.id).first();
+        const qs = await DB.prepare('SELECT COUNT(*) AS n FROM questions WHERE unit=?').bind(name).first();
+        focus.push({ ...u, topics: tops.results, wisdom: parseJson(w?.tips, []), question_count: qs?.n ?? 0 });
+      }
+      const weakest = await DB.prepare("SELECT q.topic AS topic, ROUND(100.0*SUM(a.correct)/COUNT(*)) AS pct, COUNT(*) AS n FROM attempts a JOIN questions q ON q.id=a.question_id GROUP BY q.topic HAVING COUNT(*) >= 2 ORDER BY pct ASC LIMIT 3").all();
+      return json({
+        week, daysToExam, focus, due_reviews: due.results.map(r => r.topic),
+        weakest: weakest.results
+      });
+    }
+
     // ---------- units (official RACGP curriculum) ----------
     if (path === '/api/units' && method === 'GET') {
       const rows = await DB.prepare('SELECT * FROM units ORDER BY CASE type WHEN "core" THEN 0 ELSE 1 END, number').all();
+      return json(rows.results);
+    }
+    // ---------- unit wisdom ----------
+    if (path === '/api/wisdom' && method === 'GET') {
+      const rows = await DB.prepare('SELECT w.unit_id AS unit_id, u.name AS unit, w.tips AS tips FROM unit_wisdom w JOIN units u ON u.id = w.unit_id ORDER BY u.number').all();
       return json(rows.results);
     }
 
