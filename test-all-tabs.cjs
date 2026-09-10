@@ -4,7 +4,7 @@
 const { JSDOM } = require('jsdom');
 
 const BASE = process.env.SMOKE_URL || 'https://racgp-study.limkangxian99.workers.dev';
-const TABS = (process.argv[2] || 'dashboard,curriculum,questions,cce,guidelines,resources,rapid,schedule,mistakes,meta').split(',');
+const TABS = (process.argv[2] || 'today,dashboard,curriculum,questions,cce,guidelines,resources,rapid,schedule,mistakes,meta').split(',');
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 (async () => {
