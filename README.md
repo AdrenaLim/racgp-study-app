@@ -5,6 +5,8 @@
 
 A study system for the RACGP Fellowship exams (AKT, KFP, CCE), built as a **Cloudflare Worker + D1** app. All study content (exam map, curriculum, question bank, CCE cases, guidelines, rapid revision sheets, schedule, mistake log, spaced repetition) lives in the database and is served through a single-page dashboard.
 
+**Curriculum v4** follows the official RACGP Curriculum and Syllabus (6th ed) unit structure. Each of the 42 units is presented exactly as the RACGP presents it: 1 · Rationale → 2 · Competencies and learning outcomes (per domain, with core competency outcome codes) → 3 · Words of wisdom → 4 · Case consultation example (with CCE-mapped reflection prompts) → 5 · Learning strategies (own / supervisor / small group / non-medical) → 6 · Guiding topics and content areas → 7 · Learning resources. A personal **study tracker** (topic status, notes) sits at the bottom of each unit, separate from the official content. The **Today** tab plans each day from the 18-week schedule (weeks map to focus units; week 18 lands on exam week).
+
 > **Free-tier note:** D1 free plan allows 100,000 row writes/day (reads are unlimited and much higher). Normal study use (attempts, mistakes, review updates) is a few hundred writes a day at most — the limit only matters when bulk re-seeding. If a write returns `error 1101` with a D1 limit message, it resets at midnight UTC.
 
 ## Exam targets

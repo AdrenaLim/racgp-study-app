@@ -9,14 +9,14 @@
   --bg:#050510;--bg2:#0a0a1a;
   --glass:rgba(255,255,255,.04);--glass2:rgba(255,255,255,.08);
   --border:rgba(255,255,255,.1);--border-glow:rgba(255,255,255,.15);
-  --text:#e2e8f0;--muted:#94a3b8;--dim:#64748b;
+  --text:#e2e8f0;--muted:#a8b4c4;--dim:#7e8a9b;
   --cyan:#22d3ee;--purple:#a78bfa;--green:#34d399;--red:#f87171;--amber:#fbbf24;
   --accent:var(--cyan);--accent2:var(--purple);
   --font:'Inter','SF Pro Display',system-ui,-apple-system,sans-serif;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{font-size:15px}
-body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden}
+html{font-size:16px}
+body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden}
 body::before{content:'';position:fixed;inset:0;background:
   radial-gradient(ellipse 80% 60% at 50% 0%,rgba(34,211,238,.06),transparent),
   radial-gradient(ellipse 60% 50% at 80% 100%,rgba(167,139,250,.05),transparent);
@@ -46,9 +46,10 @@ nav button.active{background:rgba(34,211,238,.1);color:var(--cyan);border-color:
   box-shadow:0 0 20px rgba(34,211,238,.1)}
 
 /* MAIN */
-main{max-width:1100px;margin:0 auto;padding:24px 20px 100px;position:relative;z-index:1}
-h2{font-size:1.4rem;font-weight:700;margin:0 0 4px}
-.lead{color:var(--dim);font-size:.85rem;margin:0 0 20px}
+main{max-width:1100px;margin:0 auto;padding:28px 20px 100px;position:relative;z-index:1}
+h2{font-size:1.45rem;font-weight:700;margin:0 0 4px;letter-spacing:-.01em}
+h3{font-weight:700;letter-spacing:-.005em}
+.lead{color:var(--dim);font-size:.9rem;margin:0 0 22px}
 
 /* GLASS CARD */
 .glass{background:var(--glass);backdrop-filter:blur(16px);
@@ -71,10 +72,10 @@ h2{font-size:1.4rem;font-weight:700;margin:0 0 4px}
 .stat .lbl{color:var(--dim);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;margin-top:4px}
 
 /* TABLES */
-table{width:100%;border-collapse:collapse;font-size:.85rem}
+table{width:100%;border-collapse:collapse;font-size:.88rem}
 th{color:var(--dim);text-align:left;font-weight:600;padding:10px 12px;border-bottom:1px solid var(--border);
-  font-size:.75rem;text-transform:uppercase;letter-spacing:.06em}
-td{padding:10px 12px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top}
+  font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+td{padding:11px 12px;border-bottom:1px solid rgba(255,255,255,.04);vertical-align:top;line-height:1.55}
 tr:hover td{background:rgba(255,255,255,.02)}
 
 /* PILLS */
@@ -128,25 +129,33 @@ textarea{width:100%;min-height:64px;resize:vertical}
 /* METAS */
 .meta-chip{background:var(--glass);border:1px solid var(--border);border-radius:12px;
   padding:14px 16px;margin-bottom:10px}
-.meta-chip .k{font-size:.7rem;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
-.meta-chip .v{font-size:.85rem;margin-top:4px;line-height:1.6}
+.meta-chip .k{font-size:.72rem;color:var(--cyan);font-weight:700;text-transform:uppercase;letter-spacing:.06em}
+.meta-chip .v{font-size:.9rem;margin-top:4px;line-height:1.65}
 .meta-chip a{color:var(--cyan);font-size:.8rem;text-decoration:none}
 
 /* EXPAND / DETAILS */
 .expand{cursor:pointer;color:var(--cyan);font-size:.8rem;font-weight:600;user-select:none}
 details summary{cursor:pointer;color:var(--cyan);font-weight:600;font-size:.9rem}
-details.unit{border:1px solid var(--border);border-radius:12px;margin-bottom:8px;
+details.unit{border:1px solid var(--border);border-radius:14px;margin-bottom:10px;
   background:var(--glass);backdrop-filter:blur(12px);overflow:hidden}
-details.unit summary{padding:12px 16px;cursor:pointer;font-size:.95rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+details.unit summary{padding:14px 18px;cursor:pointer;font-size:1rem;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 details.unit summary .pill{flex:none}
-.sec{margin:10px 0;padding:12px 14px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:10px}
-.sec-h{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--purple);margin-bottom:6px}
-.sec p,.li{font-size:.85rem;margin:4px 0;line-height:1.6}
+.sec{margin:12px 0;padding:14px 16px;background:rgba(255,255,255,.02);border:1px solid var(--border);border-radius:10px}
+.sec-h{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.07em;color:var(--purple);margin-bottom:8px}
+.sec p,.li{font-size:.9rem;margin:5px 0;line-height:1.65}
 .li.chk{display:flex;gap:9px;align-items:flex-start;cursor:pointer}
-.case{font-size:.85rem;line-height:1.6;background:rgba(34,211,238,.04);border-left:3px solid var(--cyan);
-  padding:10px 14px;border-radius:0 8px 8px 0;margin:6px 0}
-.unit-body{padding:6px 16px 16px;border-top:1px solid var(--border)}
-.gl-link{color:var(--cyan);font-size:.8rem;text-decoration:none;border-bottom:1px dotted rgba(34,211,238,.3)}
+.case{font-size:.9rem;line-height:1.65;background:rgba(34,211,238,.04);border-left:3px solid var(--cyan);
+  padding:12px 16px;border-radius:0 8px 8px 0;margin:8px 0}
+.unit-body{padding:8px 18px 18px;border-top:1px solid var(--border)}
+.gl-link{color:var(--cyan);font-size:.82rem;text-decoration:none;border-bottom:1px dotted rgba(34,211,238,.3)}
+.res-list{list-style:none;margin:6px 0 0;padding:0}
+.res-list li{padding:3px 0;font-size:.82rem;line-height:1.55}
+.res-list a{color:var(--cyan);text-decoration:none;border-bottom:1px dotted rgba(34,211,238,.3)}
+.domain-h{font-size:.82rem;font-weight:700;color:var(--cyan);margin:10px 0 4px}
+.codes{color:var(--dim);font-size:.72rem;font-family:ui-monospace,'Cascadia Mono',Consolas,monospace}
+.outcome{padding:4px 0 4px 14px;border-left:2px solid rgba(255,255,255,.06);margin:4px 0;font-size:.88rem;line-height:1.6}
+.wis{display:flex;gap:8px;align-items:flex-start;padding:7px 0;border-bottom:1px dashed rgba(255,255,255,.05);font-size:.88rem;line-height:1.6}
+.wis:last-child{border-bottom:none}
 
 /* NOTE */
 .note{margin:8px 0;display:flex;gap:8px;align-items:flex-start}
@@ -176,9 +185,9 @@ details.unit summary .pill{flex:none}
 .bar>div{height:100%;background:linear-gradient(90deg,var(--cyan),var(--purple));border-radius:99px;transition:width .5s}
 
 /* PRE */
-pre.sched{white-space:pre-wrap;font-size:.82rem;line-height:1.6;background:rgba(255,255,255,.02);
+pre.sched{white-space:pre-wrap;font-size:.85rem;line-height:1.65;background:rgba(255,255,255,.02);
   padding:14px;border-radius:10px;border:1px solid var(--border)}
-.subtle{color:var(--dim);font-size:.8rem}
+.subtle{color:var(--dim);font-size:.82rem}
 
 /* ANIMATIONS */
 @keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
@@ -245,33 +254,48 @@ async function render() {
 // ========== TODAY ==========
 async function vToday() {
   const t = await api('/today');
-  const resLinks = rs => (pj(rs)||[]).map(r=>`<a href="${esc(r.url)}" target="_blank" class="gl-link">${esc(r.label||r.title)} ↗</a>`).join(' · ') || '<span class="subtle">—</span>';
+  const resLinks = rs => {
+    const list = pj(rs)||[];
+    return list.length? `<ul class="res-list">${list.map(r=>`<li><a href="${esc(r.url)}" target="_blank">${esc(r.label||r.title)} ↗</a></li>`).join('')}</ul>` : '';
+  };
   const focusCards = (t.focus||[]).map(u=>`
     <div class="glass" style="margin-bottom:12px">
       <div class="flex-between">
-        <h3 style="margin:0;font-size:1rem">${esc(u.name)}</h3>
-        <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.question_count} questions</span>
+        <h3 style="margin:0;font-size:1.05rem">${esc(u.name)}</h3>
+        <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.question_count} question${u.question_count===1?'':'s'}</span>
       </div>
-      ${t.week?`<div class="subtle" style="margin-top:2px">Week ${t.week} focus</div>`:''}
-      ${(u.topics||[]).length?`<div style="margin-top:8px">${u.topics.map(tp=>`
-        <div class="due-row"><span><span class="pill ${tp.priority}">${tp.priority==='VH'?'🔴':tp.priority==='H'?'🟠':tp.priority==='M'?'🟡':'🟢'}</span> <b>${esc(tp.name)}</b> <span class="subtle" style="margin-left:4px">${esc(tp.status)}</span></span>
-        <span class="subtle" style="max-width:60%">${esc((tp.must_know||'').slice(0,80))}${(tp.must_know||'').length>80?'…':''}</span></div>`).join('')}</div>`:'<div class="empty">No topics mapped to this unit</div>'}
-      <div style="margin-top:10px"><span class="sec-h">Resources</span><br>${resLinks(u.guidelines)}<br>${resLinks(u.materials)}</div>
-      ${(u.wisdom||[]).length?`<details style="margin-top:8px"><summary>💡 ${u.wisdom.length} GP tips</summary><div style="margin:6px 0">${u.wisdom.map(w=>`<div class="li">💡 ${esc(w)}</div>`).join('')}</div></details>`:''}
+      ${(u.topics||[]).length?`<table style="margin-top:10px">
+        <tr><th>Topic</th><th>Yield</th><th>Status</th><th>Focus</th></tr>
+        ${u.topics.map(tp=>`<tr>
+          <td><b>${esc(tp.name)}</b></td>
+          <td><span class="pill ${tp.priority}">${tp.priority==='VH'?'🔴':tp.priority==='H'?'🟠':tp.priority==='M'?'🟡':'🟢'}</span></td>
+          <td><span class="pill st-${esc(tp.status)}">${esc(tp.status)}</span></td>
+          <td class="subtle" style="max-width:320px">${esc((tp.must_know||'').slice(0,90))}${(tp.must_know||'').length>90?'…':''}</td>
+        </tr>`).join('')}</table>`:'<div class="empty" style="padding:12px">No topics mapped to this unit yet</div>'}
+      ${resLinks(u.guidelines) || resLinks(u.materials) ? '<div style="margin-top:10px"><span class="sec-h">Resources</span>' + (resLinks(u.guidelines)+resLinks(u.materials)) + '</div>' : ''}
+      ${(u.wisdom||[]).length?`<details style="margin-top:10px"><summary>💡 Words of wisdom (${u.wisdom.length})</summary>
+        <div style="margin:8px 0">${u.wisdom.map(w=>`<div class="wis"><span>💡</span><span>${esc(w)}</span></div>`).join('')}</div></details>`:''}
     </div>`).join('');
 
   app.innerHTML = `
-  <h2>Today · ${new Date().toLocaleDateString('en-AU',{weekday:'long', day:'numeric', month:'long'})}</h2>
-  <p class="lead">${t.week?`Week ${t.week} of 18`:''} · ${t.daysToExam} days to AKT/KFP (15 Jan 2027)</p>
+  <div class="glass" style="padding:18px 22px;margin-bottom:16px">
+    <div class="flex-between">
+      <div>
+        <h2 style="margin:0">Today</h2>
+        <div class="subtle" style="margin-top:2px">${new Date().toLocaleDateString('en-AU',{weekday:'long', day:'numeric', month:'long', year:'numeric'})}</div>
+      </div>
+      <div style="text-align:right">
+        ${t.week?`<div><span class="pill tier2">Week ${t.week} of 18</span></div>`:''}
+        <div class="subtle" style="margin-top:6px">AKT/KFP 15–16 Jan 2027 · <b style="color:var(--amber)">${t.daysToExam} days</b></div>
+      </div>
+    </div>
+    ${t.week?`<p class="subtle" style="margin:12px 0 0">Weekday rhythm: 20 min topic review + 20 min questions + 10 min mistakes · Weekend: one 2–4 h deep block</p>`:''}
+  </div>
 
-  ${t.week? `<div class="glass" style="border-color:var(--cyan)">
-    <div class="flex-between"><h3 style="margin:0;font-size:1rem">🎯 This week's focus</h3><span class="subtle">from the 18-week plan</span></div>
-    <p class="subtle" style="margin:6px 0 2px;font-size:.85rem">Weekday rhythm: 20 min topic review + 20 min questions + 10 min mistakes. Weekend: one 2-4 h deep block.</p>
-  </div>`:''}
+  ${(t.focus||[]).length? `<div style="margin-bottom:6px"><span class="sec-h" style="display:inline-block">This week's focus</span></div>` : ''}
+  ${(t.focus||[]).length? focusCards : `<div class="glass"><div class="empty">Exam prep phase — work your weakest topics below or hit Rapid Revision</div></div>`}
 
-  ${(t.focus||[]).length? focusCards : `<div class="glass" style="margin-top:12px"><div class="empty">No units scheduled this week — exam prep phase. Hit the Rapid Revision tab, or work your weakest topics below.</div></div>`}
-
-  <div class="glass" style="margin-top:12px">
+  <div class="glass" style="margin-top:14px">
     <div class="flex-between"><h3 style="margin:0;font-size:1rem">🔁 Reviews due</h3><span class="subtle">${(t.due_reviews||[]).length} topic(s)</span></div>
     ${(t.due_reviews||[]).length? `<div style="margin-top:6px">${t.due_reviews.slice(0,12).map(tp=>`
       <div class="due-row"><span>${esc(tp)}</span>
@@ -279,11 +303,11 @@ async function vToday() {
           <button class="btn subtle tiny" onclick="revQ('${esc(tp)}','again')">Again</button>
           <button class="btn tiny" onclick="revQ('${esc(tp)}','good')">Good</button>
           <button class="btn green tiny" onclick="revQ('${esc(tp)}','easy')">Easy</button>
-        </span></div>`).join('')}</div>` : '<div class="empty">Nothing due — answer questions to drive the scheduler</div>'}
+        </span></div>`).join('')}</div>` : '<div class="empty" style="padding:12px">Nothing due — answer questions to drive the scheduler</div>'}
   </div>
 
   ${(t.weakest||[]).length?`<div class="glass" style="margin-top:12px">
-    <h3 style="margin:0 0 6px;font-size:1rem">📉 Weakest topics (≥2 attempts)</h3>
+    <h3 style="margin:0 0 6px;font-size:1rem">📉 Weakest topics <span class="subtle">(≥2 attempts)</span></h3>
     ${t.weakest.map(w=>`<div class="due-row"><span>${esc(w.topic)}</span><span class="subtle">${w.pct}% · ${w.n} attempts</span></div>`).join('')}
   </div>`:''}`;
 }
@@ -393,32 +417,35 @@ async function vCurriculum() {
     const kase = pj(u.case_example);        // {narrative, questions:[]}
     const rationale = u.rationale || u.blurb || '';
 
-    const glLinks = guidelines.map(g=>`<a href="${esc(g.url)}" target="_blank" class="gl-link">${esc(g.title)} ↗</a>`).join(' · ') || '<span class="subtle">—</span>';
-    const matLinks = materials.map(m=>`<a href="${esc(m.url)}" target="_blank" class="gl-link">${esc(m.label)} ↗</a>`).join(' · ') || '<span class="subtle">—</span>';
+    const glLinks = guidelines.map(g=>`<li><a href="${esc(g.url)}" target="_blank">${esc(g.title)} ↗</a></li>`).join('');
+    const matLinks = materials.map(m=>`<li><a href="${esc(m.url)}" target="_blank">${esc(m.label)} ↗</a></li>`).join('');
+    const resHTML = (glLinks||matLinks) ? `<ul class="res-list">${glLinks}${matLinks}</ul>` : '<span class="subtle">—</span>';
 
+    // RACGP unit page section 2: per-domain learning outcomes
     const compHTML = comps.map(c=>`
-      <div style="margin:8px 0">
-        <div class="subtle" style="color:var(--cyan);font-weight:700">${esc(c.domain)}</div>
-        ${(c.outcomes||[]).map(o=>`<div class="li">▸ ${esc(o.text)} <span class="subtle">[${esc(o.codes)}]</span></div>`).join('')}
-      </div>`).join('') || '<span class="subtle">See RACGP curriculum page</span>';
+      <div class="domain-h">${esc(c.domain)}</div>
+      ${(c.outcomes||[]).map(o=>`<div class="outcome">The GP is able to: ${esc(o.text)} <span class="codes">[${esc(o.codes)}]</span></div>`).join('')}
+    `).join('') || '<span class="subtle">See RACGP curriculum page</span>';
 
+    // RACGP unit page section 5: strategies grouped by learning context
     const stratHTML = strategies.map(s=>`
       <div style="margin:8px 0">
-        <div class="subtle" style="color:var(--purple);font-weight:700">${esc(s.context)}</div>
-        ${(s.items||[]).slice(0,6).map(i=>`<label class="li chk"><input type="checkbox"> ${esc(i)}</label>`).join('')}
-        ${(s.items||[]).length>6?`<div class="subtle" style="margin-top:4px">…and ${s.items.length-6} more in the RACGP unit page ↗</div>`:''}
+        <div class="domain-h" style="color:var(--purple)">${esc(s.context)}</div>
+        ${(s.items||[]).slice(0,5).map(i=>`<label class="li chk"><input type="checkbox"> ${esc(i)}</label>`).join('')}
+        ${(s.items||[]).length>5?`<div class="subtle" style="margin-top:4px">…and ${s.items.length-5} more in the official unit page ↗</div>`:''}
       </div>`).join('') || '<span class="subtle">—</span>';
 
+    // RACGP unit page section 4: case + reflection questions
     const caseHTML = kase && kase.narrative ? `
       <p class="case">${esc(kase.narrative)}</p>
-      <details><summary style="font-size:.8rem">Reflect: ${(kase.questions||[]).length} questions mapped to CCE assessment areas</summary>
-        ${(kase.questions||[]).map(q=>`<div class="li" style="margin:6px 0"><span class="subtle" style="color:var(--amber)">[${esc(q.area)}]</span> ${esc(q.q)}</div>`).join('')}
-      </details>` : '';
+      <details><summary style="font-size:.82rem">Reflect on this case — ${(kase.questions||[]).length} prompts mapped to CCE assessment areas</summary>
+        <div style="margin:8px 0">${(kase.questions||[]).map(q=>`
+          <div class="outcome" style="margin:6px 0"><span class="subtle" style="color:var(--amber)">[${esc(q.area)} · D${esc(q.domains)}]</span><br>${esc(q.q)}</div>`).join('')}</div>
+      </details>` : '<span class="subtle">—</span>';
 
+    // RACGP unit page section 3: words of wisdom
     const wisdomHTML = wisdom.length?`
-      <details style="margin-top:6px"><summary>💡 Words of wisdom (${wisdom.length} tips from experienced GPs)</summary>
-        <div style="margin:6px 0">${wisdom.map(w=>`<div class="li">💡 ${esc(w)}</div>`).join('')}</div>
-      </details>`:'';
+      <div style="margin-top:4px">${wisdom.map(w=>`<div class="wis"><span>💡</span><span>${esc(w)}</span></div>`).join('')}</div>`:'<span class="subtle">—</span>';
 
     return `<details class="unit" data-unit="${esc(u.name)}"><summary>
       <span class="pill ${u.type==='core'?'tier1':'tier2'}">${u.type==='core'?'CORE':'CTX'} ${u.number}</span>
@@ -427,28 +454,24 @@ async function vCurriculum() {
       ${guiding.length? `<span class="subtle">${guiding.length} guiding topics</span>` : ''}
     </summary>
     <div class="unit-body">
-      <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(rationale)}</p>${wisdomHTML}</div>
-      <div class="sec"><div class="sec-h">2 · Competencies & learning outcomes</div>${compHTML}</div>
-      <div class="sec"><div class="sec-h">3 · Curricula in context</div>
-        ${u.racgp_url?`<a href="${esc(u.racgp_url)}" target="_blank" class="gl-link">Official RACGP unit page ↗</a>`:'<span class="subtle">—</span>'}
-      </div>
-      <div class="sec"><div class="sec-h">4 · Case consultation example</div>${caseHTML || '<span class="subtle">—</span>'}</div>
+      <div class="sec"><div class="sec-h">1 · Rationale</div><p>${esc(rationale)}</p></div>
+      <div class="sec"><div class="sec-h">2 · Competencies and learning outcomes</div>${compHTML}</div>
+      <div class="sec"><div class="sec-h">3 · Words of wisdom</div>${wisdomHTML}</div>
+      <div class="sec"><div class="sec-h">4 · Case consultation example</div>${caseHTML}</div>
       <div class="sec"><div class="sec-h">5 · Learning strategies</div>${stratHTML}</div>
-      <div class="sec"><div class="sec-h">6 · Guiding topics</div>
+      <div class="sec"><div class="sec-h">6 · Guiding topics and content areas</div>
         ${guiding.length ? guiding.map(g=>`<div class="li">▸ ${esc(g)}</div>`).join('') : '<span class="subtle">—</span>'}
       </div>
-      <div class="sec"><div class="sec-h">7 · Study topics</div>
+      <div class="sec"><div class="sec-h">7 · Learning resources</div>${resHTML}</div>
+      <div class="sec" style="border-color:rgba(34,211,238,.25)"><div class="sec-h" style="color:var(--cyan)">Your study tracker</div>
         ${ts.length? `<table><tr><th>Topic</th><th>Yield</th><th>Status</th><th>Focus</th></tr>
         ${ts.map(t=>`<tr data-t="${esc(t.name)}">
           <td><b>${esc(t.name)}</b></td>
           <td><span class="pill ${t.priority}">${t.priority==='VH'?'🔴':t.priority==='H'?'🟠':t.priority==='M'?'🟡':'🟢'}</span></td>
           <td><span class="pill st-${esc(t.status)}" style="cursor:pointer" onclick="cycleStatus(${t.id},'${esc(t.status)}')">${esc(t.status)}</span></td>
           <td class="subtle" style="max-width:300px">${esc((t.must_know||'').slice(0,100))}… <span class="expand" onclick="tDetail(${t.id})">more</span></td>
-        </tr>`).join('')}</table>` : '<span class="subtle">No study topics mapped yet — use the guiding topics above</span>'}
-      </div>
-      <div class="sec"><div class="sec-h">8 · Learning resources</div>
-        <div style="margin:6px 0"><b>Guidelines & sources:</b><br>${glLinks}</div>
-        <div style="margin:6px 0"><b>Study materials:</b><br>${matLinks}</div>
+        </tr>`).join('')}</table>` : '<span class="subtle">No mapped study topics — learn from the guiding topics above</span>'}
+        ${u.racgp_url?`<div style="margin-top:8px"><a href="${esc(u.racgp_url)}" target="_blank" class="gl-link">Official RACGP unit page ↗</a></div>`:''}
       </div>
       <div class="unit-notes" id="notes-${u.id}"></div>
       <button class="btn subtle add-note" onclick="addNote(${u.id})">＋ Add note</button>
