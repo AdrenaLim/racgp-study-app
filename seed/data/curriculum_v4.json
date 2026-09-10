@@ -1760,10 +1760,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "empathically and sensitively ask patients of all ages about exposure to abuse and violence",
        "codes": "1.1.1, 1.1.2, 1.2.3, 1.3.1, AH1.3.1"
       },
@@ -1780,10 +1776,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify red flags that may indicate abuse or violence and respond appropriately, especially where there is an immediate risk to health and safety",
        "codes": "2.1.3, 2.3.1, 2.3.3"
@@ -1806,10 +1798,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "advocate for access to appropriate services and care for patients who have experienced, or are at risk of, abuse and violence",
        "codes": "3.1.1, 3.1.2, 3.1.3, 3.1.4"
       },
@@ -1823,10 +1811,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "manage personal health through self-care and setting professional boundaries when treating patients who have experienced abuse and violence",
        "codes": "4.1.5, 4.2.2, 4.2.3, 4.2.5"
       },
@@ -1839,10 +1823,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "document evidence of abuse and violence in a manner that is appropriate to the medico-legal context and jurisdiction",
        "codes": "5.2.1, 5.2.3"
@@ -2118,10 +2098,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate a non-judgemental attitude when communicating about addiction and substance use",
        "codes": "1.1.2, 1.2.1, AH1.3.1"
       },
@@ -2142,10 +2118,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "perform a thorough screening interview that includes questions about substance use and other addictive behaviours, such as gambling",
        "codes": "2.1.1, AH2.1.1"
@@ -2168,10 +2140,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify and screen patients at increased risk of addictive behaviours",
        "codes": "3.1.1"
       },
@@ -2185,10 +2153,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "facilitate a practice-wide approach to managing patients with addiction by maintaining personal wellbeing and boundaries, and supporting colleagues",
        "codes": "4.1.4, 4.1.5, 4.2.3, 4.3.3"
       },
@@ -2201,10 +2165,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "demonstrate an understanding of confidentiality and consent for people with addiction",
        "codes": "5.2.1, 5.2.2"
@@ -2480,10 +2440,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss the impact of cardiovascular disease in a manner that is respectful and responsive to the sociocultural context of the patient",
        "codes": "1.1.1, 1.1.5, 1.1.6, 1.3.1, 1.3.2, AH1.3.1"
       },
@@ -2496,10 +2452,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "undertake appropriate assessment and management of patients with cardiovascular presentations, including a consideration of red flags",
        "codes": "2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.6, 2.1.7, 2.1.8, 2.1.10"
@@ -2526,10 +2478,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use a planned and opportunistic approach to provide cardiovascular health screening, preventive care and health-promotion activities in a culturally appropriate way",
        "codes": "3.1.1, 3.1.4, 3.2.2"
       },
@@ -2543,10 +2491,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on skills for managing cardiovascular emergency situations and undertake training when required",
        "codes": "4.2.1, 4.2.2, RH4.2.2, RH4.2.3"
       }
@@ -2555,10 +2499,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use recall systems to optimise cardiovascular health outcomes for patients",
        "codes": "5.2.1, 5.2.3, AH5.1.2"
@@ -2812,10 +2752,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "tailor communication style to effectively interact with young patients and their family and carers",
        "codes": "1.1.3, AH1.3.1, 1.3.1, 1.4.1"
       },
@@ -2844,10 +2780,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "monitor growth and development in children and young people to ensure early recognition and management of conditions",
        "codes": "2.1.1, 2.1.2, 2.1.7, 2.1.8"
@@ -2886,10 +2818,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "provide advice on accessing health-promotion resources and programs appropriate to children and young people",
        "codes": "3.1.2, 3.1.4, AH3.2.2"
       },
@@ -2911,10 +2839,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "access relevant training and education in the care of children and young people",
        "codes": "4.2.1, 4.2.2, RH4.2.3"
       },
@@ -2927,10 +2851,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "assess for Gillick competence in young people when discussing consent in accordance with relevant jurisdiction, and maintain confidentiality as it pertains to the medico-legal context",
        "codes": "5.2.1, 5.2.2, 5.2.3"
@@ -3203,10 +3123,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate appropriate respect and concern for patients with chronic and new skin conditions",
        "codes": "1.1.1, 1.1.4, AH1.3.1, 1.4.4, RH1.4.1"
       },
@@ -3231,10 +3147,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify the acutely unwell patient with a dermatological condition or dermatological manifestation of systemic illness",
        "codes": "2.1.3"
@@ -3269,10 +3181,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify patients with risk factors for skin cancer",
        "codes": "3.1.1, 3.1.4, AH3.2.1"
       },
@@ -3294,10 +3202,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "when considering performing any procedure, recognise the limits of their professional competency and identify opportunities for skills development",
        "codes": "4.1.1, 4.1.2, RH4.2.1, RH4.2.3"
       },
@@ -3314,10 +3218,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify patients with skin conditions (including chronic skin conditions and probable or confirmed malignancies) and oversee practice recall systems that provide appropriate follow-up",
        "codes": "5.1.1, 5.2.3"
@@ -3557,10 +3457,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "tailor communication style to effectively interact with patients, their families or carers",
        "codes": "1.1.1, 1.1.2, 1.1.3, 1.1.4, 1.1.5, 1.1.6, 1.3.1, AH1.3.1"
       },
@@ -3577,10 +3473,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "screen for and recognise signs of developmental delay in paediatric patients to ensure early recognition and referral",
        "codes": "2.1.6, 2.1.8"
@@ -3615,10 +3507,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "provide equitable access to healthcare by identifying barriers and taking reasonable measures to overcome them in practice, for example, through telehealth, suitable physical access to the practice, and appropriate practice equipment",
        "codes": "RH3.2.1, 3.2.2, 3.2.4"
       },
@@ -3640,10 +3528,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "access local health pathways for ongoing training and education in the care of patients with disability",
        "codes": "4.2.1, 4.2.2, RH4.2.3"
       },
@@ -3656,10 +3540,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify appropriate documentation and reporting structures for services that assist patients in accessing care, for example, in the development and maintenance of the NDIS plan",
        "codes": "5.2.3"
@@ -3913,10 +3793,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate appropriate respect and concern for patients, families and communities who have experienced disasters in a trauma-informed and culturally safe manner appropriate to the patients’ context",
        "codes": "1.1.2, 1.2.1, 1.2.2, 1.2.3, 1.3.1, 1.3.2, AH1.3.1, RH1.1.1"
       },
@@ -3933,10 +3809,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "evaluate situations where Psychological First Aid and Skills for Psychological Recovery would be appropriate and demonstrate competence in their provision",
        "codes": "2.1.3, 2.3.1"
@@ -3971,10 +3843,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "explain factors affecting each individual and each community’s vulnerability and resilience to optimise disaster healthcare and surveillance during the acute and post-disaster periods",
        "codes": "3.2.1, 3.2.3, AH3.2.1, AH3.2.2"
       },
@@ -4000,10 +3868,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "institute and maintain self-care strategies and avenues for support prior to any local community disaster when GPs often play a strong role in caring for disaster-affected patients",
        "codes": "4.2.1, RH4.2"
       },
@@ -4020,10 +3884,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "discuss the principles involved in business continuity and disaster planning for the general practice, including for a pandemic",
        "codes": "5.1.1, 5.1.2, RH5.1.1"
@@ -4282,10 +4142,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "communicate effectively and sensitively with doctor-patients to encourage and facilitate discussion of sensitive psychological, physical and workplace issues",
        "codes": "1.1.1, 1.1.2, 1.2.1, 1.3.1, AH1.3.1"
       },
@@ -4303,10 +4159,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "explain the barriers to good healthcare for doctors",
        "codes": "2.1.4"
       },
@@ -4320,10 +4172,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "plan for relevant routine screening tests, immunisations and preventive healthcare for doctor-patients",
        "codes": "3.1.1, RH3.1.1, 3.2.2"
       },
@@ -4336,10 +4184,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "develop an ongoing learning plan to incorporate reflection on physical and emotional wellbeing and assessment of symptoms of burnout",
        "codes": "4.2.2, 4.2.3"
@@ -4361,10 +4205,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "explain the current mandatory reporting of impaired colleagues and appropriately interpret the thresholds as they relate to treating doctors",
        "codes": "5.2.1, 5.2.3"
@@ -4604,10 +4444,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "effectively and appropriately communicate with patients with hearing loss and/or speech impairment in conjunction with their families and others involved in their care",
        "codes": "1.1.1, 1.1.2, 1.1.3, 1.1.4, 1.2.1, AH1.3.1, 1.3.1, 1.3.2, 1.4.4"
       },
@@ -4628,10 +4464,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "diagnose, treat and manage common ENT and oral presentations",
        "codes": "2.1.1, 2.1.2, 2.1.3, 2.1.4, RH2.1.1, 2.3.4"
@@ -4654,10 +4486,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify, and advocate to remove barriers that have an impact on patients accessing timely optimal care to prevent sequelae",
        "codes": "3.2.1, 3.2.2, 3.2.3, 3.2.4, AH3.2.2, RH3.2.1"
       },
@@ -4679,10 +4507,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate the ability to act in the patient’s best interest when antibiotics are requested inappropriately for conditions including childhood otitis media and acute sore throat",
        "codes": "4.1.1, 4.4.2, AH4.2.1, 4.1.5"
       }
@@ -4691,10 +4515,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify readily accessible evidence-based guidelines for pre-referral treatment and referral of common ENT and oral conditions",
        "codes": "5.1.1, AH5.1.1, AH5.2.1, AH5.1.3"
@@ -4979,10 +4799,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "adjust communication to the context, such as small group or individual teaching",
        "codes": "1.1.5, 1.1.6, RH1.1.1, 1.3.2"
       },
@@ -5012,10 +4828,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "deliver education that is based on up-to-date evidence",
        "codes": "2.2.1, 2.2.2"
       },
@@ -5037,10 +4849,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "teach health promotion skills and strategies including having difficult preventive health conversations",
        "codes": "2.2.1, 2.2.2"
       },
@@ -5053,10 +4861,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "manage professional boundaries when working with others in a teaching, mentoring or coaching role",
        "codes": "4.1.1, 4.1.4, 4.1.5, 4.3.3"
@@ -5086,10 +4890,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "manage time effectively when supervising learners in practice",
        "codes": "5.1.3"
@@ -5286,10 +5086,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "effectively and appropriately communicate with other health professionals regarding clinical management and transfer, when appropriate, of emergency and trauma presentations",
        "codes": "1.1.1, 1.1.2, 1.1.5, RH1.1.1"
       },
@@ -5302,10 +5098,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "appropriately diagnose and manage emergency and trauma presentations",
        "codes": "RH2.1.1, 2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.7, 2.1.8, 2.1.9, 2.1.10"
@@ -5320,10 +5112,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "advocate for the provision and resourcing of appropriate emergency services for their community",
        "codes": "3.2.2, RH3.2.1"
       }
@@ -5332,10 +5120,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "acknowledge the personal impact of trauma and resuscitation on the individual, staff and community",
        "codes": "4.2.2, 4.2.3, 4.2.4, 4.3.3, RH4.1.1, RH4.2.1"
@@ -5357,10 +5141,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "provide emergency life-saving care and leadership in a safe manner with respect to their skillset",
        "codes": "5.1.2, 5.1.3, RH5.1.1, 5.2.3"
@@ -5680,10 +5460,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate clear communication, adapted for the patient’s background and needs, regarding complex, chronic endocrinological and metabolic disorders",
        "codes": "1.1.1, 1.1.3, 1.1.6, 1.2.1, 1.3.1, 1.4.3, AH1.3.1"
       },
@@ -5704,10 +5480,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "display appropriate clinical decision-making in investigating and monitoring endocrinological and metabolic disorders",
        "codes": "2.1.6, 2.1.7, 2.1.8, 2.2.2"
@@ -5742,10 +5514,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "describe the determinants of health as they pertain to metabolic syndrome, obesity and endocrinological diseases, and advocate for positive change in these areas",
        "codes": "3.2.3, AH3.2.1"
       },
@@ -5762,10 +5530,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "remain up to date with developments in medications and other treatments as they pertain to endocrinological and metabolic disorders and obesity",
        "codes": "4.4.1, 4.4.2, AH4.4.1, AH4.4.2"
@@ -5787,10 +5551,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "utilise appropriate Medicare items to assist in the coordination and facilitation of holistic care of patients with chronic endocrinological and metabolic conditions",
        "codes": "AH5.1.1, 5.2.3, 5.2.4"
@@ -6058,10 +5818,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "communicate the eye examination process to patients, their families or carers in a clear and respectful manner, checking for understanding",
        "codes": "1.1.1, 1.1.3, 1.1.6, AH1.3.1"
       },
@@ -6074,10 +5830,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "perform eye examinations and vision assessments in patients of all ages",
        "codes": "2.2.1, 2.1.5, 2.1.6, 2.1.7, AH2.1.2"
@@ -6100,10 +5852,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify patients at increased risk of vision loss and eye disease due to risk factors and promote relevant lifestyle changes",
        "codes": "3.1.1, 3.1.4, 3.2.2"
       },
@@ -6121,10 +5869,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on personal knowledge and skills in relation to vision and eye health and identify areas to build on",
        "codes": "4.2.1, 4.2.2, RH4.2.2, RH4.2.3"
       }
@@ -6133,10 +5877,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use effective and secure record keeping, recall systems and clinical audits to provide quality eye healthcare and promote disease prevention",
        "codes": "5.2.1, 5.2.3, AH5.2.1"
@@ -6377,10 +6117,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "effectively communicate diagnosis and management of gastrointestinal conditions, considering the patient’s level of health literacy",
        "codes": "1.1.1, 1.1.2, 1.1.3, 1.1.6, AH1.3.1, 1.2.1, 1.3.1"
       },
@@ -6397,10 +6133,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "take a history and examine paediatric and adult patients for common gastrointestinal presentations",
        "codes": "2.1.1, 2.1.2"
@@ -6423,10 +6155,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use planned and opportunistic approaches to discuss screening, preventive care and gastrointestinal health promotion",
        "codes": "3.1.1, 3.1.4"
       },
@@ -6444,10 +6172,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "seek opportunities to share and learn new skills from other health professionals involved in the care of patients with chronic gastrointestinal diseases",
        "codes": "4.2.1, 4.2.2, 4.3.1, 4.1.1"
       }
@@ -6456,10 +6180,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "develop, maintain, coordinate and evaluate disease management programs, including recall and prompted care systems, both within general practice and with multidisciplinary teams",
        "codes": "5.1.3, 5.2.1, 5.2.2"
@@ -6681,10 +6401,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "communicate with patients and family members in a sensitive, empathic manner while disclosing possible blood disorders, including difficult diagnoses such as haematological malignancies",
        "codes": "1.1.1, 1.1.2, 1.1.3, AH1.3.1, 1.3.1, 1.4.1"
       },
@@ -6697,10 +6413,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use diagnostic haematology services alongside clinical presentations for investigating anaemia, iron storage and deficiency conditions",
        "codes": "AH2.1.2, 2.1.3, 2.1.7, 2.1.9, 2.3.1, RH2.3.1"
@@ -6731,10 +6443,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify and screen at-risk populations for haematological conditions",
        "codes": "3.1.1"
       },
@@ -6748,10 +6456,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "outline a professional development plan to maintain haematology-related procedural skills such as phlebotomy and iron infusion",
        "codes": "4.1.1, 4.2.1, 4.2.2, RH4.2.3"
       }
@@ -6760,10 +6464,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "implement policies and procedures to ensure timely follow-up, recall for blood test results and monitoring of chronic conditions",
        "codes": "5.1.3, AH5.1.3, AH5.2.1"
@@ -7029,10 +6729,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "take a sensitive, respectful, non-stigmatising and clear approach when communicating with patients at higher risk of, or diagnosed with, communicable infectious diseases",
        "codes": "1.1.1, 1.1.2, 1.1.6, 1.2.1, 1.2.3, 1.3.1, AH1.3.1"
       },
@@ -7045,10 +6741,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify and provide initial management to a significantly ill patient, including children, presenting with life-threatening infection",
        "codes": "2.1.3"
@@ -7071,10 +6763,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "provide targeted advice to patients who are at increased risk of infections due to their socio-cultural, occupational or environmental context",
        "codes": "3.1.1, 3.1.3, RH3.1.1, 3.2.1, 3.2.2, 3.2.4"
       },
@@ -7088,10 +6776,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use regular self-reflective practice to identify the potential impact of personal biases, judgements, assumptions and attitudes when working with groups at high-risk for infectious diseases",
        "codes": "4.2.1, 4.2.2, 4.2.4, AH4.2.2"
       },
@@ -7104,10 +6788,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "report notifiable infectious diseases to respective state and territorial health authorities",
        "codes": "5.1.1, 5.1.2, 5.2.1, 5.2.5"
@@ -7363,10 +7043,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use a non-judgemental approach when enquiring about the use of complementary medicine",
        "codes": "1.1.1, 1.3.1"
       },
@@ -7396,10 +7072,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss and monitor for potential interactions when prescribing pharmaceuticals and complementary supplements concomitantly",
        "codes": "2.1.9, 2.2.2"
       },
@@ -7425,10 +7097,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify patterns of use of complementary and integrative medicine modalities in their community",
        "codes": "3.1.1, 3.2.2"
       }
@@ -7437,10 +7105,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "respect the right of patients to make informed decisions about the type of care they wish to receive, including integrative medicine modalities and traditional medicine practices, for example, Aboriginal and Torres Strait Islander, Chinese and Ayurvedic medicine",
        "codes": "4.1.1, 4.1.2, 4.1.5"
@@ -7462,10 +7126,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "explain and obtain informed consent on integrative medicine use in a manner of shared decision-making",
        "codes": "5.2.2"
@@ -7746,10 +7406,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate effective, empathic, respectful and culturally safe communication with patients involved in the justice system",
        "codes": "1.1.1, 1.1.2, 1.1.4, 1.1.6, AH1.3.1, 1.3.1, 1.3.2"
       },
@@ -7771,10 +7427,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate effective assessment and management of health conditions seen in patients involved in the justice system, including mental health, blood-borne viruses, chronic disease and substance use disorders",
        "codes": "2.1.1, 2.1.4, 2.1.6, 2.1.7, 2.1.8, 2.1.9, 2.2.3, 2.3.1, AH2.1.2"
       },
@@ -7787,10 +7439,6 @@
     {
      "domain": "Population health and the context of general practice",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "demonstrate understanding of the social determinants of health and health disparities as related to patients involved in the justice system",
        "codes": "3.2.1, 3.2.3"
@@ -7805,10 +7453,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on professional practice, including biases, assumptions and attitudes about patients involved in the justice system",
        "codes": "4.2.2, 4.2.4, AH4.2.1, AH4.2.2"
       },
@@ -7821,10 +7465,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "manage time and priorities to address the complex health and social support needs of patients involved in the justice system",
        "codes": "5.1.3, AH5.1.1, AH5.1.3, RH5.1.1"
@@ -8060,10 +7700,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "adapt their communication approach to meet the needs of patients, families and carers when discussing kidney and urinary tract health and disease",
        "codes": "1.1.1, 1.1.2, 1.1.3, 1.1.6, AH1.3.1, 1.2.1, 1.3.1, 1.3.2, 1.4.1"
       },
@@ -8076,10 +7712,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "take a comprehensive history to diagnose kidney and urinary tract presentations",
        "codes": "2.1.1, 2.1.3, 2.1.4, 2.1.7, 2.1.8"
@@ -8102,10 +7734,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use planned and opportunistic approaches to discuss screening and preventive care with patients at risk of long-term kidney and urinary conditions",
        "codes": "3.1.1, 3.1.4"
       },
@@ -8119,10 +7747,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "conduct clinical audits to evaluate identification processes and management of chronic kidney disease in the practice",
        "codes": "4.4.2"
       }
@@ -8131,10 +7755,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use clinical information systems effectively to manage recalls and maintain continuity of care in patients presenting with kidney and urinary conditions",
        "codes": "5.1.3, 5.2.1, 5.2.3"
@@ -8372,10 +7992,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate a professional, inclusive and culturally sensitive approach when discussing health concerns with male patients of all ages",
        "codes": "1.1.1, 1.1.3, 1.1.4, AH1.3.1, AH1.4.1, 1.2.1, 1.2.2, 1.4.4, 1.4.5"
       },
@@ -8392,10 +8008,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "diagnose and manage common health conditions that affect male patients",
        "codes": "2.1.1, 2.1.2, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7, 2.1.8, 2.1.9, 2.1.10, AH2.1.2, RH2.1.1, 2.3.1, 2.3.4"
@@ -8414,10 +8026,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use planned and opportunistic health promotion and disease prevention for early identification of male health issues",
        "codes": "3.1.1, 3.2.2, 3.2.3, 3.2.4"
       },
@@ -8435,10 +8043,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on personal attitudes and values about masculinity, the role of men in society, and how this may influence interactions with patients, their families and carers",
        "codes": "4.2.1, 4.2.2, 4.2.4"
       },
@@ -8451,10 +8055,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use practice management recall systems to encourage regular check-ups and follow-up appointments for male patients",
        "codes": "5.2.3, 5.2.4, AH5.2.1"
@@ -8791,10 +8391,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use non-judgemental and destigmatising language in discussing mental health concerns with patients and their families and carers and in assessing social factors which impact on mental health such as unemployment, isolation, marginalisation, bullying and domestic violence",
        "codes": "1.1.1, 1.1.2, 1.2.3, AH1.3.1, AH1.4.1, 1.2.1, RH1.4.1"
       },
@@ -8819,10 +8415,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use screening tools and psychometric instruments to aid identification, assessment and monitoring of patients with mental health disorders",
        "codes": "2.1.6"
@@ -8849,10 +8441,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify relevant belief systems and cultural contexts that may impact on treatment and care of patients with mental illness, including Aboriginal and Torres Strait Islander patients, people from culturally and linguistically diverse backgrounds, and/or patients living in rural and remote areas",
        "codes": "3.1.1, 3.2.1, 3.2.3, 3.2.4, AH3.2.2, RH3.2.1"
       },
@@ -8874,10 +8462,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "develop and implement self-care strategies and avenues for debriefing when caring for mental health patients",
        "codes": "4.1.1, RH4.2.1, 4.2.4, 4.2.3, 4.3.1, RH4.2.1"
       },
@@ -8890,10 +8474,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use appropriate Medicare billing and government initiatives to fund efficient and effective mental healthcare",
        "codes": "5.2.4"
@@ -9165,10 +8745,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "effectively use professional interpreters in consultations with people who speak little or no English, or English as a subsequent language",
        "codes": "1.1.6, 1.4.1"
       },
@@ -9181,10 +8757,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "conduct respectful health assessments that consider the migration experience, culture and health literacy of the person",
        "codes": "2.1.1, 2.1.2, 2.1.5, 2.1.6, 2.1.7"
@@ -9203,10 +8775,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "consider patterns of disease commonly experienced by migrants, refugees and asylum seekers and provide appropriate recommendations, including vaccinations and access to screening",
        "codes": "3.1.1, 3.1.3, 3.1.4, 3.2.3"
       },
@@ -9220,10 +8788,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "explore and identify own cultural lens and bias and reflect on how these impact provision of care for migrants, refugees and asylum seekers",
        "codes": "4.2.1, 4.2.2, 4.2.4"
       }
@@ -9232,10 +8796,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "demonstrate familiarity of the evidence-based recommendations, guidelines and relevant MBS items for health assessments for refugees and other humanitarian entrants",
        "codes": "5.2.1, 5.2.3, 5.2.5"
@@ -9471,10 +9031,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate sensitivity around discussing military and veteran health and a history of military service with patients and their families",
        "codes": "1.1.1, 1.1.2, 1.1.3, AH1.3.1"
       },
@@ -9495,10 +9051,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "incorporate military and veteran health issues and past military service into history-taking, including mental health",
        "codes": "2.1.1"
@@ -9521,10 +9073,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "describe the pattern of general practice conditions affecting defence force personnel and veterans",
        "codes": "3.1.1, 1.2.3"
       },
@@ -9542,10 +9090,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "manage the potential tensions between the medical requirements of the defence forces with those of the patient",
        "codes": "4.1.1, 4.1.5"
       }
@@ -9554,10 +9098,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "respect confidentiality when serving members choose to access civilian GP services rather than ADF health services",
        "codes": "5.2.5"
@@ -9848,10 +9388,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "communicate empathically the possible outcome of an injury or serious inflammatory condition, its associated complications and sequalae",
        "codes": "1.1.4, 1.1.5, 1.1.6, 1.2.1, 1.4.1, 1.4.3"
       },
@@ -9864,10 +9400,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "elicit a thorough history to investigate a range of musculoskeletal conditions in patients of all ages",
        "codes": "2.1.1"
@@ -9898,10 +9430,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "detect and screen high-risk population groups for underlying musculoskeletal conditions",
        "codes": "3.1.1, 3.1.3"
       },
@@ -9915,10 +9443,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "confidently refer patients to allied health professionals for treatment and management of musculoskeletal conditions",
        "codes": "4.1.1, 4.1.5"
       },
@@ -9931,10 +9455,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "ensure recall systems are in place for chronic musculoskeletal and rheumatological conditions",
        "codes": "5.1.3, AH5.1.1, AH5.1.2"
@@ -10197,10 +9717,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate a professional and culturally sensitive approach to the assessment and management of neurological presentations",
        "codes": "1.1.1, AH1.3.1, 1.3.1, 1.4.3, 1.4.5, AH1.4.1"
       },
@@ -10217,10 +9733,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "assess neurological conditions in people of all ages using relevant screening tools and investigations",
        "codes": "2.1.1, 2.1.1, 2.1.3, 2.1.4, 2.1.5, 2.1.6, 2.1.7, 2.1.8"
@@ -10247,10 +9759,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss the epidemiology of common and significant neurological disorders, and the application of screening and/or early detection",
        "codes": "3.1.1, 3.1.2, 3.1.3"
       },
@@ -10268,10 +9776,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "participate in clinical audits regarding the management of neurological presentations",
        "codes": "4.4.2"
       }
@@ -10280,10 +9784,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "discuss and integrate medico-legal requirements when obtaining informed consent from a patient with reduced or no capacity for consent",
        "codes": "5.2.2, 5.2.3"
@@ -10521,10 +10021,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "respectfully ask about and discuss environmental and occupational factors involved in patient presentations",
        "codes": "1.1.1, AH1.3.1, 1.2.1, 1.2.3, 1.3.1, 1.4.4"
       },
@@ -10545,10 +10041,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "take a comprehensive history including eliciting information about a patient’s current and past occupation and environmental context",
        "codes": "2.1.1"
@@ -10579,10 +10071,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "perform health surveillance and monitoring for patients in a range of occupations and environments based on their risk factors, for example, skin checks, respiratory monitoring, hearing checks or monitoring those vulnerable to the effects of extreme heat",
        "codes": "3.1.1"
       },
@@ -10604,10 +10092,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "write an impartial medico-legal report or certificate regarding a worker, their injury, management, rehabilitation, prognosis and capacity for work",
        "codes": "4.1.1, 4.1.2"
       },
@@ -10620,10 +10104,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "maintain comprehensive records regarding occupational history for all patients, and particularly in the case of workplace injury or incident",
        "codes": "5.2.2, 5.2.3"
@@ -10863,10 +10343,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "use effective strategies to overcome barriers when communicating with older patients, including when not able to physically attend the patient (eg telephone/telehealth)",
        "codes": "1.1.1, 1.1.5, 1.1.6, AH1.3.1, 1.2.1, RH1.1.1"
       },
@@ -10883,10 +10359,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "develop treatment plans that address the interactions and complications of multisystem disease and the use of multiple medications",
        "codes": "2.1.3, 2.1.7, 2.1.9, AH2.1.2, 2.2.2, 2.3.1"
@@ -10917,10 +10389,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "provide age-appropriate preventive care and health promotion to older patients",
        "codes": "3.1.1, 3.1.4, 3.2.3"
       },
@@ -10934,10 +10402,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on attitudes, values and behaviours related to ageing and older people and how these impact on patient interactions",
        "codes": "3.1.1, 3.1.4, 3.2.3"
       },
@@ -10950,10 +10414,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "assess and act appropriately in situations involving potential abuse of older people",
        "codes": "5.1.2, 5.2.1, 5.2.3"
@@ -11356,10 +10816,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate respect and empathy for people experiencing pain, both chronic and acute",
        "codes": "1.1.1, 1.1.2, 1.1.3, 1.1.6, AH1.3.1, 1.4.4"
       },
@@ -11372,10 +10828,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "assess and treat both acute and chronic pain using pharmacotherapies and non-pharmacological therapies, including working collaboratively with other medical and allied health professionals in supporting people experiencing pain",
        "codes": "2.1.1, 2.1.2, 2.1.3, 2.1.9"
@@ -11398,10 +10850,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify the social, economic and public health effects of pain and/or opioid dependence",
        "codes": "3.1.4, 3.2.1, 3.2.2, 3.2.3, 3.2.4, AH3.2.1, RH3.2.1"
       }
@@ -11410,10 +10858,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "participate in ongoing professional development regarding best practice pain management",
        "codes": "4.2.1, 4.3.1, 4.4.1, 4.4.2"
@@ -11431,10 +10875,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "develop and review clinical processes and policies on maintaining safety around prescription, dispensing and documentation of drugs of dependence",
        "codes": "5.1.1, 5.2.3, 5.2.3"
@@ -11673,10 +11113,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "communicate in a sensitive and compassionate manner when discussing palliative care options with patients, their families and carers",
        "codes": "1.1.1, 1.1.2, AH1.3.1"
       },
@@ -11706,10 +11142,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "assess and manage the impact of treatment and symptoms on activities of daily living",
        "codes": "2.1.3, 2.1.7, 2.1.9, 2.1.10"
       },
@@ -11727,10 +11159,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "advocate for the role of the general practitioner in palliative care",
        "codes": "3.2.1, 3.2.4, RH3.2.1"
       }
@@ -11739,10 +11167,6 @@
     {
      "domain": "Professional and ethical role",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "maintain self-care strategies and avenues for debriefing when caring for those who are terminally ill",
        "codes": "4.2.2, 4.2.5, RH4.2.1"
@@ -11760,10 +11184,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "establish clinical triggers in the management of patients with advanced chronic disease to inform anticipatory care planning and promote consideration of adopting advance care planning or a palliative care approach",
        "codes": "AH5.1.2, AH5.2.1"
@@ -12025,10 +11445,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss sensitive topics related to pregnancy and reproductive care with women and their partners",
        "codes": "1.1.1, 1.1.2, 1.1.5, 1.1.6, AH1.3.1, 1.2.1"
       },
@@ -12054,10 +11470,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "conduct a focused physical examination, targeted investigations and screening in women in relation to pregnancy and reproductive health",
        "codes": "2.1.1, 2.1.2, 2.1.3, 2.1.4, AH2.1.1, RH2.1.1"
       },
@@ -12079,10 +11491,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify current and relevant resources to support the pregnancy and reproductive health needs of patients",
        "codes": "3.1.1, 3.1.2, 3.1.4, 3.2.2, 3.2.4, AH3.2.1, AH3.2.2, RH3.2.1"
       },
@@ -12100,10 +11508,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate self-awareness of personal cultural or religious values or beliefs that may impact ability to deliver patient-centred reproductive or pregnancy care",
        "codes": "4.2.2, 4.2.4, AH4.2.1, AH4.2.2"
       },
@@ -12120,10 +11524,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "provide safe and timely access to reproductive healthcare",
        "codes": "5.2.1, 5.2.2, 5.2.3, 5.2.4, 5.2.5, 5.2.6, AH5.2.1"
@@ -12374,10 +11774,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss evidence for clinical decisions, including scientific and statistical information and the limitations of evidence, with colleagues",
        "codes": "1.2.1"
       },
@@ -12390,10 +11786,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "access and interpret research updates, decision aids, guidelines and evidence summaries",
        "codes": "2.2.1"
@@ -12412,10 +11804,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "apply relevant epidemiological information to clinical decisions",
        "codes": "3.1.1, 3.2.2, 3.2.4"
       },
@@ -12429,10 +11817,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "advocate for and/or contribute to ethical research in general practice which addresses patient needs and health gaps",
        "codes": "4.2.1, 4.2.2, AH4.3.1"
       }
@@ -12441,10 +11825,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "use data, including clinical audits, to drive quality improvements in practice, and understand the principles of ethical patient enrolment and data extraction",
        "codes": "5.2.4, 5.2.5"
@@ -12658,10 +12038,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "engage the patient or carer to gather detailed information about their respiratory presentation and the impact of their illness in their lives",
        "codes": "1.1.5, 1.4.1, 1.4.3, 1.4.4, 1.4.5, AH1.4.1, RH1.4.1"
       },
@@ -12686,10 +12062,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "interpret and analyse the history and examination findings of a respiratory presentation to arrive at a working diagnosis that considers red flags",
        "codes": "2.1.4, 2.1.7, 2.1.10"
@@ -12720,10 +12092,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "advise on and administer vaccinations for preventable respiratory illnesses",
        "codes": "3.1.1, 3.1.3, 3.1.4, AH3.2.1, RH3.2.1"
       },
@@ -12745,10 +12113,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "engage in self-reflection regarding personal values or beliefs that may impact on their ability to deliver patient-centred care in the context of ongoing health risk behaviours that may impact respiratory health",
        "codes": "4.1.2, 4.1.4, 4.2.2, AH4.2.2, 4.2.4"
       },
@@ -12761,10 +12125,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "identify appropriate Medicare item numbers that assist in the management of chronic respiratory disease",
        "codes": "5.2.3, 5.2.4, AH5.1.1, AH5.1.2, AH5.1.3, AH5.2.1"
@@ -13039,10 +12399,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "communicate about sexuality and sexual health in a manner that is respectful and responsive to the person’s beliefs, sexuality, gender and culture",
        "codes": "1.1.1, 1.1.6, 1.3.1, 1.4.1, AH1.3.1"
       },
@@ -13063,10 +12419,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "demonstrate a respectful and individually appropriate approach to taking a sexual health history",
        "codes": "2.1.1"
@@ -13089,10 +12441,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify and screen patients at increased risk of STI, for example, chlamydia in young people",
        "codes": "3.1.1, 3.1.3"
       },
@@ -13106,10 +12454,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on and actively seek to address biases, judgements, assumptions and attitudes regarding sexuality and gender",
        "codes": "4.2.2, 4.2.4, AH4.2.2"
       }
@@ -13118,10 +12462,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "maintain patient confidentiality and identify the situations when confidentiality may need to be breached, for example, sexual abuse",
        "codes": "5.2.1"
@@ -13404,10 +12744,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss prevention and treatment strategies for common travel-related illnesses including vaccination and chemoprophylaxis",
        "codes": "1.2.2"
       },
@@ -13425,10 +12761,6 @@
      "domain": "Applied knowledge and skills",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "conduct a comprehensive pre-travel history and assessment of common travel-related risks and provide tailored pre-travel health advice based on this risk assessment",
        "codes": "2.1.1"
       },
@@ -13441,10 +12773,6 @@
     {
      "domain": "Population health and the context of general practice",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "assess risk of post-travel illness through screening for conditions including malaria, tuberculosis and other endemic, epidemic and pandemic infections and consider potential isolation or quarantine requirements",
        "codes": "3.1.1, 3.1.3"
@@ -13463,10 +12791,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "discuss ethical and social challenges related to international healthcare access and travel-related illness",
        "codes": "4.1.1"
       },
@@ -13479,10 +12803,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "consider international and legal requirements for vaccination and documentation of health conditions",
        "codes": "5.2.3"
@@ -13715,10 +13035,6 @@
      "domain": "Communication and the patient—doctor relationship",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "demonstrate a professional, inclusive and culturally sensitive approach when discussing health concerns with female patients, including transgender, gender diverse and non-binary patients with female sex organs",
        "codes": "1.1.1, 1.2.1, 1.3.1, 1.4.1, 1.4.3"
       },
@@ -13735,10 +13051,6 @@
     {
      "domain": "Applied knowledge and skills",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "collect and interpret a clinical history of conditions related to women's health that includes consideration of red flags and leads to a provisional diagnosis",
        "codes": "2.1.1, 2.1.3, 2.1.4, 2.1.8, 2.1.10"
@@ -13757,10 +13069,6 @@
      "domain": "Population health and the context of general practice",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "identify and screen women at increased risk of breast, cervical, uterine and ovarian cancer using cancer risk assessment and risk management support tools where appropriate",
        "codes": "3.1.1, 3.1.3"
       },
@@ -13778,10 +13086,6 @@
      "domain": "Professional and ethical role",
      "outcomes": [
       {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
-      {
        "text": "reflect on any potential gender-based or heteronormative biases that impact on patient care",
        "codes": "4.2.1, 4.2.2, AH4.2.1"
       }
@@ -13790,10 +13094,6 @@
     {
      "domain": "Organisational and legal dimensions",
      "outcomes": [
-      {
-       "text": "Learning outcomes",
-       "codes": "Related core competency outcomes"
-      },
       {
        "text": "maintain patient confidentiality and explain to patients when legislation requires them to disclose information, for example, mandatory reporting of child abuse",
        "codes": "5.2.1, 5.2.3"

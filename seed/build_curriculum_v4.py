@@ -88,7 +88,8 @@ def parse_competencies(panel):
             if len(tds) >= 2 and cur is not None:
                 outcome = ' '.join(text_of('<td>'+tds[0]+'</td>'))
                 codes = ' '.join(text_of('<td>'+tds[1]+'</td>'))
-                if outcome and not outcome.startswith('The GP is able'):
+                skip = ('Learning outcomes', 'Related core competency outcomes')
+                if outcome and outcome not in skip and not outcome.startswith('The GP is able') and codes not in skip:
                     cur['outcomes'].append({'text': outcome, 'codes': codes})
     return comps
 
